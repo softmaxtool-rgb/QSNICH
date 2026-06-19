@@ -70,61 +70,67 @@ export const useConnectStateStore = defineStore('connectState', {
 			if (!!hostArr[0] && hostArr[0].includes('https')) {
 				protocol = 'wss';
 			}
-
-			let pingInterval: any = null;
 			let wsTimeout: any = null;
-			let connStatus: boolean = false;
-			const socket: WebSocket = new WebSocket(`${protocol}://${domain}/v1/ws/${channel}?client=${clientId}&widget=${widgetId}&token=${this.user?.token}`); //, ['json']
+			let pingInterval: any = null;
+			let connStatus: boolean = false; // เคยต่อสำเร็จอย่างน้อย 1 ครั้ง → อนุญาตให้ reconnect
+			let manualClose: boolean = false; // caller สั่งปิดเอง → ห้าม reconnect
+			let socket!: WebSocket; // mutable: reconnect จะแทนที่ตัวนี้ใน closure เดิม (handle ที่ caller ถือไม่เปลี่ยน)
+			const wsUrl = `${protocol}://${domain}/v1/ws/${channel}?client=${clientId}&widget=${widgetId}&token=${this.user?.token}`;
 
-			socket.onmessage = (event) => {
-				if (!!onMessage) {
-					onMessage(JSON.parse(event.data));
-				}
-			};
+			// สร้าง socket + ผูก handler หนึ่งตัว — เรียกซ้ำได้ตอน reconnect โดยไม่สร้าง connection ลอยที่ไม่มีใครถือ handle
+			const setupSocket = () => {
+				socket = new WebSocket(wsUrl);
 
-			socket.onopen = (event) => {
-				connStatus = true;
-				console.log(`(channel:${channel}) ` + 'onSockerOpen...');
-				pingInterval = setInterval(() => {
-					if (socket.readyState === WebSocket.OPEN) {
-						socket.send(JSON.stringify({ type: 'ping' }));
+				socket.onmessage = (event) => {
+					if (!!onMessage) {
+						onMessage(JSON.parse(event.data));
 					}
-				}, 45000);
+				};
+
+				socket.onopen = (event) => {
+					connStatus = true;
+					console.log(`(channel:${channel}) ` + 'onSockerOpen...');
+
+					pingInterval = setInterval(() => {
+						if (socket.readyState === WebSocket.OPEN) {
+							socket.send(JSON.stringify({ type: 'ping' }));
+						}
+					}, 45000);
+				};
+
+				socket.onerror = (event) => {
+					if (!!onError) {
+						onError(event);
+					}
+					console.log(`(channel:${channel}) ` + 'onSockerError', event);
+				};
+
+				socket.onclose = (event) => {
+					console.log(`(channel:${channel}) ` + 'onSockerClose...');
+
+					if (pingInterval) clearInterval(pingInterval);
+					if (!!wsTimeout) clearTimeout(wsTimeout);
+
+					// reconnect เฉพาะตอนที่เคยต่อติดแล้วหลุดเอง และ caller ยังไม่ได้สั่งปิด
+					if (connStatus && !manualClose) {
+						wsTimeout = setTimeout(() => {
+							console.log(`(channel:${channel}) ` + 'Attempting to reconnect...');
+							setupSocket(); // แทนที่ socket เดิมใน closure — ไม่สร้าง handle ลอย
+						}, 5000);
+					}
+				};
 			};
 
-			socket.onerror = (event) => {
-				if (!!onError) {
-					onError(event);
-				}
-				console.log(`(channel:${channel}) ` + 'onSockerError', event);
-			};
-
-			socket.onclose = (event) => {
-				console.log(`(channel:${channel}) ` + 'onSockerClose...');
-
-				if (pingInterval) clearInterval(pingInterval);
-
-				if (!!wsTimeout) {
-					clearTimeout(wsTimeout);
-				}
-
-				if (!!connStatus) {
-					wsTimeout = setTimeout(() => {
-						console.log(`(channel:${channel}) ` + 'Attempting to reconnect...');
-						this.connectWebSocket(channel, clientId, widgetId, onMessage, onError || undefined);
-					}, 5000);
-				}
-			};
+			setupSocket();
 
 			const wsDisconnect = () => {
-				if (!!socket && socket.readyState === WebSocket.OPEN) {
-					connStatus = false;
+				manualClose = true;
+				if (!!wsTimeout) clearTimeout(wsTimeout);
+				if (pingInterval) clearInterval(pingInterval);
+				// ปิดได้แม้ socket ยัง CONNECTING (กัน reconnect ค้างตอน unmount เร็ว)
+				if (!!socket && (socket.readyState === WebSocket.OPEN || socket.readyState === WebSocket.CONNECTING)) {
 					socket.close();
 				}
-				if (!!wsTimeout) {
-					clearTimeout(wsTimeout);
-				}
-				if (pingInterval) clearInterval(pingInterval);
 			};
 
 			const wsSend = (data: wsDataSend) => {
@@ -138,7 +144,9 @@ export const useConnectStateStore = defineStore('connectState', {
 
 			return {
 				wsTimeout: wsTimeout,
-				socket: socket,
+				get socket() {
+					return socket; // getter → คืน socket ตัวปัจจุบันเสมอแม้หลัง reconnect
+				},
 				wsDisconnect: wsDisconnect,
 				wsSend: wsSend,
 			};
