@@ -8,4 +8,5 @@ export interface ConnectProject {
 	report_builder?: number;
 	license_limit?: number;
 	license_expire?: string | null;
+	public_key?: string; // platform/license public key — ใช้ decode form_model (มาจาก VITE_PUBLIC_KEY ใน .env)
 }

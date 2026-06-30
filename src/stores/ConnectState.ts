@@ -53,7 +53,8 @@ export const useConnectStateStore = defineStore('connectState', {
 		host: API_URL, //API_URL
 		router: useRouter(),
 		systemRoles: ['super', 'admin', 'manager', 'auth', 'user'],
-		connectInfo: { license_token: '', register_id: '' } as ConnectProject,
+		// public_key มาจาก .env (VITE_PUBLIC_KEY) — decode form_model ใช้ key นี้ (decode path 1)
+		connectInfo: { license_token: '', register_id: '', public_key: import.meta.env.VITE_PUBLIC_KEY } as ConnectProject,
 		formStore: {} as any,
 		versionStore: {} as any,
 		appParams: {} as any,
@@ -240,6 +241,8 @@ export const useConnectStateStore = defineStore('connectState', {
 							} else {
 								this.connectInfo = { license_token: '', register_id: '' };
 							}
+							// คง public_key จาก .env เสมอ (user.connectInfo จาก backend ไม่มี key นี้) — ใช้ decode form_model
+							this.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
 
 							this.startRefreshTokenTimer();
 							this.ensureNotifySocket(); // เปิด notify socket ครั้งเดียวหลัง login สำเร็จ
@@ -277,6 +280,8 @@ export const useConnectStateStore = defineStore('connectState', {
 						} else {
 							this.connectInfo = { license_token: '', register_id: '' };
 						}
+						// คง public_key จาก .env เสมอ — ใช้ decode form_model
+						this.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
 
 						this.startRefreshTokenTimer();
 						this.ensureNotifySocket(); // เปิด notify socket ครั้งเดียวหลัง login2fa สำเร็จ
