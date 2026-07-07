@@ -190,10 +190,7 @@ router.beforeEach(async (to, from) => {
 						userState.connectInfo = { license_token: '', register_id: '' };
 					}
 					// คง public_key จาก .env เสมอ — ใช้ decode form_model
-					// guard: ไม่ทับ key ของ db ปลายทางถ้า backend ส่งมาแล้ว (ตรง precedence ของ decodeData)
-					if (!userState.connectInfo.public_key) {
-						userState.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
-					}
+					// userState.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
 
 					userState.startRefreshTokenTimer();
 					if (!!userState.returnUrl) {

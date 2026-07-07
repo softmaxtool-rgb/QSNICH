@@ -242,10 +242,10 @@ export const useConnectStateStore = defineStore('connectState', {
 								this.connectInfo = { license_token: '', register_id: '' };
 							}
 							// คง public_key จาก .env เสมอ (user.connectInfo จาก backend ไม่มี key นี้) — ใช้ decode form_model
-							// guard: ไม่ทับ key ของ db ปลายทางถ้า backend ส่งมาแล้ว (ตรง precedence ของ decodeData)
-							if (!this.connectInfo.public_key) {
-								this.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
-							}
+							// this.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
+
+							// [TEMP-TEST] key ขยะ — พิสูจน์ว่า "ตัว key" หรือ "แค่ side-effect" ทำให้ render (ถอดออกหลังเทส)
+							this.connectInfo.public_key = 'x';
 
 							this.startRefreshTokenTimer();
 							this.ensureNotifySocket(); // เปิด notify socket ครั้งเดียวหลัง login สำเร็จ
@@ -284,10 +284,7 @@ export const useConnectStateStore = defineStore('connectState', {
 							this.connectInfo = { license_token: '', register_id: '' };
 						}
 						// คง public_key จาก .env เสมอ — ใช้ decode form_model
-						// guard: ไม่ทับ key ของ db ปลายทางถ้า backend ส่งมาแล้ว (ตรง precedence ของ decodeData)
-						if (!this.connectInfo.public_key) {
-							this.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
-						}
+						// this.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
 
 						this.startRefreshTokenTimer();
 						this.ensureNotifySocket(); // เปิด notify socket ครั้งเดียวหลัง login2fa สำเร็จ
