@@ -184,13 +184,14 @@ router.beforeEach(async (to, from) => {
 						userState.require2FA = true;
 					}
 
+					// connectInfo ใช้ decode form_model → ต้องมี public_key (VITE) เสมอ; clone ไม่ให้ key รั่วลง localStorage
 					if (!!userState.user && !!userState.user.connectInfo) {
-						userState.connectInfo = userState.user.connectInfo;
+						userState.connectInfo = userState.user.connectInfo.public_key
+							? userState.user.connectInfo
+							: { ...userState.user.connectInfo, public_key: import.meta.env.VITE_PUBLIC_KEY };
 					} else {
-						userState.connectInfo = { license_token: '', register_id: '' };
+						userState.connectInfo = { license_token: '', register_id: '', public_key: import.meta.env.VITE_PUBLIC_KEY };
 					}
-					// คง public_key จาก .env เสมอ — ใช้ decode form_model
-					// userState.connectInfo.public_key = import.meta.env.VITE_PUBLIC_KEY;
 
 					userState.startRefreshTokenTimer();
 					if (!!userState.returnUrl) {
