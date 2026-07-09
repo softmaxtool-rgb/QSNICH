@@ -1,6 +1,7 @@
 import { ProviderType, type SdProvider } from '~/types/SdGridType';
 import { useAppStateStore } from '~/stores/AppState';
 import { useConnectStateStore } from '~/stores/ConnectState';
+import { registerRoles } from './Acl';
 
 export const initApp = async function () {
 	try {
@@ -39,6 +40,9 @@ export const getRoles = async function () {
 					appState.roles = reply.data.map((item: any) => {
 						return item.role_name;
 					});
+					// custom roles โหลดหลัง app.use(acl) — ต้องลงทะเบียนเข้า ACL เพิ่ม
+					// ไม่งั้น anyCan/v-can ไม่รู้จัก role กลุ่มนี้ (มองเป็นไม่มีสิทธิ์เสมอ)
+					registerRoles(appState.roles);
 				},
 				() => {
 					appState.roles = [];

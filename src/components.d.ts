@@ -36,6 +36,7 @@ declare module 'vue' {
     ElLink: typeof import('element-plus/es')['ElLink']
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
     ElOption: typeof import('element-plus/es')['ElOption']
     ElRadioButton: typeof import('element-plus/es')['ElRadioButton']
     ElRadioGroup: typeof import('element-plus/es')['ElRadioGroup']
@@ -57,6 +58,7 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SettingConfig: typeof import('./components/layouts/SettingConfig.vue')['default']
     SideMenu: typeof import('./components/layouts/SideMenu.vue')['default']
+    SideMenuItem: typeof import('./components/layouts/SideMenuItem.vue')['default']
     Unauthorized: typeof import('./components/layouts/Unauthorized.vue')['default']
   }
 }
@@ -87,6 +89,7 @@ declare global {
   const ElLink: typeof import('element-plus/es')['ElLink']
   const ElMenu: typeof import('element-plus/es')['ElMenu']
   const ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+  const ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
   const ElOption: typeof import('element-plus/es')['ElOption']
   const ElRadioButton: typeof import('element-plus/es')['ElRadioButton']
   const ElRadioGroup: typeof import('element-plus/es')['ElRadioGroup']
@@ -108,5 +111,6 @@ declare global {
   const RouterView: typeof import('vue-router')['RouterView']
   const SettingConfig: typeof import('./components/layouts/SettingConfig.vue')['default']
   const SideMenu: typeof import('./components/layouts/SideMenu.vue')['default']
+  const SideMenuItem: typeof import('./components/layouts/SideMenuItem.vue')['default']
   const Unauthorized: typeof import('./components/layouts/Unauthorized.vue')['default']
 }

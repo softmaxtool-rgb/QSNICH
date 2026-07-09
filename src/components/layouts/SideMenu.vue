@@ -21,36 +21,8 @@
 				<el-divider direction="horizontal" style="margin: 0px" :style="`${!!borderColor ? `border-color: ${borderColor};` : ''}`" />
 			</div>
 
-			<template v-for="(item, index) in menuData" :key="item._id">
-				<el-sub-menu
-					v-if="!!subMenuField && !!item[subMenuField]"
-					:index="!!pathField && !!item[pathField] ? item[pathField] : index"
-					v-can.any="!!roleField && !!item[roleField] ? item[roleField] : ['user']"
-					@click="!!pathField && !!item[pathField] ? handleClick(item, index) : undefined">
-					<template #title>
-						<svg-icon class="menu-icon" v-if="!!iconField" :icon-name="item[iconField]" />
-						<span class="menu-label" v-if="!!labelField">{{ item[labelField] }}</span>
-					</template>
-					<template v-for="(subItem, subIndex) in item[subMenuField]" :key="subItem._id">
-						<el-menu-item
-							class="sub-menu-item"
-							:index="!!pathField && !!subValue(subItem, pathField) ? subValue(subItem, pathField) : index"
-							v-can.any="!!roleField && !!subValue(subItem, roleField) ? subValue(subItem, roleField) : ['user']"
-							@click="!!pathField && !!subValue(subItem, pathField) ? handleClick(subItem, subIndex, true) : undefined">
-							<svg-icon class="menu-icon" v-if="!!iconField" :icon-name="subValue(subItem, iconField)" />
-							<span class="menu-label" v-if="!!labelField">{{ subValue(subItem, labelField) }}</span>
-						</el-menu-item>
-					</template>
-				</el-sub-menu>
-				<el-menu-item
-					v-else
-					class="menu-item"
-					:index="!!pathField && !!item[pathField] ? item[pathField] : index"
-					v-can.any="!!roleField && !!item[roleField] ? item[roleField] : ['user']"
-					@click="!!pathField && !!item[pathField] ? handleClick(item, index) : undefined">
-					<svg-icon class="menu-icon" v-if="!!iconField" :icon-name="item[iconField]" />
-					<span class="menu-label" v-if="!!labelField">{{ item[labelField] }}</span>
-				</el-menu-item>
+			<template v-for="(item, index) in visibleMenuData" :key="item._id || index">
+				<side-menu-item :item="item" :index-path="String(index)" :sub-menu-prefix="subMenuPrefix" />
 			</template>
 		</el-menu>
 	</el-scrollbar>
@@ -59,12 +31,14 @@
 <script lang="ts">
 import type { MenuItemRegistered } from 'element-plus';
 import { defineComponent, type PropType } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { useRoute } from 'vue-router';
+import { useAcl } from 'vue-simple-acl';
 import { onWindowResizeHandler } from '~/utils/Util';
+import SideMenuItem from './SideMenuItem.vue';
 
 export default defineComponent({
 	name: 'SideMenu',
-	components: {},
+	components: { SideMenuItem },
 	props: {
 		menuData: {
 			type: Array as PropType<any>,
@@ -134,18 +108,19 @@ export default defineComponent({
 		return {
 			scrollerHeight: 0,
 			resizeCleanup: undefined as (() => void) | undefined,
-			router: useRouter(),
 			route: useRoute(),
+			acl: useAcl(),
 			isCollapse: this.expandDefault === 'collapse' ? true : false,
 			menuWidthOnexpand: !!!this.isCollapse ? this.menuWidth : 64,
-			subMenuField: 'subMenu',
-			roleField: 'role',
-			pathField: 'path',
-			iconField: 'icon',
-			labelField: 'label',
 		};
 	},
-	computed: {},
+	computed: {
+		// เมนูหลังกรอง role แล้วทั้งต้นไม้ — reactive ตาม user ใน store
+		// (anyCan อ่าน user ผ่าน reactive state ของ vue-simple-acl → role เปลี่ยนแล้ว re-render เอง)
+		visibleMenuData(): any[] {
+			return this.filterByRole(this.menuData || [], 0);
+		},
+	},
 	created() {
 		if (!!this.expandEnable) {
 			let expandBackup = window.localStorage.getItem('SideMenu_System');
@@ -190,21 +165,37 @@ export default defineComponent({
 	},
 	setup(props, ctx) {},
 	methods: {
-		// sub item field lookup — ถ้ากำหนด subMenuPrefix จะอ่าน key แบบมี prefix (เช่น sub_path)
-		// ถ้าไม่กำหนด จะอ่าน key เดียวกับ menu หลัก (path, label, icon, role)
-		subValue(subItem: any, field: string) {
-			return !!this.subMenuPrefix ? subItem[`${this.subMenuPrefix}${field}`] : subItem[field];
-		},
-		handleClick(row: any, index: number | string, subMenu: boolean = false) {
-			if (!!subMenu) {
-				if (!!this.pathField && !!this.subValue(row, this.pathField)) {
-					this.router.push(this.subValue(row, this.pathField));
+		// กรอง item ที่ user ไม่มีสิทธิ์ออกทั้งต้นไม้ (group/subMenu/leaf)
+		// - ไม่มี field role → default ['user'] (พฤติกรรมเดียวกับ v-can.any เดิม)
+		// - item ใต้ sub menu (depth ≥ 1) อ่าน role แบบมี prefix เมื่อกำหนด subMenuPrefix
+		// - group/sub menu ที่ลูกโดนกรองหมด → ตัดหัวข้อทิ้งด้วย
+		filterByRole(items: any[], depth: number): any[] {
+			const result: any[] = [];
+			for (const item of items) {
+				if (!!item.group && !!item.items) {
+					const children = this.filterByRole(item.items, depth);
+					if (children.length > 0) {
+						result.push({ ...item, items: children });
+					}
+					continue;
 				}
-			} else {
-				if (!!this.pathField && !!row[this.pathField]) {
-					this.router.push(row[this.pathField]);
+
+				const roleKey = depth > 0 && !!this.subMenuPrefix ? `${this.subMenuPrefix}role` : 'role';
+				if (!this.acl.anyCan(item[roleKey] || ['user'])) {
+					continue;
 				}
+
+				if (!!item.subMenu) {
+					const children = this.filterByRole(item.subMenu, depth + 1);
+					if (children.length > 0) {
+						result.push({ ...item, subMenu: children });
+					}
+					continue;
+				}
+
+				result.push(item);
 			}
+			return result;
 		},
 		expandClick(item: MenuItemRegistered) {
 			if (this.isCollapse) {
