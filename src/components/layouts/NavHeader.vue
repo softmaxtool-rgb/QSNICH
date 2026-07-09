@@ -89,6 +89,10 @@
 
 		<el-sub-menu index="10" class="menu-custom" popper-class="menu-custom-poper">
 			<template #title>
+				<!-- เปิดผ่าน setting navbar_unit_switch — instance ที่ยังไม่มีฟอร์ม Organization/Unit Access จะได้ไม่เห็นปุ่ม
+				     navbar_room_switch เปิด section ห้องตรวจ (ต้องมีฟอร์มห้องตรวจ) -->
+				<sd-unit-switcher v-if="!!userState.user && !!appState.params['navbar_unit_switch']" :user-state="userState" :room-enable="!!appState.params['navbar_room_switch']" />
+				<el-divider v-if="!!userState.user && !!appState.params['navbar_unit_switch']" direction="vertical" />
 				<el-badge v-if="!!userState.user" :hidden="!!!options.notifyCount" :value="options.notifyCount" :max="99" class="item" style="right: 6px; display: flex">
 					<el-button link @click.prevent="notifyShow">
 						<el-icon style="margin-right: -5px"><BellFilled /></el-icon>
@@ -97,7 +101,6 @@
 				<el-button v-if="!userState.user" link @click.prevent="router.push('/user/login')">
 					<el-icon class="text-5 mr-1"><Unlock /></el-icon> Login
 				</el-button>
-				<el-divider direction="vertical" />
 
 				<el-switch class="ml-2" v-model="appState.isDark" inline-prompt :tabindex="-1" active-icon="Sunny" inactive-icon="Moon" style="width: 40px" />
 

@@ -11,7 +11,7 @@ import 'virtual:svg-icons-register';
 
 import './styles/index.scss';
 import 'uno.css';
-import SdForm, { SdHtmlEditor, SvgIcon, SvgData } from 'sd-render';
+import SdForm, { SdHtmlEditor, SvgIcon, SvgData, SdUnitSwitcher } from 'sd-render';
 import draggable from 'vuedraggable';
 import 'sd-render/style.css';
 
@@ -43,5 +43,6 @@ app.use(SdForm);
 app.component('SvgIcon', SvgIcon);
 app.component('SvgData', SvgData);
 app.component('SdHtmlEditor', SdHtmlEditor);
+app.component('SdUnitSwitcher', SdUnitSwitcher);
 
 app.mount('#app');

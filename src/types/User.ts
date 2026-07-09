@@ -17,6 +17,8 @@ export interface SdUserLogin {
 	notify_last_at?: string;
 	site: { code: string; name: string };
 	unit: { code: string; name: string };
+	// ห้องตรวจปัจจุบัน (work context) — null = ยังไม่เลือก/แผนกไม่มีห้อง
+	room?: { id: string; code: string; name: string } | null;
 	connectInfo?: { license_token: string; register_id: string };
 	two_factor_enabled?: boolean;
 }

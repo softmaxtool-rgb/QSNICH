@@ -372,6 +372,114 @@ export const useConnectStateStore = defineStore('connectState', {
 					});
 			}
 		},
+		// รายการแผนกที่ user ปัจจุบันมีสิทธิ์ย้ายไป (สิทธิ์มาจาก zdata_unit_access, admin/super = ทุกแผนก)
+		async getUnitOptions(): Promise<{ allowAll: boolean; units: any[] }> {
+			if (!this.user || !this.user.token) {
+				return { allowAll: false, units: [] };
+			}
+			try {
+				const response = await axios.get(`${this.host}/user/unit-options`, {
+					headers: {
+						Authorization: `Bearer ${this.user?.token}`,
+					},
+				});
+				return { allowAll: !!response.data?.allowAll, units: response.data?.units || [] };
+			} catch (error: any) {
+				if (!!error.response && !!error.response.data && !!error.response.data.message) {
+					ElMessage.warning(error.response.data.message);
+				} else {
+					ElMessage.warning(error.message);
+				}
+				return { allowAll: false, units: [] };
+			}
+		},
+		// ย้ายแผนก — backend อัพเดต session + core_user แล้ว xsitex/xunitx stamp + data filter ใช้แผนกใหม่ทันที
+		// notify socket ไม่ต้อง reconnect: server broadcast ทุก client แล้ว filter ฝั่งนี้อ่าน user.unit สดตอน message เข้า
+		async switchUnit(unitId: string): Promise<boolean> {
+			if (!this.user || !this.user.token) {
+				return false;
+			}
+			try {
+				const response = await axios.post(
+					`${this.host}/user/switch-unit`,
+					{ unit_id: unitId },
+					{
+						headers: {
+							Authorization: `Bearer ${this.user?.token}`,
+						},
+					}
+				);
+				if (!!response.data && !!response.data.unit && this.user != null) {
+					this.user.site = response.data.site;
+					this.user.unit = response.data.unit;
+					this.user.room = response.data.room ?? null; // เปลี่ยนแผนก = ห้องถูกเคลียร์ฝั่ง server เสมอ
+					localStorage.setItem('connect', JSON.stringify(this.user));
+					ElMessage.success(response.data.message || 'Unit switched');
+					return true;
+				}
+				return false;
+			} catch (error: any) {
+				if (!!error.response && !!error.response.data && !!error.response.data.message) {
+					ElMessage.warning(error.response.data.message);
+				} else {
+					ElMessage.warning(error.message);
+				}
+				return false;
+			}
+		},
+		// รายการห้องตรวจของทุกแผนกที่มีสิทธิ์ — เลือกห้อง = ย้ายแผนกตามห้องในคลิกเดียว
+		async getRoomOptions(): Promise<{ rooms: any[] }> {
+			if (!this.user || !this.user.token) {
+				return { rooms: [] };
+			}
+			try {
+				const response = await axios.get(`${this.host}/user/room-options`, {
+					headers: {
+						Authorization: `Bearer ${this.user?.token}`,
+					},
+				});
+				return { rooms: response.data?.rooms || [] };
+			} catch (error: any) {
+				if (!!error.response && !!error.response.data && !!error.response.data.message) {
+					ElMessage.warning(error.response.data.message);
+				} else {
+					ElMessage.warning(error.message);
+				}
+				return { rooms: [] };
+			}
+		},
+		async switchRoom(roomId: string): Promise<boolean> {
+			if (!this.user || !this.user.token) {
+				return false;
+			}
+			try {
+				const response = await axios.post(
+					`${this.host}/user/switch-room`,
+					{ room_id: roomId },
+					{
+						headers: {
+							Authorization: `Bearer ${this.user?.token}`,
+						},
+					}
+				);
+				if (!!response.data && !!response.data.room && this.user != null) {
+					this.user.site = response.data.site;
+					this.user.unit = response.data.unit; // unit เปลี่ยนตามแผนกของห้อง
+					this.user.room = response.data.room;
+					localStorage.setItem('connect', JSON.stringify(this.user));
+					ElMessage.success(response.data.message || 'Room switched');
+					return true;
+				}
+				return false;
+			} catch (error: any) {
+				if (!!error.response && !!error.response.data && !!error.response.data.message) {
+					ElMessage.warning(error.response.data.message);
+				} else {
+					ElMessage.warning(error.message);
+				}
+				return false;
+			}
+		},
 		async updateRoles(roles: string[], callbackSuccess?: Function, callbackError?: Function) {
 			if (!!this.user && this.user.token) {
 				await axios
