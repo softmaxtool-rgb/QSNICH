@@ -240,9 +240,7 @@ export const useConnectStateStore = defineStore('connectState', {
 							// clone แทน mutate เพื่อไม่ให้ key ติดไปกับ user ที่ persist ลง localStorage (key อยู่แค่ใน memory)
 							// guard: ถ้า backend ส่ง public_key (db ปลายทาง) มาแล้ว ใช้ตัวนั้น ไม่ทับ
 							if (!!this.user && !!this.user.connectInfo) {
-								this.connectInfo = this.user.connectInfo.public_key
-									? this.user.connectInfo
-									: { ...this.user.connectInfo, public_key: import.meta.env.VITE_PUBLIC_KEY };
+								this.connectInfo = this.user.connectInfo.public_key ? this.user.connectInfo : { ...this.user.connectInfo, public_key: import.meta.env.VITE_PUBLIC_KEY };
 							} else {
 								this.connectInfo = { license_token: '', register_id: '', public_key: import.meta.env.VITE_PUBLIC_KEY };
 							}
@@ -280,9 +278,7 @@ export const useConnectStateStore = defineStore('connectState', {
 						this.user = response.data;
 						// connectInfo ใช้ decode form_model → ต้องมี public_key (VITE) เสมอ; clone ไม่ให้ key รั่วลง localStorage
 						if (!!this.user && !!this.user.connectInfo) {
-							this.connectInfo = this.user.connectInfo.public_key
-								? this.user.connectInfo
-								: { ...this.user.connectInfo, public_key: import.meta.env.VITE_PUBLIC_KEY };
+							this.connectInfo = this.user.connectInfo.public_key ? this.user.connectInfo : { ...this.user.connectInfo, public_key: import.meta.env.VITE_PUBLIC_KEY };
 						} else {
 							this.connectInfo = { license_token: '', register_id: '', public_key: import.meta.env.VITE_PUBLIC_KEY };
 						}
@@ -839,8 +835,8 @@ export const useConnectStateStore = defineStore('connectState', {
 							callback(response.data);
 						}
 					} else {
-						ElMessage.warning('Data not found');
 						if (!!callbackError) {
+							// ElMessage.warning('Data not found');
 							callbackError(response);
 						}
 					}
@@ -871,8 +867,8 @@ export const useConnectStateStore = defineStore('connectState', {
 							callback(response.data);
 						}
 					} else {
-						ElMessage.warning('Data not found');
 						if (!!callbackError) {
+							// ElMessage.warning('Data not found');
 							callbackError(response);
 						}
 					}

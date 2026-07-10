@@ -19,7 +19,8 @@ export interface SdUserLogin {
 	unit: { code: string; name: string };
 	// ห้องตรวจปัจจุบัน (work context) — null = ยังไม่เลือก/แผนกไม่มีห้อง
 	room?: { id: string; code: string; name: string } | null;
-	connectInfo?: { license_token: string; register_id: string };
+	connectInfo?: { license_token: string; register_id: string; public_key: string };
+
 	two_factor_enabled?: boolean;
 }
 
