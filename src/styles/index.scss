@@ -701,8 +701,8 @@ code {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px 12px;
-  padding: 11px var(--pc-pad-x);
+  gap: 8px 8px;
+  padding: 5px var(--pc-pad-x);
   border-top: 1px solid var(--el-color-danger-light-8);
   background: var(--el-color-danger-light-9);
 }
