@@ -353,6 +353,9 @@ export const useConnectStateStore = defineStore('connectState', {
 							this.user.roles = response.data.roles;
 							this.user.site = response.data.site;
 							this.user.unit = response.data.unit;
+							// room ต้อง sync คู่กับ unit เสมอ — /me คืนทั้งคู่จาก Level session (consistent)
+							// ถ้าเอาแค่ unit จะทำให้ room เดิมค้าง = unit/room ชี้คนละแผนก (bug ห้องข้ามแผนก)
+							this.user.room = response.data.room ?? null;
 							localStorage.setItem('connect', JSON.stringify(this.user));
 						}
 					})
