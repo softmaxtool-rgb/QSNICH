@@ -1,7 +1,7 @@
-import { defineComponent as C, inject as A, openBlock as l, createElementBlock as c, normalizeClass as S, renderSlot as ke, createBlock as a, withCtx as f, createTextVNode as E, toDisplayString as F, createCommentVNode as b, getCurrentInstance as ci, withDirectives as Q, resolveDynamicComponent as N, mergeProps as he, Fragment as y, renderList as T, vShow as X, resolveComponent as Z, normalizeStyle as j, createSlots as Y, createElementVNode as v, createVNode as h, computed as _, useCssVars as Ae, withModifiers as U, ref as R, nextTick as bi, reactive as gi, markRaw as de, h as Fi } from "vue";
-import { af as I, ag as yi, R as V, ah as Ne, ai as D, aj as P, ak as ae, al as ve, am as vi, an as oe, ao as wi, ap as Ci, aq as Si, ar as Ii, as as We, at as Mi, au as Ri, av as ki, aw as Oi, ax as Me, ay as Re, az as Pi, aA as $i, aB as z, a as Ei, aC as Li, q as He, J as ji, c as Di, d as Ti, e as Vi, f as Ui, h as qe, F as le, o as ie, p as Ge, A as we, B as Bi, C as Je, K as zi, D as Ai, aD as Ke, M as Ni, G as Ze, aE as me, l as Oe, H as Wi, L as Hi, I as Qe, aF as qi, aG as Gi, Q as Ji, m as Ye, _ as Xe, aH as Ki, aI as Zi, aJ as Qi, aK as Yi, aL as Xi, aM as je, T as _i, aN as xi, aO as et, i as it, j as tt } from "./sd-lib-JG0YsUrI.js";
-import { useMediaQuery as ot, useDark as H } from "@vueuse/core";
-import { ElTag as ue, ElCard as _e, ElTooltip as ne, ElIcon as be, ElCollapse as lt, ElCollapseItem as nt, ElCol as ge, ElRow as Fe, ElScrollbar as st, ElSpace as rt, ElButton as q, ElTabs as dt, ElTabPane as at, ElAlert as xe, ElFormItem as ei, ElInput as ye, ElAvatar as ft, ElDialog as ii, ElButtonGroup as ut, ElPopconfirm as pe, ElBadge as pt, ElCheckboxGroup as mt, ElCheckboxButton as ht, ElCheckbox as ct, ElColorPicker as bt, ElDivider as ti, ElDropdown as gt, ElDropdownMenu as Ft, ElDropdownItem as yt, ElUpload as Pe, ElAutocomplete as vt, ElImage as oi, ElLink as wt, ElInputNumber as Ct, ElInputOtp as St, ElProgress as It, ElRadioGroup as li, ElRadioButton as Mt, ElRadio as ni, ElRate as Rt, ElSegmented as kt, ElSelect as Ot, ElOption as Pt, ElSlider as $t, ElStatistic as Et, ElSteps as Lt, ElStep as jt, ElSwitch as Dt, ElInputTag as Tt, ElText as Vt, ElTimePicker as si, ElTimeSelect as Ut, ElTour as Bt, ElTourStep as zt, ElForm as At, ElLoadingDirective as Nt } from "element-plus/es";
+import { defineComponent as C, inject as A, openBlock as l, createElementBlock as c, normalizeClass as S, renderSlot as ke, createBlock as a, withCtx as f, createTextVNode as $, toDisplayString as F, createCommentVNode as b, getCurrentInstance as bi, withDirectives as Q, resolveDynamicComponent as N, mergeProps as he, Fragment as y, renderList as T, vShow as X, resolveComponent as Z, normalizeStyle as j, createSlots as Y, createElementVNode as v, createVNode as h, computed as _, useCssVars as Ae, withModifiers as V, ref as M, nextTick as gi, reactive as Fi, markRaw as ae, h as yi } from "vue";
+import { af as I, ag as vi, R as U, ah as Ne, ai as D, aj as P, ak as fe, al as ve, am as wi, an as le, ao as Ci, ap as Si, aq as Ii, ar as Mi, as as We, at as Ri, au as ki, av as Oi, aw as Pi, ax as Me, ay as Re, az as Ei, aA as $i, aB as z, a as Li, aC as ji, q as He, J as Di, c as Ti, d as Ui, e as Vi, f as Bi, h as qe, F as oe, o as ie, p as Ge, A as we, B as zi, C as Je, K as Ai, aD as Ke, D as Ni, aE as Ze, M as Wi, G as Qe, aF as me, l as Oe, H as Hi, L as qi, I as Ye, aG as Gi, aH as Ji, Q as Ki, m as Xe, _ as _e, aI as Zi, aJ as Qi, aK as Yi, aL as Xi, aM as _i, aN as je, T as xi, aO as et, aP as it, i as tt, j as ot } from "./sd-lib-DUErlnts.js";
+import { useMediaQuery as lt, useDark as H } from "@vueuse/core";
+import { ElTag as ne, ElCard as xe, ElTooltip as se, ElIcon as be, ElCollapse as nt, ElCollapseItem as st, ElCol as ge, ElRow as Fe, ElScrollbar as rt, ElSpace as dt, ElButton as q, ElTabs as at, ElTabPane as ft, ElAlert as ei, ElFormItem as ii, ElInput as ye, ElAvatar as ut, ElDialog as ti, ElButtonGroup as pt, ElPopconfirm as pe, ElBadge as mt, ElCheckboxGroup as ht, ElCheckboxButton as ct, ElCheckbox as bt, ElColorPicker as gt, ElDivider as oi, ElDropdown as Ft, ElDropdownMenu as yt, ElDropdownItem as vt, ElUpload as Pe, ElAutocomplete as wt, ElImage as li, ElLink as Ct, ElInputNumber as St, ElInputOtp as It, ElProgress as Mt, ElRadioGroup as ni, ElRadioButton as Rt, ElRadio as si, ElRate as kt, ElSegmented as Ot, ElSelect as Pt, ElOption as Et, ElSlider as $t, ElStatistic as Lt, ElSteps as jt, ElStep as Dt, ElSwitch as Tt, ElInputTag as Ut, ElText as Vt, ElTimePicker as ri, ElTimeSelect as Bt, ElTour as zt, ElTourStep as At, ElForm as Nt, ElLoadingDirective as Wt } from "element-plus/es";
 import "element-plus/es/components/base/style/index";
 import "element-plus/es/components/card/style/index";
 import "element-plus/es/components/icon/style/index";
@@ -13,7 +13,7 @@ import "element-plus/es/components/col/style/index";
 import "element-plus/es/components/scrollbar/style/index";
 import "element-plus/es/components/space/style/index";
 import "element-plus/es/components/button/style/index";
-import { ElMessage as x, ElMessageBox as te, ElNotification as ri, ElLoading as Wt } from "element-plus";
+import { ElMessage as x, ElMessageBox as te, ElNotification as di, ElLoading as Ht } from "element-plus";
 import "element-plus/es/components/tabs/style/index";
 import "element-plus/es/components/tab-pane/style/index";
 import "element-plus/es/components/tag/style/index";
@@ -29,22 +29,22 @@ import "element-plus/es/components/checkbox/style/index";
 import "element-plus/es/components/checkbox-button/style/index";
 import ce from "axios";
 import "element-plus/es/components/color-picker/style/index";
-import fe from "dayjs";
+import ue from "dayjs";
 import "element-plus/es/components/divider/style/index";
 import "element-plus/es/components/dropdown/style/index";
 import "element-plus/es/components/dropdown-menu/style/index";
 import "element-plus/es/components/dropdown-item/style/index";
 import "element-plus/es/components/upload/style/index";
 import "element-plus/es/components/autocomplete/style/index";
-import Ht from "fuse.js";
+import qt from "fuse.js";
 import "element-plus/es/components/image/style/index";
-import { Mode as qt } from "vanilla-jsoneditor";
-import Gt from "json-editor-vue";
+import { Mode as Gt } from "vanilla-jsoneditor";
+import Jt from "json-editor-vue";
 import "element-plus/es/components/link/style/index";
 import "element-plus/es/components/input-number/style/index";
 import "element-plus/es/components/input-otp/style/index";
 import "element-plus/es/components/progress/style/index";
-import Jt from "@chenfengyuan/vue-qrcode";
+import Kt from "@chenfengyuan/vue-qrcode";
 import "element-plus/es/components/radio-group/style/index";
 import "element-plus/es/components/radio/style/index";
 import "element-plus/es/components/radio-button/style/index";
@@ -64,8 +64,8 @@ import "element-plus/es/components/form-item/style/index";
 import "element-plus/es/components/time-select/style/index";
 import "element-plus/es/components/tour/style/index";
 import "element-plus/es/components/tour-step/style/index";
-import { useRoute as di, useRouter as ai } from "vue-router";
-import { Panel as Kt, Handle as Zt, VueFlow as Qt } from "@vue-flow/core";
+import { useRoute as ai, useRouter as fi } from "vue-router";
+import { Panel as Zt, Handle as Qt, VueFlow as Yt } from "@vue-flow/core";
 import "@vue-flow/core/dist/style.css";
 import "@vue-flow/core/dist/theme-default.css";
 import "element-plus/es/components/loading/style/index";
@@ -93,9 +93,9 @@ import "element-plus/es/components/cascader/style/index";
 import "element-plus/es/locale/lang/th";
 import "element-plus/es/components/date-picker-panel/style/index";
 import "element-plus/es/components/tree-v2/style/index";
-import { AES as Yt, pad as Xt, mode as _t, enc as fi } from "crypto-ts";
-import xt from "node-rsa";
-const Ce = /* @__PURE__ */ Object.assign({ "./affix-render.vue": () => Promise.resolve().then(() => ao), "./card-render.vue": () => Promise.resolve().then(() => Oo), "./collapse-render.vue": () => Promise.resolve().then(() => jo), "./grid-render.vue": () => Promise.resolve().then(() => zo), "./object-group-render.vue": () => Promise.resolve().then(() => Ho), "./scrollbar-render.vue": () => Promise.resolve().then(() => Ko), "./space-render.vue": () => Promise.resolve().then(() => Xo), "./sub-form-render.vue": () => Promise.resolve().then(() => ll), "./tab-render.vue": () => Promise.resolve().then(() => al), "./table-render.vue": () => Promise.resolve().then(() => bl) }), eo = {
+import { AES as Xt, pad as _t, mode as xt, enc as ui } from "crypto-ts";
+import eo from "node-rsa";
+const Ce = /* @__PURE__ */ Object.assign({ "./affix-render.vue": () => Promise.resolve().then(() => fo), "./card-render.vue": () => Promise.resolve().then(() => Po), "./collapse-render.vue": () => Promise.resolve().then(() => Do), "./grid-render.vue": () => Promise.resolve().then(() => Ao), "./object-group-render.vue": () => Promise.resolve().then(() => qo), "./scrollbar-render.vue": () => Promise.resolve().then(() => Zo), "./space-render.vue": () => Promise.resolve().then(() => _o), "./sub-form-render.vue": () => Promise.resolve().then(() => nl), "./tab-render.vue": () => Promise.resolve().then(() => fl), "./table-render.vue": () => Promise.resolve().then(() => gl) }), io = {
   install(e) {
     for (const i in Ce)
       Ce[i] && Ce[i]().then((t) => {
@@ -103,7 +103,7 @@ const Ce = /* @__PURE__ */ Object.assign({ "./affix-render.vue": () => Promise.r
         o && e.component(o, t.default);
       });
   }
-}, Se = /* @__PURE__ */ Object.assign({ "./alert-ui.vue": () => Promise.resolve().then(() => Rl), "./apexchart-ui.vue": () => Promise.resolve().then(() => $l), "./autonumber-input.vue": () => Promise.resolve().then(() => Nl), "./avatar-ui.vue": () => Promise.resolve().then(() => Gl), "./btn-editor-input.vue": () => Promise.resolve().then(() => _l), "./button-ui.vue": () => Promise.resolve().then(() => on), "./carousel-ui.vue": () => Promise.resolve().then(() => rn), "./cascader-form-input.vue": () => Promise.resolve().then(() => un), "./chart-ui.vue": () => Promise.resolve().then(() => cn), "./checkbox-input.vue": () => Promise.resolve().then(() => yn), "./code-input.vue": () => Promise.resolve().then(() => In), "./color-input.vue": () => Promise.resolve().then(() => On), "./crop-upload-input.vue": () => Promise.resolve().then(() => Ln), "./datagrid-form-ui.vue": () => Promise.resolve().then(() => Vn), "./datagrid-sql-ui.vue": () => Promise.resolve().then(() => An), "./date-input.vue": () => Promise.resolve().then(() => qn), "./date-panel-input.vue": () => Promise.resolve().then(() => Zn), "./date-range-input.vue": () => Promise.resolve().then(() => _n), "./divider-ui.vue": () => Promise.resolve().then(() => ts), "./dropdown-ui.vue": () => Promise.resolve().then(() => ss), "./dynamic-input.vue": () => Promise.resolve().then(() => fs), "./file-upload-input.vue": () => Promise.resolve().then(() => vs), "./group-list-input.vue": () => Promise.resolve().then(() => Is), "./html-input.vue": () => Promise.resolve().then(() => Os), "./html-ui.vue": () => Promise.resolve().then(() => Ls), "./icon-input.vue": () => Promise.resolve().then(() => Vs), "./image-ui.vue": () => Promise.resolve().then(() => Ns), "./json-input.vue": () => Promise.resolve().then(() => Gs), "./liff-ui.vue": () => Promise.resolve().then(() => Qs), "./link-ui.vue": () => Promise.resolve().then(() => xs), "./list-ui.vue": () => Promise.resolve().then(() => or), "./masked-input.vue": () => Promise.resolve().then(() => dr), "./multiple-date.vue": () => Promise.resolve().then(() => pr), "./number-input.vue": () => Promise.resolve().then(() => Fr), "./objectid-input.vue": () => Promise.resolve().then(() => Cr), "./otp-input.vue": () => Promise.resolve().then(() => Rr), "./picture-upload-input.vue": () => Promise.resolve().then(() => Tr), "./progress-ui.vue": () => Promise.resolve().then(() => zr), "./qrcode-ui.vue": () => Promise.resolve().then(() => Hr), "./radio-input.vue": () => Promise.resolve().then(() => Kr), "./radio-text-input.vue": () => Promise.resolve().then(() => Xr), "./rate-input.vue": () => Promise.resolve().then(() => id), "./record-ui.vue": () => Promise.resolve().then(() => sd), "./report-ui.vue": () => Promise.resolve().then(() => fd), "./scan-code-ui.vue": () => Promise.resolve().then(() => hd), "./segmented-ui.vue": () => Promise.resolve().then(() => Fd), "./select-data-input.vue": () => Promise.resolve().then(() => Cd), "./select-form-input.vue": () => Promise.resolve().then(() => Rd), "./select-input.vue": () => Promise.resolve().then(() => $d), "./select-path-input.vue": () => Promise.resolve().then(() => Dd), "./select-sql-input.vue": () => Promise.resolve().then(() => Bd), "./side-menu-ui.vue": () => Promise.resolve().then(() => Wd), "./slider-input.vue": () => Promise.resolve().then(() => Jd), "./smart-card-ui.vue": () => Promise.resolve().then(() => Yd), "./statistic-ui.vue": () => Promise.resolve().then(() => na), "./step-ui.vue": () => Promise.resolve().then(() => aa), "./svg-input.vue": () => Promise.resolve().then(() => ha), "./svg-ui.vue": () => Promise.resolve().then(() => Fa), "./switch-input.vue": () => Promise.resolve().then(() => Ia), "./tags-input.vue": () => Promise.resolve().then(() => $a), "./text-input.vue": () => Promise.resolve().then(() => Da), "./text-ui.vue": () => Promise.resolve().then(() => Ba), "./textarea-input.vue": () => Promise.resolve().then(() => Wa), "./time-input.vue": () => Promise.resolve().then(() => Ja), "./time-range-input.vue": () => Promise.resolve().then(() => Ya), "./time-select-input.vue": () => Promise.resolve().then(() => ef), "./tour-ui.vue": () => Promise.resolve().then(() => nf), "./tree-ui.vue": () => Promise.resolve().then(() => af), "./vue-ui.vue": () => Promise.resolve().then(() => mf) }), io = {
+}, Se = /* @__PURE__ */ Object.assign({ "./alert-ui.vue": () => Promise.resolve().then(() => kl), "./apexchart-ui.vue": () => Promise.resolve().then(() => $l), "./autonumber-input.vue": () => Promise.resolve().then(() => Wl), "./avatar-ui.vue": () => Promise.resolve().then(() => Jl), "./btn-editor-input.vue": () => Promise.resolve().then(() => xl), "./button-ui.vue": () => Promise.resolve().then(() => ln), "./carousel-ui.vue": () => Promise.resolve().then(() => dn), "./cascader-form-input.vue": () => Promise.resolve().then(() => pn), "./chart-ui.vue": () => Promise.resolve().then(() => bn), "./checkbox-input.vue": () => Promise.resolve().then(() => vn), "./code-input.vue": () => Promise.resolve().then(() => Mn), "./color-input.vue": () => Promise.resolve().then(() => Pn), "./crop-upload-input.vue": () => Promise.resolve().then(() => jn), "./datagrid-form-ui.vue": () => Promise.resolve().then(() => Vn), "./datagrid-sql-ui.vue": () => Promise.resolve().then(() => Nn), "./date-input.vue": () => Promise.resolve().then(() => Gn), "./date-panel-input.vue": () => Promise.resolve().then(() => Qn), "./date-range-input.vue": () => Promise.resolve().then(() => xn), "./divider-ui.vue": () => Promise.resolve().then(() => os), "./dropdown-ui.vue": () => Promise.resolve().then(() => rs), "./dynamic-input.vue": () => Promise.resolve().then(() => us), "./file-upload-input.vue": () => Promise.resolve().then(() => ws), "./group-list-input.vue": () => Promise.resolve().then(() => Ms), "./html-input.vue": () => Promise.resolve().then(() => Ps), "./html-ui.vue": () => Promise.resolve().then(() => js), "./icon-input.vue": () => Promise.resolve().then(() => Vs), "./image-ui.vue": () => Promise.resolve().then(() => Ws), "./json-input.vue": () => Promise.resolve().then(() => Js), "./liff-ui.vue": () => Promise.resolve().then(() => Ys), "./link-ui.vue": () => Promise.resolve().then(() => er), "./list-ui.vue": () => Promise.resolve().then(() => lr), "./local-agent-ui.vue": () => Promise.resolve().then(() => ar), "./masked-input.vue": () => Promise.resolve().then(() => hr), "./multiple-date.vue": () => Promise.resolve().then(() => Fr), "./number-input.vue": () => Promise.resolve().then(() => Ir), "./objectid-input.vue": () => Promise.resolve().then(() => Or), "./otp-input.vue": () => Promise.resolve().then(() => Lr), "./picture-upload-input.vue": () => Promise.resolve().then(() => Nr), "./progress-ui.vue": () => Promise.resolve().then(() => Gr), "./qrcode-ui.vue": () => Promise.resolve().then(() => Qr), "./radio-input.vue": () => Promise.resolve().then(() => xr), "./radio-text-input.vue": () => Promise.resolve().then(() => od), "./rate-input.vue": () => Promise.resolve().then(() => rd), "./record-ui.vue": () => Promise.resolve().then(() => pd), "./report-ui.vue": () => Promise.resolve().then(() => bd), "./scan-code-ui.vue": () => Promise.resolve().then(() => vd), "./segmented-ui.vue": () => Promise.resolve().then(() => Id), "./select-data-input.vue": () => Promise.resolve().then(() => Od), "./select-form-input.vue": () => Promise.resolve().then(() => Ld), "./select-input.vue": () => Promise.resolve().then(() => Ud), "./select-path-input.vue": () => Promise.resolve().then(() => Ad), "./select-sql-input.vue": () => Promise.resolve().then(() => qd), "./side-menu-ui.vue": () => Promise.resolve().then(() => Zd), "./slider-input.vue": () => Promise.resolve().then(() => _d), "./smart-card-ui.vue": () => Promise.resolve().then(() => ta), "./statistic-ui.vue": () => Promise.resolve().then(() => ua), "./step-ui.vue": () => Promise.resolve().then(() => ca), "./svg-input.vue": () => Promise.resolve().then(() => va), "./svg-ui.vue": () => Promise.resolve().then(() => Ia), "./switch-input.vue": () => Promise.resolve().then(() => Ea), "./tags-input.vue": () => Promise.resolve().then(() => Ua), "./text-input.vue": () => Promise.resolve().then(() => Aa), "./text-ui.vue": () => Promise.resolve().then(() => qa), "./textarea-input.vue": () => Promise.resolve().then(() => Za), "./time-input.vue": () => Promise.resolve().then(() => _a), "./time-range-input.vue": () => Promise.resolve().then(() => of), "./time-select-input.vue": () => Promise.resolve().then(() => rf), "./tour-ui.vue": () => Promise.resolve().then(() => uf), "./tree-ui.vue": () => Promise.resolve().then(() => cf), "./vue-ui.vue": () => Promise.resolve().then(() => yf) }), to = {
   install(e) {
     for (const i in Se)
       Se[i] && Se[i]().then((t) => {
@@ -111,12 +111,12 @@ const Ce = /* @__PURE__ */ Object.assign({ "./affix-render.vue": () => Promise.r
         o && e.component(o, t.default);
       });
   }
-}, to = (e) => {
-  e.use(eo), e.use(io);
-}, cp = {
-  install: to
+}, oo = (e) => {
+  e.use(io), e.use(to);
+}, wp = {
+  install: oo
   // SdFormRender,
-}, oo = C({
+}, lo = C({
   name: "ContainerRenderWrapper",
   components: {},
   props: {
@@ -133,8 +133,8 @@ const Ce = /* @__PURE__ */ Object.assign({ "./affix-render.vue": () => Promise.r
     }
   }
 });
-function lo(e, i, t, o, n, m) {
-  const s = ue;
+function no(e, i, t, o, n, m) {
+  const s = ne;
   return l(), c("div", {
     class: S(["container-wrapper", [e.customClass]]),
     style: { position: "relative" }
@@ -148,13 +148,13 @@ function lo(e, i, t, o, n, m) {
       style: { position: "absolute", top: "-19px", right: "0", "z-index": "999" }
     }, {
       default: f(() => [
-        E(F(e.field.options.name), 1)
+        $(F(e.field.options.name), 1)
       ]),
       _: 1
     })) : b("", !0)
   ], 2);
 }
-const W = /* @__PURE__ */ I(oo, [["render", lo]]), $e = C({
+const W = /* @__PURE__ */ I(lo, [["render", no]]), Ee = C({
   props: {
     field: Object,
     objGroupName: {
@@ -192,7 +192,7 @@ const W = /* @__PURE__ */ I(oo, [["render", lo]]), $e = C({
     }
   }
 }), ee = C({
-  mixins: [$e],
+  mixins: [Ee],
   data() {
     return {
       activeTabName: "",
@@ -231,7 +231,7 @@ const W = /* @__PURE__ */ I(oo, [["render", lo]]), $e = C({
         let o = t.options.name, n = this.getFieldRef(o);
         e && n && n.clearFieldRules && n.clearFieldRules(), !e && n && n.buildFieldRules && n.buildFieldRules();
       };
-      yi(this.field, i);
+      vi(this.field, i);
     },
     unregisterFromRefList() {
       if (this.refList !== null && this.field.options.name) {
@@ -334,7 +334,7 @@ const W = /* @__PURE__ */ I(oo, [["render", lo]]), $e = C({
   },
   methods: {
     setCurrentInstance() {
-      this.currentInstance = ci();
+      this.currentInstance = bi();
     },
     // Emitter handle =========================================
     emit$(e, i) {
@@ -387,7 +387,7 @@ const W = /* @__PURE__ */ I(oo, [["render", lo]]), $e = C({
       }
     }
   }
-}), no = C({
+}), so = C({
   name: "affix-render",
   typeName: "FormContainer",
   components: {
@@ -397,7 +397,7 @@ const W = /* @__PURE__ */ I(oo, [["render", lo]]), $e = C({
   mixins: [ee, J],
   inject: ["refList", "sfRefList", "globalModel"],
   setup() {
-    return { isMobile: ot("(max-width: 480px)") };
+    return { isMobile: lt("(max-width: 480px)") };
   },
   computed: {
     // ปิด affix เมื่อเปิด option disableOnMobile + อยู่บนจอมือถือ
@@ -433,7 +433,7 @@ const W = /* @__PURE__ */ I(oo, [["render", lo]]), $e = C({
     this.unregisterFromRefList();
   }
 });
-function so(e, i, t, o, n, m) {
+function ro(e, i, t, o, n, m) {
   const s = W;
   return l(), a(s, {
     field: e.field,
@@ -474,10 +474,10 @@ function so(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const ro = /* @__PURE__ */ I(no, [["render", so], ["__scopeId", "data-v-8b4333c7"]]), ao = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ao = /* @__PURE__ */ I(so, [["render", ro], ["__scopeId", "data-v-8b4333c7"]]), fo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ro
-}, Symbol.toStringTag, { value: "Module" })), fo = C({
+  default: ao
+}, Symbol.toStringTag, { value: "Module" })), uo = C({
   name: "card-render",
   typeName: "FormContainer",
   components: {
@@ -507,12 +507,12 @@ const ro = /* @__PURE__ */ I(no, [["render", so], ["__scopeId", "data-v-8b4333c7
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), uo = { class: "card-header clear-fix" }, po = {
+}), po = { class: "card-header clear-fix" }, mo = {
   key: 0,
   class: "custom-label wcard-head"
-}, mo = { class: "wcard-icon" }, ho = { class: "wcard-titles" }, co = { class: "wcard-sub" }, bo = { class: "wcard-icon" }, go = { class: "wcard-titles" }, Fo = { class: "wcard-sub" }, yo = { class: "wcard-titles" }, vo = { class: "wcard-sub" }, wo = { class: "wcard-icon wcard-icon--rear" }, Co = { class: "wcard-titles" }, So = { class: "wcard-sub" }, Io = { class: "wcard-icon wcard-icon--rear" }, Mo = { class: "wcard-sub ml-1" };
-function Ro(e, i, t, o, n, m) {
-  const s = V, u = ne, p = Z("arrow-down"), g = Z("arrow-up"), w = be, L = _e, r = W;
+}, ho = { class: "wcard-icon" }, co = { class: "wcard-titles" }, bo = { class: "wcard-sub" }, go = { class: "wcard-icon" }, Fo = { class: "wcard-titles" }, yo = { class: "wcard-sub" }, vo = { class: "wcard-titles" }, wo = { class: "wcard-sub" }, Co = { class: "wcard-icon wcard-icon--rear" }, So = { class: "wcard-titles" }, Io = { class: "wcard-sub" }, Mo = { class: "wcard-icon wcard-icon--rear" }, Ro = { class: "wcard-sub ml-1" };
+function ko(e, i, t, o, n, m) {
+  const s = U, u = se, p = Z("arrow-down"), g = Z("arrow-up"), w = be, L = xe, r = W;
   return l(), a(r, {
     field: e.field,
     style: { "margin-bottom": "15px" }
@@ -561,17 +561,17 @@ function Ro(e, i, t, o, n, m) {
         e.field.options.headerDisable ? void 0 : {
           name: "header",
           fn: f(() => [
-            v("div", uo, [
-              e.field.options.labelIconClass ? (l(), c("span", po, [
+            v("div", po, [
+              e.field.options.labelIconClass ? (l(), c("span", mo, [
                 e.field.options.labelIconPosition === "front" ? (l(), c(y, { key: 0 }, [
                   e.field.options.labelTooltip ? (l(), c(y, { key: 0 }, [
                     h(u, {
                       content: e.field.options.labelTooltip
                     }, {
                       default: f(() => [
-                        v("span", mo, [
+                        v("span", ho, [
                           e.field.options.labelIconText ? (l(), c(y, { key: 1 }, [
-                            E(F(e.field.options.labelIconClass), 1)
+                            $(F(e.field.options.labelIconClass), 1)
                           ], 64)) : (l(), a(s, {
                             key: 0,
                             "icon-name": e.field.options.labelIconClass
@@ -580,46 +580,46 @@ function Ro(e, i, t, o, n, m) {
                       ]),
                       _: 1
                     }, 8, ["content"]),
-                    v("div", ho, [
+                    v("div", co, [
                       v("span", {
                         class: "wcard-title",
                         style: j({ color: e.field.options.labelColor })
                       }, F(e.field.options.label), 5),
-                      v("span", co, F(e.field.options.subLabel), 1)
+                      v("span", bo, F(e.field.options.subLabel), 1)
                     ])
                   ], 64)) : (l(), c(y, { key: 1 }, [
-                    v("span", bo, [
+                    v("span", go, [
                       e.field.options.labelIconText ? (l(), c(y, { key: 1 }, [
-                        E(F(e.field.options.labelIconClass), 1)
+                        $(F(e.field.options.labelIconClass), 1)
                       ], 64)) : (l(), a(s, {
                         key: 0,
                         "icon-name": e.field.options.labelIconClass
                       }, null, 8, ["icon-name"]))
                     ]),
-                    v("div", go, [
+                    v("div", Fo, [
                       v("span", {
                         class: "wcard-title",
                         style: j({ color: e.field.options.labelColor })
                       }, F(e.field.options.label), 5),
-                      v("span", Fo, F(e.field.options.subLabel), 1)
+                      v("span", yo, F(e.field.options.subLabel), 1)
                     ])
                   ], 64))
                 ], 64)) : e.field.options.labelIconPosition === "rear" ? (l(), c(y, { key: 1 }, [
                   e.field.options.labelTooltip ? (l(), c(y, { key: 0 }, [
-                    v("div", yo, [
+                    v("div", vo, [
                       v("span", {
                         class: "wcard-title",
                         style: j({ color: e.field.options.labelColor })
                       }, F(e.field.options.label), 5),
-                      v("span", vo, F(e.field.options.subLabel), 1)
+                      v("span", wo, F(e.field.options.subLabel), 1)
                     ]),
                     h(u, {
                       content: e.field.options.labelTooltip
                     }, {
                       default: f(() => [
-                        v("span", wo, [
+                        v("span", Co, [
                           e.field.options.labelIconText ? (l(), c(y, { key: 1 }, [
-                            E(F(e.field.options.labelIconClass), 1)
+                            $(F(e.field.options.labelIconClass), 1)
                           ], 64)) : (l(), a(s, {
                             key: 0,
                             "icon-name": e.field.options.labelIconClass
@@ -629,16 +629,16 @@ function Ro(e, i, t, o, n, m) {
                       _: 1
                     }, 8, ["content"])
                   ], 64)) : (l(), c(y, { key: 1 }, [
-                    v("div", Co, [
+                    v("div", So, [
                       v("span", {
                         class: "wcard-title",
                         style: j({ color: e.field.options.labelColor })
                       }, F(e.field.options.label), 5),
-                      v("span", So, F(e.field.options.subLabel), 1)
+                      v("span", Io, F(e.field.options.subLabel), 1)
                     ]),
-                    v("span", Io, [
+                    v("span", Mo, [
                       e.field.options.labelIconText ? (l(), c(y, { key: 1 }, [
-                        E(F(e.field.options.labelIconClass), 1)
+                        $(F(e.field.options.labelIconClass), 1)
                       ], 64)) : (l(), a(s, {
                         key: 0,
                         "icon-name": e.field.options.labelIconClass
@@ -651,8 +651,8 @@ function Ro(e, i, t, o, n, m) {
                 class: "custom-label",
                 style: j({ color: e.field.options.labelColor })
               }, [
-                E(F(e.field.options.label) + " ", 1),
-                v("span", Mo, F(e.field.options.subLabel), 1)
+                $(F(e.field.options.label) + " ", 1),
+                v("span", Ro, F(e.field.options.subLabel), 1)
               ], 4)),
               e.field.options.showFold ? (l(), a(w, {
                 key: 2,
@@ -676,10 +676,10 @@ function Ro(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const ko = /* @__PURE__ */ I(fo, [["render", Ro], ["__scopeId", "data-v-265376dd"]]), Oo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Oo = /* @__PURE__ */ I(uo, [["render", ko], ["__scopeId", "data-v-265376dd"]]), Po = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ko
-}, Symbol.toStringTag, { value: "Module" })), Po = C({
+  default: Oo
+}, Symbol.toStringTag, { value: "Module" })), Eo = C({
   name: "collapse-render",
   typeName: "FormContainer",
   components: {
@@ -719,8 +719,8 @@ const ko = /* @__PURE__ */ I(fo, [["render", Ro], ["__scopeId", "data-v-265376dd
     this.unregisterFromRefList();
   }
 }), $o = { class: "custom-collapses-title" };
-function Eo(e, i, t, o, n, m) {
-  const s = V, u = nt, p = lt, g = W;
+function Lo(e, i, t, o, n, m) {
+  const s = U, u = st, p = nt, g = W;
   return l(), a(g, {
     field: e.field,
     style: { "margin-bottom": "15px" }
@@ -786,16 +786,16 @@ function Eo(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const Lo = /* @__PURE__ */ I(Po, [["render", Eo], ["__scopeId", "data-v-e477f3cf"]]), jo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const jo = /* @__PURE__ */ I(Eo, [["render", Lo], ["__scopeId", "data-v-e477f3cf"]]), Do = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Lo
-}, Symbol.toStringTag, { value: "Module" })), Do = C({
+  default: jo
+}, Symbol.toStringTag, { value: "Module" })), To = C({
   name: "grid-col-render",
   typeName: "FormContainer",
   components: {
     // ...FieldComponents,
   },
-  mixins: [$e, J],
+  mixins: [Ee, J],
   inject: ["refList", "globalModel", "getFormConfig", "previewState"],
   props: {
     parentField: Object,
@@ -861,7 +861,7 @@ const Lo = /* @__PURE__ */ I(Po, [["render", Eo], ["__scopeId", "data-v-e477f3cf
   beforeUnmount() {
   }
 });
-function To(e, i, t, o, n, m) {
+function Uo(e, i, t, o, n, m) {
   const s = ge;
   return Q((l(), a(s, he({
     class: ["grid-cell", [e.customClass]]
@@ -895,12 +895,12 @@ function To(e, i, t, o, n, m) {
     [X, !e.field.options.hidden]
   ]);
 }
-const ui = /* @__PURE__ */ I(Do, [["render", To]]), Vo = C({
+const pi = /* @__PURE__ */ I(To, [["render", Uo]]), Vo = C({
   name: "grid-render",
   typeName: "FormContainer",
   components: {
     ContainerRenderWrapper: W,
-    GridColRender: ui
+    GridColRender: pi
   },
   mixins: [ee, J],
   inject: ["refList", "sfRefList", "globalModel"],
@@ -917,8 +917,8 @@ const ui = /* @__PURE__ */ I(Do, [["render", To]]), Vo = C({
     this.unregisterFromRefList();
   }
 });
-function Uo(e, i, t, o, n, m) {
-  const s = ui, u = Fe, p = W;
+function Bo(e, i, t, o, n, m) {
+  const s = pi, u = Fe, p = W;
   return l(), a(p, { field: e.field }, {
     default: f(() => [
       Q((l(), a(u, {
@@ -946,10 +946,10 @@ function Uo(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const Bo = /* @__PURE__ */ I(Vo, [["render", Uo], ["__scopeId", "data-v-3e72ec8c"]]), zo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const zo = /* @__PURE__ */ I(Vo, [["render", Bo], ["__scopeId", "data-v-3e72ec8c"]]), Ao = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Bo
-}, Symbol.toStringTag, { value: "Module" })), Ao = C({
+  default: zo
+}, Symbol.toStringTag, { value: "Module" })), No = C({
   name: "object-group-render",
   typeName: "FormContainer",
   components: {
@@ -975,8 +975,8 @@ const Bo = /* @__PURE__ */ I(Vo, [["render", Uo], ["__scopeId", "data-v-3e72ec8c
     this.unregisterFromRefList();
   }
 });
-function No(e, i, t, o, n, m) {
-  const s = _e, u = W;
+function Wo(e, i, t, o, n, m) {
+  const s = xe, u = W;
   return l(), a(u, {
     field: e.field,
     style: { "margin-bottom": "0px" }
@@ -1017,10 +1017,10 @@ function No(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const Wo = /* @__PURE__ */ I(Ao, [["render", No], ["__scopeId", "data-v-36c5f3e4"]]), Ho = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ho = /* @__PURE__ */ I(No, [["render", Wo], ["__scopeId", "data-v-36c5f3e4"]]), qo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Wo
-}, Symbol.toStringTag, { value: "Module" })), qo = C({
+  default: Ho
+}, Symbol.toStringTag, { value: "Module" })), Go = C({
   name: "scrollbar-render",
   typeName: "FormContainer",
   components: {
@@ -1068,8 +1068,8 @@ const Wo = /* @__PURE__ */ I(Ao, [["render", No], ["__scopeId", "data-v-36c5f3e4
     this.resizeCleanup?.(), this.unregisterFromRefList();
   }
 });
-function Go(e, i, t, o, n, m) {
-  const s = st, u = W;
+function Jo(e, i, t, o, n, m) {
+  const s = rt, u = W;
   return l(), a(u, {
     field: e.field,
     style: { "margin-bottom": "0px" }
@@ -1118,10 +1118,10 @@ function Go(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const Jo = /* @__PURE__ */ I(qo, [["render", Go], ["__scopeId", "data-v-e02996fd"]]), Ko = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ko = /* @__PURE__ */ I(Go, [["render", Jo], ["__scopeId", "data-v-e02996fd"]]), Zo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Jo
-}, Symbol.toStringTag, { value: "Module" })), Zo = C({
+  default: Ko
+}, Symbol.toStringTag, { value: "Module" })), Qo = C({
   name: "space-render",
   typeName: "FormContainer",
   components: {
@@ -1143,8 +1143,8 @@ const Jo = /* @__PURE__ */ I(qo, [["render", Go], ["__scopeId", "data-v-e02996fd
     this.unregisterFromRefList();
   }
 });
-function Qo(e, i, t, o, n, m) {
-  const s = rt, u = W;
+function Yo(e, i, t, o, n, m) {
+  const s = dt, u = W;
   return l(), a(u, {
     field: e.field,
     style: j([{ "margin-bottom": "0px" }, { textAlign: e.field.options.contentPosition || "left" }])
@@ -1191,10 +1191,10 @@ function Qo(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field", "style"]);
 }
-const Yo = /* @__PURE__ */ I(Zo, [["render", Qo], ["__scopeId", "data-v-cafd5b38"]]), Xo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Xo = /* @__PURE__ */ I(Qo, [["render", Yo], ["__scopeId", "data-v-cafd5b38"]]), _o = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Yo
-}, Symbol.toStringTag, { value: "Module" })), _o = C({
+  default: Xo
+}, Symbol.toStringTag, { value: "Module" })), xo = C({
   name: "sub-form-render",
   typeName: "FormContainer",
   components: {
@@ -1248,7 +1248,7 @@ const Yo = /* @__PURE__ */ I(Zo, [["render", Qo], ["__scopeId", "data-v-cafd5b38
         this.rowIdData.splice(0, this.rowIdData.length);
         let i = this.formModel[this.field.options.name];
         i && i.length > 0 && (i.forEach(() => {
-          this.rowIdData.push("id" + ae());
+          this.rowIdData.push("id" + fe());
         }), e && setTimeout(() => {
           this.handleSubFormRowChange(i);
         }, 200));
@@ -1309,7 +1309,7 @@ const Yo = /* @__PURE__ */ I(Zo, [["render", Qo], ["__scopeId", "data-v-cafd5b38
     },
     cloneFieldSchema(e) {
       let i = D(e);
-      return i.id = e.component + ae(), i;
+      return i.id = e.component + fe(), i;
     },
     initEventHandler() {
       this.field.component === "sub-form" && this.on$("setFormData", (e) => {
@@ -1337,10 +1337,10 @@ const Yo = /* @__PURE__ */ I(Zo, [["render", Qo], ["__scopeId", "data-v-cafd5b38
       }
     },
     addToRowIdData() {
-      this.rowIdData.push("id" + ae());
+      this.rowIdData.push("id" + fe());
     },
     insertToRowIdData(e) {
-      this.rowIdData.splice(e, 0, "id" + ae());
+      this.rowIdData.splice(e, 0, "id" + fe());
     },
     deleteFromRowIdData(e) {
       this.rowIdData.splice(e, 1);
@@ -1463,15 +1463,15 @@ const Yo = /* @__PURE__ */ I(Zo, [["render", Qo], ["__scopeId", "data-v-cafd5b38
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), xo = ["title"], el = {
+}), el = ["title"], il = {
   key: 2,
   class: "row-number-span"
-}, il = {
+}, tl = {
   key: 0,
   class: "row-number-span"
 };
-function tl(e, i, t, o, n, m) {
-  const s = V, u = q, p = ge, g = Fe, w = ne, L = Z("draggable"), r = W;
+function ol(e, i, t, o, n, m) {
+  const s = U, u = q, p = ge, g = Fe, w = se, L = Z("draggable"), r = W;
   return l(), a(r, {
     field: e.field,
     style: { "margin-bottom": "15px" }
@@ -1567,18 +1567,18 @@ function tl(e, i, t, o, n, m) {
                                   ]),
                                   _: 2
                                 }, 1032, ["content"]),
-                                E(F(d.options.label), 1)
+                                $(F(d.options.label), 1)
                               ], 64)) : (l(), c(y, { key: 1 }, [
                                 h(s, {
                                   "icon-name": d.options.labelIconClass,
                                   class: "mr-1",
                                   size: "13px"
                                 }, null, 8, ["icon-name"]),
-                                E(F(d.options.label), 1)
+                                $(F(d.options.label), 1)
                               ], 64))
                             ], 64)) : d.options.labelIconPosition === "rear" ? (l(), c(y, { key: 1 }, [
                               d.options.labelTooltip ? (l(), c(y, { key: 0 }, [
-                                E(F(d.options.label), 1),
+                                $(F(d.options.label), 1),
                                 h(w, {
                                   content: d.options.labelTooltip
                                 }, {
@@ -1592,7 +1592,7 @@ function tl(e, i, t, o, n, m) {
                                   _: 2
                                 }, 1032, ["content"])
                               ], 64)) : (l(), c(y, { key: 1 }, [
-                                E(F(d.options.label), 1),
+                                $(F(d.options.label), 1),
                                 h(s, {
                                   "icon-name": d.options.labelIconClass,
                                   class: "ml-1",
@@ -1604,7 +1604,7 @@ function tl(e, i, t, o, n, m) {
                             key: 1,
                             title: d.options.labelTooltip,
                             style: j({ color: d.options.labelColor })
-                          }, F(d.options.label), 13, xo))
+                          }, F(d.options.label), 13, el))
                         ]),
                         _: 2
                       }, 1032, ["span", "class"])) : b("", !0)
@@ -1699,7 +1699,7 @@ function tl(e, i, t, o, n, m) {
                       title: "delete this row",
                       icon: "Delete"
                     }, null, 8, ["disabled", "size", "onClick"]),
-                    e.field.options.showRowNumber ? (l(), c("span", el, "#" + F(Number(k) + 1), 1)) : b("", !0)
+                    e.field.options.showRowNumber ? (l(), c("span", il, "#" + F(Number(k) + 1), 1)) : b("", !0)
                   ]),
                   _: 2
                 }, 1024)) : e.field.options.showRowNumber ? (l(), a(p, {
@@ -1708,7 +1708,7 @@ function tl(e, i, t, o, n, m) {
                   class: "sub-form-action-column hide-label action-button-column"
                 }, {
                   default: f(() => [
-                    e.field.options.showRowNumber ? (l(), c("span", il, "#" + F(Number(k) + 1), 1)) : b("", !0)
+                    e.field.options.showRowNumber ? (l(), c("span", tl, "#" + F(Number(k) + 1), 1)) : b("", !0)
                   ]),
                   _: 2
                 }, 1024)) : b("", !0),
@@ -1718,7 +1718,7 @@ function tl(e, i, t, o, n, m) {
                   default: f(() => [
                     h(g, null, {
                       default: f(() => [
-                        e.fieldSchemaData.length > 0 ? (l(!0), c(y, { key: 0 }, T(e.field.fields, (B, se) => (l(), a(p, {
+                        e.fieldSchemaData.length > 0 ? (l(!0), c(y, { key: 0 }, T(e.field.fields, (B, re) => (l(), a(p, {
                           key: B.id + "tc" + d,
                           span: B.options.columnSpan,
                           class: "sub-form-field-column hide-label",
@@ -1726,14 +1726,14 @@ function tl(e, i, t, o, n, m) {
                         }, {
                           default: f(() => [
                             (l(), a(N(B.component), {
-                              field: e.fieldSchemaData[k][se],
-                              key: e.fieldSchemaData[k][se].id,
+                              field: e.fieldSchemaData[k][re],
+                              key: e.fieldSchemaData[k][re].id,
                               "parent-list": e.field.fields,
-                              "index-of-parent-list": se,
+                              "index-of-parent-list": re,
                               "parent-field": e.field,
                               "sub-form-row-id": d,
                               "sub-form-row-index": k,
-                              "sub-form-col-index": se
+                              "sub-form-col-index": re
                             }, null, 8, ["field", "parent-list", "index-of-parent-list", "parent-field", "sub-form-row-id", "sub-form-row-index", "sub-form-col-index"]))
                           ]),
                           _: 2
@@ -1802,10 +1802,10 @@ function tl(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const ol = /* @__PURE__ */ I(_o, [["render", tl], ["__scopeId", "data-v-8ad26f19"]]), ll = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ll = /* @__PURE__ */ I(xo, [["render", ol], ["__scopeId", "data-v-8ad26f19"]]), nl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ol
-}, Symbol.toStringTag, { value: "Module" })), nl = C({
+  default: ll
+}, Symbol.toStringTag, { value: "Module" })), sl = C({
   name: "tab-render",
   typeName: "FormContainer",
   components: {
@@ -1838,9 +1838,9 @@ const ol = /* @__PURE__ */ I(_o, [["render", tl], ["__scopeId", "data-v-8ad26f19
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), sl = { class: "custom-tabs-label" };
-function rl(e, i, t, o, n, m) {
-  const s = V, u = at, p = dt, g = W;
+}), rl = { class: "custom-tabs-label" };
+function dl(e, i, t, o, n, m) {
+  const s = U, u = ft, p = at, g = W;
   return l(), a(g, {
     field: e.field,
     style: { "margin-bottom": "15px" }
@@ -1867,7 +1867,7 @@ function rl(e, i, t, o, n, m) {
               lazy: !!e.field.options.lazy
             }, {
               label: f(() => [
-                v("span", sl, [
+                v("span", rl, [
                   w.options.icon ? (l(), a(s, {
                     key: 0,
                     "icon-name": w.options.icon
@@ -1908,16 +1908,16 @@ function rl(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const dl = /* @__PURE__ */ I(nl, [["render", rl], ["__scopeId", "data-v-292f3a08"]]), al = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const al = /* @__PURE__ */ I(sl, [["render", dl], ["__scopeId", "data-v-292f3a08"]]), fl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: dl
-}, Symbol.toStringTag, { value: "Module" })), fl = C({
+  default: al
+}, Symbol.toStringTag, { value: "Module" })), ul = C({
   name: "table-cell-render",
   typeName: "FormContainer",
   components: {
     // ...FieldComponents,
   },
-  mixins: [$e, J],
+  mixins: [Ee, J],
   inject: ["refList", "globalModel"],
   props: {
     parentField: Object,
@@ -1943,8 +1943,8 @@ const dl = /* @__PURE__ */ I(nl, [["render", rl], ["__scopeId", "data-v-292f3a08
   methods: {},
   beforeUnmount() {
   }
-}), ul = ["colspan", "rowspan"];
-function pl(e, i, t, o, n, m) {
+}), pl = ["colspan", "rowspan"];
+function ml(e, i, t, o, n, m) {
   return l(), c("td", {
     class: S(["table-cell", [e.customClass]]),
     colspan: e.field.options.colspan || 1,
@@ -1970,14 +1970,14 @@ function pl(e, i, t, o, n, m) {
         "obj-group-name": e.objGroupName ? e.objGroupName : ""
       }, null, 8, ["field", "parent-list", "index-of-parent-list", "parent-field", "obj-group-name"]))
     ], 64))), 256))
-  ], 14, ul);
+  ], 14, pl);
 }
-const pi = /* @__PURE__ */ I(fl, [["render", pl], ["__scopeId", "data-v-7cfc555a"]]), ml = C({
+const mi = /* @__PURE__ */ I(ul, [["render", ml], ["__scopeId", "data-v-7cfc555a"]]), hl = C({
   name: "table-render",
   typeName: "FormContainer",
   components: {
     ContainerRenderWrapper: W,
-    TableCellRender: pi
+    TableCellRender: mi
   },
   mixins: [ee, J],
   inject: ["refList", "sfRefList", "globalModel"],
@@ -1998,8 +1998,8 @@ const pi = /* @__PURE__ */ I(fl, [["render", pl], ["__scopeId", "data-v-7cfc555a
     this.unregisterFromRefList();
   }
 });
-function hl(e, i, t, o, n, m) {
-  const s = pi, u = W;
+function cl(e, i, t, o, n, m) {
+  const s = mi, u = W;
   return l(), a(u, {
     field: e.field,
     style: { "margin-bottom": "15px" }
@@ -2039,10 +2039,10 @@ function hl(e, i, t, o, n, m) {
     _: 1
   }, 8, ["field"]);
 }
-const cl = /* @__PURE__ */ I(ml, [["render", hl], ["__scopeId", "data-v-1f4873e1"]]), bl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const bl = /* @__PURE__ */ I(hl, [["render", cl], ["__scopeId", "data-v-1f4873e1"]]), gl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: cl
-}, Symbol.toStringTag, { value: "Module" })), mi = {
+  default: bl
+}, Symbol.toStringTag, { value: "Module" })), hi = {
   builder: Object,
   field: Object,
   parentField: Object,
@@ -2079,8 +2079,8 @@ const cl = /* @__PURE__ */ I(ml, [["render", hl], ["__scopeId", "data-v-1f4873e1
     type: String,
     default: "block"
   }
-}, hi = C({
-  props: mi,
+}, ci = C({
+  props: hi,
   computed: {
     customClass() {
       return this.field.options.customClass ? this.field.options.customClass.join(" ") : "";
@@ -2153,10 +2153,10 @@ const cl = /* @__PURE__ */ I(ml, [["render", hl], ["__scopeId", "data-v-1f4873e1
       }
     }
   }
-}), Ee = C({
+}), $e = C({
   name: "StaticContentWrapper",
   components: {},
-  mixins: [hi],
+  mixins: [ci],
   setup(e) {
     return {
       fieldColor: _(() => {
@@ -2175,17 +2175,17 @@ const cl = /* @__PURE__ */ I(ml, [["render", hl], ["__scopeId", "data-v-1f4873e1
   Ae((e) => ({
     v2de7e8dc: e.fieldColor
   }));
-}, Te = Ee.setup;
-Ee.setup = Te ? (e, i) => (De(), Te(e, i)) : De;
-const gl = {
+}, Te = $e.setup;
+$e.setup = Te ? (e, i) => (De(), Te(e, i)) : De;
+const Fl = {
   key: 0,
   class: "field-action"
-}, Fl = {
+}, yl = {
   key: 1,
   class: "drag-handler background-opacity"
-}, yl = { title: "Drag" }, vl = { key: 0 };
-function wl(e, i, t, o, n, m) {
-  const s = V;
+}, vl = { title: "Drag" }, wl = { key: 0 };
+function Cl(e, i, t, o, n, m) {
+  const s = U;
   return l(), c("div", {
     class: S(["field-wrapper", { "builder-time-bottom-margin": !!e.builder }])
   }, [
@@ -2193,60 +2193,60 @@ function wl(e, i, t, o, n, m) {
       key: 0,
       class: S(["static-content-item", [e.selected ? "selected" : "", e.customClass]]),
       style: j({ display: e.displayStyle }),
-      onClick: i[0] || (i[0] = U((u) => e.selectField(e.field), ["stop"]))
+      onClick: i[0] || (i[0] = V((u) => e.selectField(e.field), ["stop"]))
     }, [
       ke(e.$slots, "default", {}, void 0, !0)
     ], 6)) : b("", !0),
     e.builder ? (l(), c(y, { key: 1 }, [
-      e.builder.selectedId === e.field.id ? (l(), c("div", gl, [
+      e.builder.selectedId === e.field.id ? (l(), c("div", Fl, [
         v("i", {
           title: "Select Parent",
-          onClick: i[1] || (i[1] = U((u) => e.selectParentField(), ["stop"]))
+          onClick: i[1] || (i[1] = V((u) => e.selectParentField(), ["stop"]))
         }, [
           h(s, { "icon-name": "addon-select-parent" })
         ]),
         e.parentList && e.parentList.length > 1 ? (l(), c("i", {
           key: 0,
           title: "Move Up",
-          onClick: i[2] || (i[2] = U((u) => e.moveUpField(), ["stop"]))
+          onClick: i[2] || (i[2] = V((u) => e.moveUpField(), ["stop"]))
         }, [
           h(s, { "icon-name": "el-top" })
         ])) : b("", !0),
         e.parentList && e.parentList.length > 1 ? (l(), c("i", {
           key: 1,
           title: "Move Down",
-          onClick: i[3] || (i[3] = U((u) => e.moveDownField(), ["stop"]))
+          onClick: i[3] || (i[3] = V((u) => e.moveDownField(), ["stop"]))
         }, [
           h(s, { "icon-name": "el-bottom" })
         ])) : b("", !0),
         v("i", {
           title: "Clone",
-          onClick: i[4] || (i[4] = U((u) => e.cloneFields(e.field), ["stop"]))
+          onClick: i[4] || (i[4] = V((u) => e.cloneFields(e.field), ["stop"]))
         }, [
           h(s, { "icon-name": "el-copy-document" })
         ]),
         v("i", {
           title: "Add Library",
-          onClick: i[5] || (i[5] = U((u) => e.addLibFields(e.field), ["stop"]))
+          onClick: i[5] || (i[5] = V((u) => e.addLibFields(e.field), ["stop"]))
         }, [
           h(s, { "icon-name": "addon-library" })
         ]),
         v("i", {
           title: "Remove",
-          onClick: i[6] || (i[6] = U((...u) => e.removeField && e.removeField(...u), ["stop"]))
+          onClick: i[6] || (i[6] = V((...u) => e.removeField && e.removeField(...u), ["stop"]))
         }, [
           h(s, { "icon-name": "el-delete" })
         ])
       ])) : b("", !0),
-      e.builder.selectedId === e.field.id ? (l(), c("div", Fl, [
-        v("i", yl, [
+      e.builder.selectedId === e.field.id ? (l(), c("div", yl, [
+        v("i", vl, [
           h(s, {
             "icon-name": "el-rank",
             size: "14px"
           })
         ]),
         v("i", null, F(e.field.name ? e.field.name : e.field.component), 1),
-        e.field.options.hidden === !0 ? (l(), c("i", vl, [
+        e.field.options.hidden === !0 ? (l(), c("i", wl, [
           h(s, {
             "icon-name": "el-hide",
             size: "14px"
@@ -2256,7 +2256,7 @@ function wl(e, i, t, o, n, m) {
     ], 64)) : b("", !0)
   ], 2);
 }
-const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"]]), Cl = function(e) {
+const E = /* @__PURE__ */ I($e, [["render", Cl], ["__scopeId", "data-v-67efe709"]]), Sl = function(e) {
   return {
     number: "/^[-]?\\d+(\\.\\d+)?$/",
     letter: "/^[A-Za-z]+$/",
@@ -2281,7 +2281,7 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
     o();
     return;
   }
-  if (new Function("return " + Cl(e))().test(t))
+  if (new Function("return " + Sl(e))().test(t))
     o();
   else {
     let u = i.errorMsg || n;
@@ -2366,7 +2366,7 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
     }
   }
 }, O = C({
-  props: mi,
+  props: hi,
   mixins: [J],
   data() {
     return {
@@ -2383,8 +2383,8 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
       uploadHeaders: {},
       uploadData: { key: "" },
       customToolbar: null,
-      router: ai(),
-      route: di()
+      router: fi(),
+      route: ai()
       //   sdEvents: {} as any,
       //   fieldRefList: null as any,
     };
@@ -2423,7 +2423,7 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
             return o && o.formParams ? (t = o.formParams.xrstatx ? o.formParams.xrstatx : 0, i = o.formParams && o.formParams._id ? o.formParams._id : null) : (t = this.formParams && this.formParams.xrstatx ? this.formParams.xrstatx : 0, i = this.formParams && this.formParams._id ? this.formParams._id : null), e = o.formDataId, !this.builderStatus && e && i && (t ? this.show() : this.hide()), e;
         }
       } else if (this.field.options.parentPath)
-        return o && o.formParams ? (e = oe(o.formParams, this.field.options.parentPath) || "", t = o.formParams.xrstatx ? o.formParams.xrstatx : 0, i = o.formParams && o.formParams._id ? o.formParams._id : null) : (e = oe(this.formParams, this.field.options.parentPath) || "", t = this.formParams && this.formParams.xrstatx ? this.formParams.xrstatx : 0, i = this.formParams && this.formParams._id ? this.formParams._id : null), !this.builderStatus && e && i && (t ? this.show() : this.hide()), e;
+        return o && o.formParams ? (e = le(o.formParams, this.field.options.parentPath) || "", t = o.formParams.xrstatx ? o.formParams.xrstatx : 0, i = o.formParams && o.formParams._id ? o.formParams._id : null) : (e = le(this.formParams, this.field.options.parentPath) || "", t = this.formParams && this.formParams.xrstatx ? this.formParams.xrstatx : 0, i = this.formParams && this.formParams._id ? this.formParams._id : null), !this.builderStatus && e && i && (t ? this.show() : this.hide()), e;
       return e;
     },
     params() {
@@ -2475,7 +2475,7 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
     // ========================== Start SdFramework ==================================
     notify(e, i = "info", t = "Notification", o = 5e3) {
       try {
-        ri({
+        di({
           title: t,
           type: i,
           message: e,
@@ -2573,7 +2573,7 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
     },
     object2Path(e) {
       try {
-        return Pi(e);
+        return Ei(e);
       } catch (i) {
         return this.alert(i.message, "error"), {};
       }
@@ -2702,10 +2702,10 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
       this.enableOptionOfList(this.field.options.optionItems, e);
     },
     dayjs(e) {
-      return fe(e);
+      return ue(e);
     },
     getAge(e, i = "YYYY-MM-DD") {
-      let t = fe(e, i), o = fe(), n = o.diff(t, "year"), m = o.diff(t, "month"), s = o.diff(t, "day");
+      let t = ue(e, i), o = ue(), n = o.diff(t, "year"), m = o.diff(t, "month"), s = o.diff(t, "day");
       var u = m % 12;
       return { ageOfYear: n, monthOfYear: u, ageOfMonth: m, ageOfDay: s };
     },
@@ -2713,7 +2713,7 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
       return Re();
     },
     generateId() {
-      return ae();
+      return fe();
     },
     isNull() {
       return ve(this.getValue());
@@ -2722,37 +2722,37 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
       return Me(this.getValue());
     },
     isEmptyStr() {
-      return Oi(this.getValue());
+      return Pi(this.getValue());
     },
     isEmptyObj() {
-      return ki(this.getValue());
+      return Oi(this.getValue());
     },
     ucfirst() {
-      return Ri(this.getValue());
+      return ki(this.getValue());
     },
     lcfirst() {
-      return Mi(this.getValue());
+      return Ri(this.getValue());
     },
     htmlEncode() {
       return We(this.getValue());
     },
     string2boolean(e) {
-      return Ii(e);
+      return Mi(e);
     },
     inStrFormatted(e) {
-      return Si(e);
+      return Ii(e);
     },
     inIntFormatted(e) {
-      return Ci(e);
+      return Si(e);
     },
     setObjectByPath(e, i, t) {
-      return wi(e, i, t);
+      return Ci(e, i, t);
     },
     getObjectByPath(e, i) {
-      return oe(e, i);
+      return le(e, i);
     },
     getQueryParam(e) {
-      return vi(e);
+      return wi(e);
     },
     clearValidateAll() {
       this.builderStatus || this.getFormRef().clearValidate();
@@ -3182,11 +3182,11 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
   unmounted() {
     this.handleOnUnmount(), this.clearSafeTimers(), this._fnCache = null;
   }
-}), Sl = C({
+}), Il = C({
   name: "alert-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -3200,7 +3200,7 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -3219,8 +3219,8 @@ const $ = /* @__PURE__ */ I(Ee, [["render", wl], ["__scopeId", "data-v-67efe709"
     this.unregisterFromRefList();
   }
 });
-function Il(e, i, t, o, n, m) {
-  const s = xe, u = $;
+function Ml(e, i, t, o, n, m) {
+  const s = ei, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -3252,14 +3252,14 @@ function Il(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Ml = /* @__PURE__ */ I(Sl, [["render", Il], ["__scopeId", "data-v-14bdd0f7"]]), Rl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Rl = /* @__PURE__ */ I(Il, [["render", Ml], ["__scopeId", "data-v-14bdd0f7"]]), kl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Ml
-}, Symbol.toStringTag, { value: "Module" })), kl = C({
+  default: Rl
+}, Symbol.toStringTag, { value: "Module" })), Ol = C({
   name: "apexchart-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdChart,
   },
   mixins: [O],
@@ -3283,7 +3283,7 @@ const Ml = /* @__PURE__ */ I(Sl, [["render", Il], ["__scopeId", "data-v-14bdd0f7
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -3302,8 +3302,8 @@ const Ml = /* @__PURE__ */ I(Sl, [["render", Il], ["__scopeId", "data-v-14bdd0f7
     this.unregisterFromRefList();
   }
 });
-function Ol(e, i, t, o, n, m) {
-  const s = Ei, u = $;
+function Pl(e, i, t, o, n, m) {
+  const s = Li, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -3363,13 +3363,13 @@ function Ol(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const Pl = /* @__PURE__ */ I(kl, [["render", Ol], ["__scopeId", "data-v-d1bf8e60"]]), $l = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const El = /* @__PURE__ */ I(Ol, [["render", Pl], ["__scopeId", "data-v-d1bf8e60"]]), $l = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Pl
+  default: El
 }, Symbol.toStringTag, { value: "Module" })), Le = C({
   name: "FormItemWrapper",
   components: {},
-  mixins: [hi],
+  mixins: [ci],
   setup(e) {
     const i = _(() => {
       let d = {
@@ -3398,21 +3398,21 @@ const Pl = /* @__PURE__ */ I(kl, [["render", Ol], ["__scopeId", "data-v-d1bf8e60
       return this.subFormItemFlag && !this.builderStatus ? this.subFormName + "." + this.subFormRowIndex + "." + this.field.options.name : this.field.options.name;
     }
   }
-}), Ve = () => {
+}), Ue = () => {
   Ae((e) => ({
     v44e8eb22: e.fieldColor
   }));
-}, Ue = Le.setup;
-Le.setup = Ue ? (e, i) => (Ve(), Ue(e, i)) : Ve;
-const El = ["data-id"], Ll = {
+}, Ve = Le.setup;
+Le.setup = Ve ? (e, i) => (Ue(), Ve(e, i)) : Ue;
+const Ll = ["data-id"], jl = {
   key: 0,
   class: "field-action"
-}, jl = {
+}, Dl = {
   key: 1,
   class: "drag-handler background-opacity"
-}, Dl = { title: "Drag" }, Tl = { key: 0 }, Vl = { key: 1 };
-function Ul(e, i, t, o, n, m) {
-  const s = V, u = ne, p = ue, g = ei;
+}, Tl = { title: "Drag" }, Ul = { key: 0 }, Vl = { key: 1 };
+function Bl(e, i, t, o, n, m) {
+  const s = U, u = se, p = ne, g = ii;
   return l(), c("div", {
     class: S(["field-wrapper", { "builder-time-bottom-margin": !!e.builder }]),
     "data-id": e.field.options.name
@@ -3426,7 +3426,7 @@ function Ul(e, i, t, o, n, m) {
       rules: e.buildRules,
       prop: e.getPropName(),
       class: S([e.selected ? "selected" : "", e.labelAlign, e.customClass, e.field.options.required ? "required" : "", e.field.options.labelHidden ? "label-hide" : ""]),
-      onClick: i[0] || (i[0] = U((w) => e.selectField(e.field), ["stop"]))
+      onClick: i[0] || (i[0] = V((w) => e.selectField(e.field), ["stop"]))
     }, {
       label: f(() => [
         e.field.options.labelHidden ? b("", !0) : (l(), c(y, { key: 0 }, [
@@ -3449,18 +3449,18 @@ function Ul(e, i, t, o, n, m) {
                   ]),
                   _: 1
                 }, 8, ["content"]),
-                E(" " + F(e.label), 1)
+                $(" " + F(e.label), 1)
               ], 64)) : (l(), c(y, { key: 1 }, [
                 h(s, {
                   "icon-name": e.field.options.labelIconClass,
                   class: "mr-1",
                   size: "13px"
                 }, null, 8, ["icon-name"]),
-                E(F(e.label), 1)
+                $(F(e.label), 1)
               ], 64))
             ], 64)) : e.field.options.labelIconPosition === "rear" ? (l(), c(y, { key: 1 }, [
               e.field.options.labelTooltip ? (l(), c(y, { key: 0 }, [
-                E(F(e.label) + " ", 1),
+                $(F(e.label) + " ", 1),
                 h(u, {
                   content: e.field.options.labelTooltip
                 }, {
@@ -3474,7 +3474,7 @@ function Ul(e, i, t, o, n, m) {
                   _: 1
                 }, 8, ["content"])
               ], 64)) : (l(), c(y, { key: 1 }, [
-                E(F(e.label) + " ", 1),
+                $(F(e.label) + " ", 1),
                 h(s, {
                   "icon-name": e.field.options.labelIconClass,
                   class: "ml-1",
@@ -3499,7 +3499,7 @@ function Ul(e, i, t, o, n, m) {
           style: { position: "absolute", top: "0", right: "0", "z-index": "999" }
         }, {
           default: f(() => [
-            E(F(e.field.options.name), 1)
+            $(F(e.field.options.name), 1)
           ]),
           _: 1
         })) : b("", !0)
@@ -3507,55 +3507,55 @@ function Ul(e, i, t, o, n, m) {
       _: 3
     }, 8, ["label", "label-width", "title", "size", "rules", "prop", "class"])) : b("", !0),
     e.builder ? (l(), c(y, { key: 1 }, [
-      e.builder.selectedId === e.field.id ? (l(), c("div", Ll, [
+      e.builder.selectedId === e.field.id ? (l(), c("div", jl, [
         v("i", {
           title: "Select Parent",
-          onClick: i[1] || (i[1] = U((w) => e.selectParentField(), ["stop"]))
+          onClick: i[1] || (i[1] = V((w) => e.selectParentField(), ["stop"]))
         }, [
           h(s, { "icon-name": "addon-select-parent" })
         ]),
         e.parentList && e.parentList.length > 1 ? (l(), c("i", {
           key: 0,
           title: "Move Up",
-          onClick: i[2] || (i[2] = U((w) => e.moveUpField(), ["stop"]))
+          onClick: i[2] || (i[2] = V((w) => e.moveUpField(), ["stop"]))
         }, [
           h(s, { "icon-name": "el-top" })
         ])) : b("", !0),
         e.parentList && e.parentList.length > 1 ? (l(), c("i", {
           key: 1,
           title: "Move Down",
-          onClick: i[3] || (i[3] = U((w) => e.moveDownField(), ["stop"]))
+          onClick: i[3] || (i[3] = V((w) => e.moveDownField(), ["stop"]))
         }, [
           h(s, { "icon-name": "el-bottom" })
         ])) : b("", !0),
         v("i", {
           title: "Clone",
-          onClick: i[4] || (i[4] = U((w) => e.cloneFields(e.field), ["stop"]))
+          onClick: i[4] || (i[4] = V((w) => e.cloneFields(e.field), ["stop"]))
         }, [
           h(s, { "icon-name": "el-copy-document" })
         ]),
         v("i", {
           title: "Add Library",
-          onClick: i[5] || (i[5] = U((w) => e.addLibFields(e.field), ["stop"]))
+          onClick: i[5] || (i[5] = V((w) => e.addLibFields(e.field), ["stop"]))
         }, [
           h(s, { "icon-name": "addon-library" })
         ]),
         v("i", {
           title: "Remove",
-          onClick: i[6] || (i[6] = U((...w) => e.removeField && e.removeField(...w), ["stop"]))
+          onClick: i[6] || (i[6] = V((...w) => e.removeField && e.removeField(...w), ["stop"]))
         }, [
           h(s, { "icon-name": "el-delete" })
         ])
       ])) : b("", !0),
-      e.builder.selectedId === e.field.id ? (l(), c("div", jl, [
-        v("i", Dl, [
+      e.builder.selectedId === e.field.id ? (l(), c("div", Dl, [
+        v("i", Tl, [
           h(s, {
             "icon-name": "el-rank",
             size: "14px"
           })
         ]),
         v("i", null, F(e.field.name ? e.field.name : e.field.component), 1),
-        e.field.options.hidden === !0 ? (l(), c("i", Tl, [
+        e.field.options.hidden === !0 ? (l(), c("i", Ul, [
           h(s, {
             "icon-name": "el-hide",
             size: "14px",
@@ -3576,13 +3576,13 @@ function Ul(e, i, t, o, n, m) {
         ])) : b("", !0)
       ])) : b("", !0)
     ], 64)) : b("", !0)
-  ], 10, El);
+  ], 10, Ll);
 }
-const M = /* @__PURE__ */ I(Le, [["render", Ul], ["__scopeId", "data-v-0cb4e76b"]]), Bl = C({
+const R = /* @__PURE__ */ I(Le, [["render", Bl], ["__scopeId", "data-v-0cb4e76b"]]), zl = C({
   name: "autonumber-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -3609,15 +3609,15 @@ const M = /* @__PURE__ */ I(Le, [["render", Ul], ["__scopeId", "data-v-0cb4e76b"
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function zl(e, i, t, o, n, m) {
-  const s = V, u = ye, p = M;
+function Al(e, i, t, o, n, m) {
+  const s = U, u = ye, p = R;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -3660,14 +3660,14 @@ function zl(e, i, t, o, n, m) {
         e.field.options.prefixText ? {
           name: "prepend",
           fn: f(() => [
-            E(F(e.field.options.prefixText), 1)
+            $(F(e.field.options.prefixText), 1)
           ]),
           key: "0"
         } : void 0,
         e.field.options.suffixText ? {
           name: "append",
           fn: f(() => [
-            E(F(e.field.options.suffixText), 1)
+            $(F(e.field.options.suffixText), 1)
           ]),
           key: "1"
         } : void 0,
@@ -3685,14 +3685,14 @@ function zl(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Al = /* @__PURE__ */ I(Bl, [["render", zl]]), Nl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Nl = /* @__PURE__ */ I(zl, [["render", Al]]), Wl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Al
-}, Symbol.toStringTag, { value: "Module" })), Wl = C({
+  default: Nl
+}, Symbol.toStringTag, { value: "Module" })), Hl = C({
   name: "avatar-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -3706,7 +3706,7 @@ const Al = /* @__PURE__ */ I(Bl, [["render", zl]]), Nl = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -3725,8 +3725,8 @@ const Al = /* @__PURE__ */ I(Bl, [["render", zl]]), Nl = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   }
 });
-function Hl(e, i, t, o, n, m) {
-  const s = ft, u = $;
+function ql(e, i, t, o, n, m) {
+  const s = ut, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -3757,14 +3757,14 @@ function Hl(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const ql = /* @__PURE__ */ I(Wl, [["render", Hl], ["__scopeId", "data-v-9b381b55"]]), Gl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Gl = /* @__PURE__ */ I(Hl, [["render", ql], ["__scopeId", "data-v-9b381b55"]]), Jl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ql
-}, Symbol.toStringTag, { value: "Module" })), Jl = C({
+  default: Gl
+}, Symbol.toStringTag, { value: "Module" })), Kl = C({
   name: "btn-editor-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdDynamicInput,
   },
   mixins: [O],
@@ -3776,8 +3776,8 @@ const ql = /* @__PURE__ */ I(Wl, [["render", Hl], ["__scopeId", "data-v-9b381b55
   },
   mounted() {
     this.registerToRefList(), this.handleOnMounted(), this.resizeCleanup = Ne(async () => {
-      await bi(() => {
-        this.popupWidth = Li("80%");
+      await gi(() => {
+        this.popupWidth = ji("80%");
       });
     });
   },
@@ -3808,7 +3808,7 @@ const ql = /* @__PURE__ */ I(Wl, [["render", Hl], ["__scopeId", "data-v-9b381b55
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -3822,12 +3822,12 @@ const ql = /* @__PURE__ */ I(Wl, [["render", Hl], ["__scopeId", "data-v-9b381b55
   beforeUnmount() {
     this.resizeCleanup?.(), this.unregisterFromRefList();
   }
-}), Kl = { key: 0 }, Zl = {
+}), Zl = { key: 0 }, Ql = {
   role: "heading",
   class: "el-dialog__title"
-}, Ql = { class: "dialog-footer" };
-function Yl(e, i, t, o, n, m) {
-  const s = V, u = q, p = He, g = ii, w = M;
+}, Yl = { class: "dialog-footer" };
+function Xl(e, i, t, o, n, m) {
+  const s = U, u = q, p = He, g = ti, w = R;
   return l(), a(w, {
     "build-rules": e.rules,
     field: e.field,
@@ -3870,11 +3870,11 @@ function Yl(e, i, t, o, n, m) {
             "icon-name": "btn-editor",
             class: "mr-1"
           })),
-          E(" " + F(e.field.options.actionLabel ? e.field.options.actionLabel : "Edit"), 1)
+          $(" " + F(e.field.options.actionLabel ? e.field.options.actionLabel : "Edit"), 1)
         ]),
         _: 1
       }, 8, ["type", "onClick", "size", "disabled"]),
-      e.showPopupFlag ? (l(), c("div", Kl, [
+      e.showPopupFlag ? (l(), c("div", Zl, [
         h(g, {
           title: "Crop Picture",
           modelValue: e.showPopupFlag,
@@ -3888,16 +3888,16 @@ function Yl(e, i, t, o, n, m) {
           "destroy-on-close": !0
         }, {
           header: f(({ close: L, titleId: r, titleClass: d }) => [
-            v("span", Zl, F(e.field.options.label ? e.field.options.label : "Editor"), 1)
+            v("span", Ql, F(e.field.options.label ? e.field.options.label : "Editor"), 1)
           ]),
           footer: f(() => [
-            v("div", Ql, [
+            v("div", Yl, [
               h(u, {
                 plain: "",
                 onClick: e.handleClose
               }, {
                 default: f(() => [...i[2] || (i[2] = [
-                  E("Close", -1)
+                  $("Close", -1)
                 ])]),
                 _: 1
               }, 8, ["onClick"])
@@ -3926,14 +3926,14 @@ function Yl(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Xl = /* @__PURE__ */ I(Jl, [["render", Yl]]), _l = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _l = /* @__PURE__ */ I(Kl, [["render", Xl]]), xl = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Xl
-}, Symbol.toStringTag, { value: "Module" })), xl = C({
+  default: _l
+}, Symbol.toStringTag, { value: "Module" })), en = C({
   name: "button-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -3953,7 +3953,7 @@ const Xl = /* @__PURE__ */ I(Jl, [["render", Yl]]), _l = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -3977,8 +3977,8 @@ const Xl = /* @__PURE__ */ I(Jl, [["render", Yl]]), _l = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   }
 });
-function en(e, i, t, o, n, m) {
-  const s = V, u = q, p = pe, g = ut, w = pt, L = $;
+function tn(e, i, t, o, n, m) {
+  const s = U, u = q, p = pe, g = pt, w = mt, L = E;
   return l(), a(L, {
     "build-rules": e.rules,
     field: e.field,
@@ -4049,7 +4049,7 @@ function en(e, i, t, o, n, m) {
                 tag: r.tag,
                 href: r.tag && r.tag == "a" ? r.href : "",
                 target: r.blank ? "_blank" : "_self",
-                onClick: U((k) => e.emitButtonClick(r, Number(d)), ["prevent"])
+                onClick: V((k) => e.emitButtonClick(r, Number(d)), ["prevent"])
               }, {
                 default: f(() => [
                   r.prefixIcon ? (l(), a(s, {
@@ -4091,7 +4091,7 @@ function en(e, i, t, o, n, m) {
                   tag: r.tag,
                   href: r.tag && r.tag == "a" ? r.href : "",
                   target: r.blank ? "_blank" : "_self",
-                  onClick: U((k) => e.emitButtonClick(r, Number(d)), ["prevent"])
+                  onClick: V((k) => e.emitButtonClick(r, Number(d)), ["prevent"])
                 }, {
                   default: f(() => [
                     r.prefixIcon ? (l(), a(s, {
@@ -4158,7 +4158,7 @@ function en(e, i, t, o, n, m) {
               tag: r.tag,
               href: r.tag && r.tag == "a" ? r.href : "",
               target: r.blank ? "_blank" : "_self",
-              onClick: U((k) => e.emitButtonClick(r, Number(d)), ["prevent"])
+              onClick: V((k) => e.emitButtonClick(r, Number(d)), ["prevent"])
             }, {
               default: f(() => [
                 r.prefixIcon ? (l(), a(s, {
@@ -4181,14 +4181,14 @@ function en(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const tn = /* @__PURE__ */ I(xl, [["render", en], ["__scopeId", "data-v-3d7bb4e8"]]), on = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const on = /* @__PURE__ */ I(en, [["render", tn], ["__scopeId", "data-v-3d7bb4e8"]]), ln = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: tn
-}, Symbol.toStringTag, { value: "Module" })), ln = C({
+  default: on
+}, Symbol.toStringTag, { value: "Module" })), nn = C({
   name: "carousel-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdUiCarousel,
   },
   mixins: [O],
@@ -4227,7 +4227,7 @@ const tn = /* @__PURE__ */ I(xl, [["render", en], ["__scopeId", "data-v-3d7bb4e8
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -4246,8 +4246,8 @@ const tn = /* @__PURE__ */ I(xl, [["render", en], ["__scopeId", "data-v-3d7bb4e8
     this.unregisterFromRefList();
   }
 });
-function nn(e, i, t, o, n, m) {
-  const s = ji, u = $;
+function sn(e, i, t, o, n, m) {
+  const s = Di, u = E;
   return e.showWhenParent ? (l(), a(u, {
     key: 0,
     "build-rules": e.rules,
@@ -4301,13 +4301,13 @@ function nn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"])) : b("", !0);
 }
-const sn = /* @__PURE__ */ I(ln, [["render", nn], ["__scopeId", "data-v-53fcc79d"]]), rn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const rn = /* @__PURE__ */ I(nn, [["render", sn], ["__scopeId", "data-v-53fcc79d"]]), dn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: sn
-}, Symbol.toStringTag, { value: "Module" })), dn = C({
+  default: rn
+}, Symbol.toStringTag, { value: "Module" })), an = C({
   name: "cascader-form-input",
   typeName: "FormField",
-  components: { FormItemWrapper: M },
+  components: { FormItemWrapper: R },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
   computed: {
@@ -4327,7 +4327,7 @@ const sn = /* @__PURE__ */ I(ln, [["render", nn], ["__scopeId", "data-v-53fcc79d
     }
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return { fieldEditor: e, formParams: i };
   },
   created() {
@@ -4340,8 +4340,8 @@ const sn = /* @__PURE__ */ I(ln, [["render", nn], ["__scopeId", "data-v-53fcc79d
     this.unregisterFromRefList();
   }
 });
-function an(e, i, t, o, n, m) {
-  const s = Di, u = M;
+function fn(e, i, t, o, n, m) {
+  const s = Ti, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -4383,14 +4383,14 @@ function an(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const fn = /* @__PURE__ */ I(dn, [["render", an]]), un = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const un = /* @__PURE__ */ I(an, [["render", fn]]), pn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: fn
-}, Symbol.toStringTag, { value: "Module" })), pn = C({
+  default: un
+}, Symbol.toStringTag, { value: "Module" })), mn = C({
   name: "chart-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdChart,
   },
   mixins: [O],
@@ -4414,7 +4414,7 @@ const fn = /* @__PURE__ */ I(dn, [["render", an]]), un = /* @__PURE__ */ Object.
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -4433,8 +4433,8 @@ const fn = /* @__PURE__ */ I(dn, [["render", an]]), un = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   }
 });
-function mn(e, i, t, o, n, m) {
-  const s = Ti, u = $;
+function hn(e, i, t, o, n, m) {
+  const s = Ui, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -4491,14 +4491,14 @@ function mn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const hn = /* @__PURE__ */ I(pn, [["render", mn], ["__scopeId", "data-v-c0f6576e"]]), cn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const cn = /* @__PURE__ */ I(mn, [["render", hn], ["__scopeId", "data-v-c0f6576e"]]), bn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: hn
-}, Symbol.toStringTag, { value: "Module" })), bn = C({
+  default: cn
+}, Symbol.toStringTag, { value: "Module" })), gn = C({
   name: "checkbox-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -4523,15 +4523,15 @@ const hn = /* @__PURE__ */ I(pn, [["render", mn], ["__scopeId", "data-v-c0f6576e
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function gn(e, i, t, o, n, m) {
-  const s = ht, u = ct, p = ge, g = Fe, w = mt, L = M;
+function Fn(e, i, t, o, n, m) {
+  const s = ct, u = bt, p = ge, g = Fe, w = ht, L = R;
   return l(), a(L, {
     "build-rules": e.rules,
     field: e.field,
@@ -4566,7 +4566,7 @@ function gn(e, i, t, o, n, m) {
             style: j({ display: e.field.options.displayStyle })
           }, {
             default: f(() => [
-              E(F(r.label), 1)
+              $(F(r.label), 1)
             ]),
             _: 2
           }, 1032, ["value", "disabled", "border", "style"]))), 128)) : (l(), c(y, { key: 1 }, [
@@ -4584,7 +4584,7 @@ function gn(e, i, t, o, n, m) {
                       style: j({ display: e.field.options.displayStyle })
                     }, {
                       default: f(() => [
-                        E(F(r.label), 1)
+                        $(F(r.label), 1)
                       ]),
                       _: 2
                     }, 1032, ["value", "disabled", "border", "style"]))
@@ -4601,7 +4601,7 @@ function gn(e, i, t, o, n, m) {
               style: j({ display: e.field.options.displayStyle })
             }, {
               default: f(() => [
-                E(F(r.label), 1)
+                $(F(r.label), 1)
               ]),
               _: 2
             }, 1032, ["value", "disabled", "border", "style"]))), 128))
@@ -4613,14 +4613,14 @@ function gn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Fn = /* @__PURE__ */ I(bn, [["render", gn], ["__scopeId", "data-v-41c9d41a"]]), yn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const yn = /* @__PURE__ */ I(gn, [["render", Fn], ["__scopeId", "data-v-41c9d41a"]]), vn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Fn
-}, Symbol.toStringTag, { value: "Module" })), vn = C({
+  default: yn
+}, Symbol.toStringTag, { value: "Module" })), wn = C({
   name: "code-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdAceEditor,
   },
   mixins: [O],
@@ -4688,18 +4688,18 @@ const Fn = /* @__PURE__ */ I(bn, [["render", gn], ["__scopeId", "data-v-41c9d41a
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), wn = {
+}), Cn = {
   key: 0,
   class: "latex-toolbar"
 };
-function Cn(e, i, t, o, n, m) {
-  const s = q, u = Vi, p = M;
+function Sn(e, i, t, o, n, m) {
+  const s = q, u = Vi, p = R;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -4713,7 +4713,7 @@ function Cn(e, i, t, o, n, m) {
     "sub-form-row-id": e.subFormRowId
   }, {
     default: f(() => [
-      e.isLatex && !e.builderStatus ? (l(), c("div", wn, [
+      e.isLatex && !e.builderStatus ? (l(), c("div", Cn, [
         h(s, {
           size: e.widgetSize,
           loading: e.validating,
@@ -4721,7 +4721,7 @@ function Cn(e, i, t, o, n, m) {
           onClick: e.validateLatex
         }, {
           default: f(() => [...i[1] || (i[1] = [
-            E("Validate", -1)
+            $("Validate", -1)
           ])]),
           _: 1
         }, 8, ["size", "loading", "onClick"])
@@ -4747,14 +4747,14 @@ function Cn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Sn = /* @__PURE__ */ I(vn, [["render", Cn], ["__scopeId", "data-v-1a3ed238"]]), In = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const In = /* @__PURE__ */ I(wn, [["render", Sn], ["__scopeId", "data-v-1a3ed238"]]), Mn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Sn
-}, Symbol.toStringTag, { value: "Module" })), Mn = C({
+  default: In
+}, Symbol.toStringTag, { value: "Module" })), Rn = C({
   name: "color-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -4778,7 +4778,7 @@ const Sn = /* @__PURE__ */ I(vn, [["render", Cn], ["__scopeId", "data-v-1a3ed238
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = R(["#409EFF", "#67C23A", "#E6A23C", "#F56C6C", "#626aef", "#909399", "#303133", "#606266", "#D4D7DE", "#EBEDF0"]);
+    const e = M(null), i = M(["#409EFF", "#67C23A", "#E6A23C", "#F56C6C", "#626aef", "#909399", "#303133", "#606266", "#D4D7DE", "#EBEDF0"]);
     return {
       fieldEditor: e,
       predefineColors: i
@@ -4788,8 +4788,8 @@ const Sn = /* @__PURE__ */ I(vn, [["render", Cn], ["__scopeId", "data-v-1a3ed238
     this.unregisterFromRefList();
   }
 });
-function Rn(e, i, t, o, n, m) {
-  const s = bt, u = M;
+function kn(e, i, t, o, n, m) {
+  const s = gt, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -4817,14 +4817,14 @@ function Rn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const kn = /* @__PURE__ */ I(Mn, [["render", Rn], ["__scopeId", "data-v-a95a64b8"]]), On = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const On = /* @__PURE__ */ I(Rn, [["render", kn], ["__scopeId", "data-v-a95a64b8"]]), Pn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: kn
-}, Symbol.toStringTag, { value: "Module" })), Pn = C({
+  default: On
+}, Symbol.toStringTag, { value: "Module" })), En = C({
   name: "crop-upload-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdCropImageInput,
   },
   mixins: [O],
@@ -4855,7 +4855,7 @@ const kn = /* @__PURE__ */ I(Mn, [["render", Rn], ["__scopeId", "data-v-a95a64b8
     this.registerToRefList(), this.field.options.disabled, this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = R(null);
+    const e = M(null), i = M(null);
     return {
       fieldEditor: e,
       imageRef: i
@@ -4957,7 +4957,7 @@ const kn = /* @__PURE__ */ I(Mn, [["render", Rn], ["__scopeId", "data-v-a95a64b8
   }
 });
 function $n(e, i, t, o, n, m) {
-  const s = Ui, u = M;
+  const s = Bi, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -4989,14 +4989,14 @@ function $n(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const En = /* @__PURE__ */ I(Pn, [["render", $n], ["__scopeId", "data-v-5bfdb1e5"]]), Ln = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ln = /* @__PURE__ */ I(En, [["render", $n], ["__scopeId", "data-v-5bfdb1e5"]]), jn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: En
-}, Symbol.toStringTag, { value: "Module" })), jn = C({
+  default: Ln
+}, Symbol.toStringTag, { value: "Module" })), Dn = C({
   name: "datagrid-form-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdCrudGrid,
     // SdReport,
   },
@@ -5047,7 +5047,7 @@ const En = /* @__PURE__ */ I(Pn, [["render", $n], ["__scopeId", "data-v-5bfdb1e5
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -5153,8 +5153,8 @@ const En = /* @__PURE__ */ I(Pn, [["render", $n], ["__scopeId", "data-v-5bfdb1e5
     this.unregisterFromRefList();
   }
 });
-function Dn(e, i, t, o, n, m) {
-  const s = V, u = q, p = pe, g = le, w = qe, L = $;
+function Tn(e, i, t, o, n, m) {
+  const s = U, u = q, p = pe, g = oe, w = qe, L = E;
   return e.showWhenParent ? (l(), a(L, {
     key: 0,
     "build-rules": e.rules,
@@ -5281,7 +5281,7 @@ function Dn(e, i, t, o, n, m) {
               tag: r.tag,
               href: r.tag && r.tag == "a" ? r.href : "",
               target: r.blank ? "_blank" : "_self",
-              onClick: U((k) => e.emitButtonBarClick(r, Number(d)), ["prevent"])
+              onClick: V((k) => e.emitButtonBarClick(r, Number(d)), ["prevent"])
             }, {
               default: f(() => [
                 r.prefixIcon ? (l(), a(s, {
@@ -5359,7 +5359,7 @@ function Dn(e, i, t, o, n, m) {
               tag: d.tag,
               href: d.tag && d.tag == "a" ? d.href : "",
               target: d.blank ? "_blank" : "_self",
-              onClick: U((B) => e.emitButtonRowClick(d, Number(k), r.row, r.index), ["prevent"])
+              onClick: V((B) => e.emitButtonRowClick(d, Number(k), r.row, r.index), ["prevent"])
             }, {
               default: f(() => [
                 d.prefixIcon ? (l(), a(s, {
@@ -5384,14 +5384,14 @@ function Dn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"])) : b("", !0);
 }
-const Tn = /* @__PURE__ */ I(jn, [["render", Dn], ["__scopeId", "data-v-1dac8809"]]), Vn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Un = /* @__PURE__ */ I(Dn, [["render", Tn], ["__scopeId", "data-v-1dac8809"]]), Vn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Tn
-}, Symbol.toStringTag, { value: "Module" })), Un = C({
+  default: Un
+}, Symbol.toStringTag, { value: "Module" })), Bn = C({
   name: "datagrid-sql-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdCrudGrid,
     // SdReport,
   },
@@ -5445,7 +5445,7 @@ const Tn = /* @__PURE__ */ I(jn, [["render", Dn], ["__scopeId", "data-v-1dac8809
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -5551,8 +5551,8 @@ const Tn = /* @__PURE__ */ I(jn, [["render", Dn], ["__scopeId", "data-v-1dac8809
     this.unregisterFromRefList();
   }
 });
-function Bn(e, i, t, o, n, m) {
-  const s = V, u = q, p = pe, g = le, w = qe, L = $;
+function zn(e, i, t, o, n, m) {
+  const s = U, u = q, p = pe, g = oe, w = qe, L = E;
   return l(), a(L, {
     "build-rules": e.rules,
     field: e.field,
@@ -5650,7 +5650,7 @@ function Bn(e, i, t, o, n, m) {
               tag: r.tag,
               href: r.tag && r.tag == "a" ? r.href : "",
               target: r.blank ? "_blank" : "_self",
-              onClick: U((k) => e.emitButtonBarClick(r, Number(d)), ["prevent"])
+              onClick: V((k) => e.emitButtonBarClick(r, Number(d)), ["prevent"])
             }, {
               default: f(() => [
                 r.prefixIcon ? (l(), a(s, {
@@ -5728,7 +5728,7 @@ function Bn(e, i, t, o, n, m) {
               tag: d.tag,
               href: d.tag && d.tag == "a" ? d.href : "",
               target: d.blank ? "_blank" : "_self",
-              onClick: U((B) => e.emitButtonRowClick(d, Number(k), r.row, r.index), ["prevent"])
+              onClick: V((B) => e.emitButtonRowClick(d, Number(k), r.row, r.index), ["prevent"])
             }, {
               default: f(() => [
                 d.prefixIcon ? (l(), a(s, {
@@ -5753,14 +5753,14 @@ function Bn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const zn = /* @__PURE__ */ I(Un, [["render", Bn], ["__scopeId", "data-v-c26b554a"]]), An = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const An = /* @__PURE__ */ I(Bn, [["render", zn], ["__scopeId", "data-v-c26b554a"]]), Nn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: zn
-}, Symbol.toStringTag, { value: "Module" })), Nn = C({
+  default: An
+}, Symbol.toStringTag, { value: "Module" })), Wn = C({
   name: "date-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M,
+    FormItemWrapper: R,
     SdDatePickerBE: ie
   },
   mixins: [O],
@@ -5786,19 +5786,19 @@ const zn = /* @__PURE__ */ I(Un, [["render", Bn], ["__scopeId", "data-v-c26b554a
     this.initFieldModel(), this.initEventHandler(), this.buildFieldRules(), this.handleOnCreated();
   },
   mounted() {
-    this.registerToRefList(), this.field.options.initCurrent && this.field.options.valueFormat && !this.fieldValue && this.setFieldValue(fe().format(this.field.options.valueFormat)), this.handleOnMounted();
+    this.registerToRefList(), this.field.options.initCurrent && this.field.options.valueFormat && !this.fieldValue && this.setFieldValue(ue().format(this.field.options.valueFormat)), this.handleOnMounted();
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Wn(e, i, t, o, n, m) {
-  const s = ie, u = M;
+function Hn(e, i, t, o, n, m) {
+  const s = ie, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -5839,14 +5839,14 @@ function Wn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Hn = /* @__PURE__ */ I(Nn, [["render", Wn], ["__scopeId", "data-v-0ae45f53"]]), qn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const qn = /* @__PURE__ */ I(Wn, [["render", Hn], ["__scopeId", "data-v-0ae45f53"]]), Gn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Hn
-}, Symbol.toStringTag, { value: "Module" })), Gn = C({
+  default: qn
+}, Symbol.toStringTag, { value: "Module" })), Jn = C({
   name: "date-panel-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M,
+    FormItemWrapper: R,
     SdDatePickerPanelBE: Ge
   },
   mixins: [O],
@@ -5870,19 +5870,19 @@ const Hn = /* @__PURE__ */ I(Nn, [["render", Wn], ["__scopeId", "data-v-0ae45f53
     this.initFieldModel(), this.initEventHandler(), this.buildFieldRules(), this.handleOnCreated();
   },
   mounted() {
-    this.registerToRefList(), this.field.options.initCurrent && this.field.options.valueFormat && !this.fieldValue && this.setFieldValue(fe().format(this.field.options.valueFormat)), this.handleOnMounted();
+    this.registerToRefList(), this.field.options.initCurrent && this.field.options.valueFormat && !this.fieldValue && this.setFieldValue(ue().format(this.field.options.valueFormat)), this.handleOnMounted();
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Jn(e, i, t, o, n, m) {
-  const s = Ge, u = M;
+function Kn(e, i, t, o, n, m) {
+  const s = Ge, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -5912,14 +5912,14 @@ function Jn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Kn = /* @__PURE__ */ I(Gn, [["render", Jn]]), Zn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Zn = /* @__PURE__ */ I(Jn, [["render", Kn]]), Qn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Kn
-}, Symbol.toStringTag, { value: "Module" })), Qn = C({
+  default: Zn
+}, Symbol.toStringTag, { value: "Module" })), Yn = C({
   name: "date-range-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M,
+    FormItemWrapper: R,
     SdDatePickerBE: ie
   },
   mixins: [O],
@@ -5948,15 +5948,15 @@ const Kn = /* @__PURE__ */ I(Gn, [["render", Jn]]), Zn = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Yn(e, i, t, o, n, m) {
-  const s = ie, u = M;
+function Xn(e, i, t, o, n, m) {
+  const s = ie, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -5995,14 +5995,14 @@ function Yn(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Xn = /* @__PURE__ */ I(Qn, [["render", Yn], ["__scopeId", "data-v-b67a42e2"]]), _n = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _n = /* @__PURE__ */ I(Yn, [["render", Xn], ["__scopeId", "data-v-b67a42e2"]]), xn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Xn
-}, Symbol.toStringTag, { value: "Module" })), xn = C({
+  default: _n
+}, Symbol.toStringTag, { value: "Module" })), es = C({
   name: "divider-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -6016,15 +6016,15 @@ const Xn = /* @__PURE__ */ I(Qn, [["render", Yn], ["__scopeId", "data-v-b67a42e2
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function es(e, i, t, o, n, m) {
-  const s = ti, u = $;
+function is(e, i, t, o, n, m) {
+  const s = oi, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -6045,7 +6045,7 @@ function es(e, i, t, o, n, m) {
         "content-position": e.field.options.contentPosition
       }, {
         default: f(() => [
-          E(F(e.field.options.label), 1)
+          $(F(e.field.options.label), 1)
         ]),
         _: 1
       }, 8, ["content-position"]))
@@ -6053,14 +6053,14 @@ function es(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const is = /* @__PURE__ */ I(xn, [["render", es]]), ts = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ts = /* @__PURE__ */ I(es, [["render", is]]), os = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: is
-}, Symbol.toStringTag, { value: "Module" })), os = C({
+  default: ts
+}, Symbol.toStringTag, { value: "Module" })), ls = C({
   name: "dropdown-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -6079,7 +6079,7 @@ const is = /* @__PURE__ */ I(xn, [["render", es]]), ts = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -6098,8 +6098,8 @@ const is = /* @__PURE__ */ I(xn, [["render", es]]), ts = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   }
 });
-function ls(e, i, t, o, n, m) {
-  const s = V, u = Z("arrow-down"), p = be, g = q, w = yt, L = Ft, r = gt, d = $;
+function ns(e, i, t, o, n, m) {
+  const s = U, u = Z("arrow-down"), p = be, g = q, w = vt, L = yt, r = Ft, d = E;
   return l(), a(d, {
     "build-rules": e.rules,
     field: e.field,
@@ -6139,7 +6139,7 @@ function ls(e, i, t, o, n, m) {
                       key: 0,
                       "icon-name": k.icon
                     }, null, 8, ["icon-name"])) : b("", !0),
-                    E(" " + F(k.label), 1)
+                    $(" " + F(k.label), 1)
                   ]),
                   _: 2
                 }, 1032, ["command", "divided", "disabled"]))), 256))
@@ -6160,7 +6160,7 @@ function ls(e, i, t, o, n, m) {
                   "icon-name": e.field.options.prefixIcon,
                   class: "mr-1"
                 }, null, 8, ["icon-name"])) : b("", !0),
-                E(" " + F(e.field.options.label || "Menu") + " ", 1),
+                $(" " + F(e.field.options.label || "Menu") + " ", 1),
                 h(p, { class: "el-icon--right" }, {
                   default: f(() => [
                     h(u)
@@ -6178,7 +6178,7 @@ function ls(e, i, t, o, n, m) {
                 key: 0,
                 "icon-name": e.field.options.prefixIcon
               }, null, 8, ["icon-name"])) : b("", !0),
-              E(" " + F(e.field.options.label || "Menu") + " ", 1),
+              $(" " + F(e.field.options.label || "Menu") + " ", 1),
               h(p, { class: "el-icon--right" }, {
                 default: f(() => [
                   h(u)
@@ -6194,14 +6194,14 @@ function ls(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ns = /* @__PURE__ */ I(os, [["render", ls], ["__scopeId", "data-v-331ecc16"]]), ss = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ss = /* @__PURE__ */ I(ls, [["render", ns], ["__scopeId", "data-v-331ecc16"]]), rs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ns
-}, Symbol.toStringTag, { value: "Module" })), rs = C({
+  default: ss
+}, Symbol.toStringTag, { value: "Module" })), ds = C({
   name: "dynamic-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdDynamicInput,
   },
   mixins: [O],
@@ -6233,7 +6233,7 @@ const ns = /* @__PURE__ */ I(os, [["render", ls], ["__scopeId", "data-v-331ecc16
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {},
@@ -6241,8 +6241,8 @@ const ns = /* @__PURE__ */ I(os, [["render", ls], ["__scopeId", "data-v-331ecc16
     this.unregisterFromRefList();
   }
 });
-function ds(e, i, t, o, n, m) {
-  const s = He, u = M;
+function as(e, i, t, o, n, m) {
+  const s = He, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -6274,14 +6274,14 @@ function ds(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const as = /* @__PURE__ */ I(rs, [["render", ds]]), fs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fs = /* @__PURE__ */ I(ds, [["render", as]]), us = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: as
-}, Symbol.toStringTag, { value: "Module" })), us = C({
+  default: fs
+}, Symbol.toStringTag, { value: "Module" })), ps = C({
   name: "file-upload-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   data() {
@@ -6308,7 +6308,7 @@ const as = /* @__PURE__ */ I(rs, [["render", ds]]), fs = /* @__PURE__ */ Object.
     this.registerToRefList(), this.initApi(), this.field.options.disabled, this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = R(null);
+    const e = M(null), i = M(null);
     return {
       fieldEditor: e,
       imageRef: i
@@ -6421,15 +6421,15 @@ const as = /* @__PURE__ */ I(rs, [["render", ds]]), fs = /* @__PURE__ */ Object.
       }
     }
   }
-}), ps = { class: "upload-file-list" }, ms = ["title"], hs = ["href"], cs = {
+}), ms = { class: "upload-file-list" }, hs = ["title"], cs = ["href"], bs = {
   class: "el-icon-download file-action",
   title: "Download"
-}, bs = ["onClick"], gs = {
+}, gs = ["onClick"], Fs = {
   key: 0,
   class: "el-upload__tip"
 };
-function Fs(e, i, t, o, n, m) {
-  const s = q, u = Z("Document"), p = be, g = ti, w = V, L = Z("Delete"), r = Pe, d = M;
+function ys(e, i, t, o, n, m) {
+  const s = q, u = Z("Document"), p = be, g = oi, w = U, L = Z("Delete"), r = Pe, d = R;
   return l(), a(d, {
     "build-rules": e.rules,
     field: e.field,
@@ -6463,7 +6463,7 @@ function Fs(e, i, t, o, n, m) {
         "on-error": e.handleUploadError
       }, {
         file: f(({ file: k }) => [
-          v("div", ps, [
+          v("div", ms, [
             v("span", {
               class: "upload-file-name",
               title: k.name
@@ -6474,18 +6474,18 @@ function Fs(e, i, t, o, n, m) {
                 ]),
                 _: 1
               }),
-              E(" " + F(k.name), 1)
-            ], 8, ms),
+              $(" " + F(k.name), 1)
+            ], 8, hs),
             h(g, { direction: "vertical" }),
             v("a", {
               href: k.url,
               download: "",
               target: "_blank"
             }, [
-              v("span", cs, [
+              v("span", bs, [
                 h(w, { "icon-name": "addon-download" })
               ])
-            ], 8, hs),
+            ], 8, cs),
             e.field.options.disabled ? b("", !0) : (l(), c(y, { key: 0 }, [
               h(g, { direction: "vertical" }),
               v("span", {
@@ -6499,12 +6499,12 @@ function Fs(e, i, t, o, n, m) {
                   ]),
                   _: 1
                 })
-              ], 8, bs)
+              ], 8, gs)
             ], 64))
           ])
         ]),
         tip: f(() => [
-          e.field.options.uploadTip ? (l(), c("div", gs, F(e.field.options.uploadTip), 1)) : b("", !0)
+          e.field.options.uploadTip ? (l(), c("div", Fs, F(e.field.options.uploadTip), 1)) : b("", !0)
         ]),
         default: f(() => [
           h(s, {
@@ -6513,7 +6513,7 @@ function Fs(e, i, t, o, n, m) {
             icon: "Plus"
           }, {
             default: f(() => [...i[1] || (i[1] = [
-              E("Click to upload", -1)
+              $("Click to upload", -1)
             ])]),
             _: 1
           })
@@ -6524,14 +6524,14 @@ function Fs(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ys = /* @__PURE__ */ I(us, [["render", Fs], ["__scopeId", "data-v-d7e0942e"]]), vs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const vs = /* @__PURE__ */ I(ps, [["render", ys], ["__scopeId", "data-v-d7e0942e"]]), ws = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ys
-}, Symbol.toStringTag, { value: "Module" })), ws = C({
+  default: vs
+}, Symbol.toStringTag, { value: "Module" })), Cs = C({
   name: "group-list-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -6604,7 +6604,7 @@ const ys = /* @__PURE__ */ I(us, [["render", Fs], ["__scopeId", "data-v-d7e0942e
     }
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -6635,7 +6635,7 @@ const ys = /* @__PURE__ */ I(us, [["render", Fs], ["__scopeId", "data-v-d7e0942e
           }
         );
       }
-      const o = new Ht(this.categoryItems, {
+      const o = new qt(this.categoryItems, {
         keys: [
           {
             name: "label",
@@ -6656,8 +6656,8 @@ const ys = /* @__PURE__ */ I(us, [["render", Fs], ["__scopeId", "data-v-d7e0942e
     this.unregisterFromRefList();
   }
 });
-function Cs(e, i, t, o, n, m) {
-  const s = vt, u = M;
+function Ss(e, i, t, o, n, m) {
+  const s = wt, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -6707,14 +6707,14 @@ function Cs(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Ss = /* @__PURE__ */ I(ws, [["render", Cs], ["__scopeId", "data-v-fc626291"]]), Is = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Is = /* @__PURE__ */ I(Cs, [["render", Ss], ["__scopeId", "data-v-fc626291"]]), Ms = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Ss
-}, Symbol.toStringTag, { value: "Module" })), Ms = C({
+  default: Is
+}, Symbol.toStringTag, { value: "Module" })), Rs = C({
   name: "html-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdHtmlEditor,
   },
   mixins: [O],
@@ -6744,15 +6744,15 @@ const Ss = /* @__PURE__ */ I(ws, [["render", Cs], ["__scopeId", "data-v-fc626291
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Rs(e, i, t, o, n, m) {
-  const s = we, u = M;
+function ks(e, i, t, o, n, m) {
+  const s = we, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -6786,14 +6786,14 @@ function Rs(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ks = /* @__PURE__ */ I(Ms, [["render", Rs]]), Os = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Os = /* @__PURE__ */ I(Rs, [["render", ks]]), Ps = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ks
-}, Symbol.toStringTag, { value: "Module" })), Ps = C({
+  default: Os
+}, Symbol.toStringTag, { value: "Module" })), Es = C({
   name: "html-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdHtmlEditor,
   },
   mixins: [O],
@@ -6808,7 +6808,7 @@ const ks = /* @__PURE__ */ I(Ms, [["render", Rs]]), Os = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
@@ -6816,7 +6816,7 @@ const ks = /* @__PURE__ */ I(Ms, [["render", Rs]]), Os = /* @__PURE__ */ Object.
   }
 });
 function $s(e, i, t, o, n, m) {
-  const s = we, u = $;
+  const s = we, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -6843,14 +6843,14 @@ function $s(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Es = /* @__PURE__ */ I(Ps, [["render", $s]]), Ls = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ls = /* @__PURE__ */ I(Es, [["render", $s]]), js = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Es
-}, Symbol.toStringTag, { value: "Module" })), js = C({
+  default: Ls
+}, Symbol.toStringTag, { value: "Module" })), Ds = C({
   name: "icon-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdIcon,
   },
   mixins: [O],
@@ -6886,7 +6886,7 @@ const Es = /* @__PURE__ */ I(Ps, [["render", $s]]), Ls = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   watch: {
@@ -6896,7 +6896,7 @@ const Es = /* @__PURE__ */ I(Ps, [["render", $s]]), Ls = /* @__PURE__ */ Object.
         let i = [];
         if (this.field.options.sourcePath)
           for (const t in e) {
-            const o = e[t], n = oe(o, this.field.options.sourcePath);
+            const o = e[t], n = le(o, this.field.options.sourcePath);
             if (n && typeof n == "object")
               for (const m in n) {
                 let s = n[m];
@@ -6949,8 +6949,8 @@ const Es = /* @__PURE__ */ I(Ps, [["render", $s]]), Ls = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   }
 });
-function Ds(e, i, t, o, n, m) {
-  const s = Bi, u = M;
+function Ts(e, i, t, o, n, m) {
+  const s = zi, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -6983,14 +6983,14 @@ function Ds(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Ts = /* @__PURE__ */ I(js, [["render", Ds], ["__scopeId", "data-v-8e741c15"]]), Vs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Us = /* @__PURE__ */ I(Ds, [["render", Ts], ["__scopeId", "data-v-8e741c15"]]), Vs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Ts
-}, Symbol.toStringTag, { value: "Module" })), Us = C({
+  default: Us
+}, Symbol.toStringTag, { value: "Module" })), Bs = C({
   name: "image-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -7004,16 +7004,16 @@ const Ts = /* @__PURE__ */ I(js, [["render", Ds], ["__scopeId", "data-v-8e741c15
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {},
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), Bs = { class: "image-slot" };
-function zs(e, i, t, o, n, m) {
-  const s = V, u = oi, p = $;
+}), zs = { class: "image-slot" };
+function As(e, i, t, o, n, m) {
+  const s = U, u = li, p = E;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -7049,12 +7049,12 @@ function zs(e, i, t, o, n, m) {
       }, {
         placeholder: f(() => [...i[0] || (i[0] = [
           v("div", { class: "image-slot image-load" }, [
-            E("Loading"),
+            $("Loading"),
             v("span", { class: "dot" }, "...")
           ], -1)
         ])]),
         error: f(() => [
-          v("div", Bs, [
+          v("div", zs, [
             h(s, { "icon-name": "image-ui" })
           ])
         ]),
@@ -7064,15 +7064,15 @@ function zs(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const As = /* @__PURE__ */ I(Us, [["render", zs], ["__scopeId", "data-v-836345dd"]]), Ns = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ns = /* @__PURE__ */ I(Bs, [["render", As], ["__scopeId", "data-v-836345dd"]]), Ws = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: As
-}, Symbol.toStringTag, { value: "Module" })), Ws = C({
+  default: Ns
+}, Symbol.toStringTag, { value: "Module" })), Hs = C({
   name: "json-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M,
-    JsonEditorVue: Gt
+    FormItemWrapper: R,
+    JsonEditorVue: Jt
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -7086,7 +7086,7 @@ const As = /* @__PURE__ */ I(Us, [["render", zs], ["__scopeId", "data-v-836345dd
       }
     },
     mode() {
-      return qt.tree;
+      return Gt.tree;
     }
   },
   beforeCreate() {
@@ -7104,7 +7104,7 @@ const As = /* @__PURE__ */ I(Us, [["render", zs], ["__scopeId", "data-v-836345dd
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -7116,8 +7116,8 @@ const As = /* @__PURE__ */ I(Us, [["render", zs], ["__scopeId", "data-v-836345dd
     this.unregisterFromRefList();
   }
 });
-function Hs(e, i, t, o, n, m) {
-  const s = Z("JsonEditorVue"), u = M;
+function qs(e, i, t, o, n, m) {
+  const s = Z("JsonEditorVue"), u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -7148,14 +7148,14 @@ function Hs(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const qs = /* @__PURE__ */ I(Ws, [["render", Hs]]), Gs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Gs = /* @__PURE__ */ I(Hs, [["render", qs]]), Js = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: qs
-}, Symbol.toStringTag, { value: "Module" })), Js = C({
+  default: Gs
+}, Symbol.toStringTag, { value: "Module" })), Ks = C({
   name: "liff-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $,
+    StaticContentWrapper: E,
     SdLiff: Je
   },
   mixins: [O],
@@ -7170,7 +7170,7 @@ const qs = /* @__PURE__ */ I(Ws, [["render", Hs]]), Gs = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   },
   setup() {
-    const e = R(null), i = R(null);
+    const e = M(null), i = M(null);
     return { fieldEditor: e, sdLiffRef: i };
   },
   methods: {
@@ -7218,8 +7218,8 @@ const qs = /* @__PURE__ */ I(Ws, [["render", Hs]]), Gs = /* @__PURE__ */ Object.
     }
   }
 });
-function Ks(e, i, t, o, n, m) {
-  const s = V, u = ue, p = Je, g = $;
+function Zs(e, i, t, o, n, m) {
+  const s = U, u = ne, p = Je, g = E;
   return l(), a(g, {
     "build-rules": e.rules,
     field: e.field,
@@ -7248,7 +7248,7 @@ function Ks(e, i, t, o, n, m) {
               "icon-name": "liff-ui",
               class: "mr-1"
             }),
-            E(" LINE LIFF" + F(e.field.options.name ? ": " + e.field.options.name : ""), 1)
+            $(" LINE LIFF" + F(e.field.options.name ? ": " + e.field.options.name : ""), 1)
           ]),
           _: 1
         })) : (l(), a(p, {
@@ -7268,14 +7268,14 @@ function Ks(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Zs = /* @__PURE__ */ I(Js, [["render", Ks]]), Qs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Qs = /* @__PURE__ */ I(Ks, [["render", Zs]]), Ys = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Zs
-}, Symbol.toStringTag, { value: "Module" })), Ys = C({
+  default: Qs
+}, Symbol.toStringTag, { value: "Module" })), Xs = C({
   name: "link-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -7289,15 +7289,15 @@ const Zs = /* @__PURE__ */ I(Js, [["render", Ks]]), Qs = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Xs(e, i, t, o, n, m) {
-  const s = V, u = ne, p = wt, g = $;
+function _s(e, i, t, o, n, m) {
+  const s = U, u = se, p = Ct, g = E;
   return l(), a(g, {
     "build-rules": e.rules,
     field: e.field,
@@ -7343,7 +7343,7 @@ function Xs(e, i, t, o, n, m) {
                 "icon-name": e.field.options.labelIconClass
               }, null, 8, ["icon-name"]))
             ], 64)) : b("", !0),
-            E(" " + F(e.field.options.content) + " ", 1),
+            $(" " + F(e.field.options.content) + " ", 1),
             e.field.options.labelIconClass && e.field.options.labelIconPosition === "rear" ? (l(), c(y, { key: 1 }, [
               e.field.options.labelTooltip ? (l(), a(u, {
                 key: 0,
@@ -7369,14 +7369,14 @@ function Xs(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const _s = /* @__PURE__ */ I(Ys, [["render", Xs], ["__scopeId", "data-v-f3464b8f"]]), xs = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const xs = /* @__PURE__ */ I(Xs, [["render", _s], ["__scopeId", "data-v-f3464b8f"]]), er = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _s
-}, Symbol.toStringTag, { value: "Module" })), er = C({
+  default: xs
+}, Symbol.toStringTag, { value: "Module" })), ir = C({
   name: "list-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdUiListView,
     // SdReport,
   },
@@ -7416,7 +7416,7 @@ const _s = /* @__PURE__ */ I(Ys, [["render", Xs], ["__scopeId", "data-v-f3464b8f
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -7521,8 +7521,8 @@ const _s = /* @__PURE__ */ I(Ys, [["render", Xs], ["__scopeId", "data-v-f3464b8f
     this.unregisterFromRefList();
   }
 });
-function ir(e, i, t, o, n, m) {
-  const s = le, u = V, p = q, g = pe, w = zi, L = $;
+function tr(e, i, t, o, n, m) {
+  const s = oe, u = U, p = q, g = pe, w = Ai, L = E;
   return e.showWhenParent ? (l(), a(L, {
     key: 0,
     "build-rules": e.rules,
@@ -7653,7 +7653,7 @@ function ir(e, i, t, o, n, m) {
               tag: d.tag,
               href: d.tag && d.tag == "a" ? d.href : "",
               target: d.blank ? "_blank" : "_self",
-              onClick: U((B) => e.emitButtonRowClick(d, +k, r.row, r.index), ["prevent"])
+              onClick: V((B) => e.emitButtonRowClick(d, +k, r.row, r.index), ["prevent"])
             }, {
               default: f(() => [
                 d.prefixIcon ? (l(), a(u, {
@@ -7678,14 +7678,147 @@ function ir(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"])) : b("", !0);
 }
-const tr = /* @__PURE__ */ I(er, [["render", ir], ["__scopeId", "data-v-66bf7a89"]]), or = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const or = /* @__PURE__ */ I(ir, [["render", tr], ["__scopeId", "data-v-66bf7a89"]]), lr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: tr
-}, Symbol.toStringTag, { value: "Module" })), lr = C({
+  default: or
+}, Symbol.toStringTag, { value: "Module" })), nr = C({
+  name: "local-agent-ui",
+  typeName: "FormField",
+  components: {
+    StaticContentWrapper: E,
+    SdLocalAgent: Ke
+  },
+  mixins: [O],
+  inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel", "globalUserState"],
+  created() {
+    this.initEventHandler(), this.handleOnCreated();
+  },
+  mounted() {
+    this.registerToRefList(), this.handleOnMounted();
+  },
+  beforeUnmount() {
+    this.unregisterFromRefList();
+  },
+  setup() {
+    const e = M(null), i = M(null);
+    return { fieldEditor: e, reportRef: i };
+  },
+  computed: {
+    /** params ที่ส่งต่อให้ SdReport ตอน render รายงาน (pattern เดียวกับ report-ui) */
+    params() {
+      return this.getFormRef() && this.getFormRef().formParams ? this.getFormRef().formParams : this.formParams ? this.formParams : {};
+    }
+  },
+  methods: {
+    /** ส่งให้ SdLocalAgent เป็น prop — ไม่ให้ widget ผูกกับ Report Factory โดยตรง */
+    getReportRef() {
+      return this.reportRef;
+    },
+    openSettings() {
+      this.fieldEditor?.openSettings();
+    },
+    // รัน user JS ของ event ผ่าน sandbox (pattern เดียวกับ smart-card-ui / button-ui)
+    runUserEvent(e, i, t) {
+      if (e)
+        try {
+          const n = P(e, i).call(this, ...t);
+          n && typeof n.then == "function" && n.catch((m) => this.alert(m?.message || String(m), "warning"));
+        } catch (o) {
+          this.alert(o.message, "warning");
+        }
+    },
+    handleAgentEvent(e, i, t, o, n) {
+      this.runUserEvent(this.field.options.onAgentEvent, ["agent", "event", "data", "ok", "error"], [e, i, t, o, n]);
+    },
+    handleAgentConnected(e) {
+      this.runUserEvent(this.field.options.onAgentConnected, ["agent"], [e]);
+    },
+    handleAgentDisconnected(e, i) {
+      this.runUserEvent(this.field.options.onAgentDisconnected, ["agent", "error"], [e, i]);
+    },
+    handleAgentError(e, i) {
+      this.runUserEvent(this.field.options.onAgentError, ["agent", "error"], [e, i]);
+    }
+  }
+}), sr = { style: { display: "none" } };
+function rr(e, i, t, o, n, m) {
+  const s = U, u = ne, p = q, g = Ke, w = oe, L = E;
+  return l(), a(L, {
+    "build-rules": e.rules,
+    field: e.field,
+    builder: e.builder,
+    "builder-status": e.builderStatus,
+    "parent-field": e.parentField,
+    "parent-list": e.parentList,
+    "index-of-parent-list": e.indexOfParentList,
+    "sub-form-row-index": e.subFormRowIndex,
+    "sub-form-col-index": e.subFormColIndex,
+    "sub-form-row-id": e.subFormRowId
+  }, {
+    default: f(() => [
+      e.builderStatus ? (l(), a(u, {
+        key: 0,
+        type: "info",
+        effect: "plain",
+        "disable-transitions": ""
+      }, {
+        default: f(() => [
+          h(s, {
+            "icon-name": "el-connection",
+            class: "mr-1"
+          }),
+          $(" Local agent" + F(e.field.options.name ? ": " + e.field.options.name : ""), 1)
+        ]),
+        _: 1
+      })) : (l(), c(y, { key: 1 }, [
+        e.field.options.settingsButton ? (l(), a(p, {
+          key: 0,
+          size: e.widgetSize,
+          plain: "",
+          icon: "Setting",
+          onClick: e.openSettings
+        }, {
+          default: f(() => [
+            $(F(e.field.options.settingsLabel || "Agents"), 1)
+          ]),
+          _: 1
+        }, 8, ["size", "onClick"])) : b("", !0),
+        (l(), a(g, {
+          ref: "fieldEditor",
+          key: e.field.id,
+          disabled: !!e.field.options.hidden || !!e.field.options.disabled,
+          "auto-connect": e.field.options.autoConnect !== !1,
+          indicator: e.field.options.indicator,
+          "indicator-position": e.field.options.indicatorCorner,
+          "indicator-timeout": e.field.options.indicatorTimeout,
+          "field-name": e.field.options.name,
+          "report-provider": e.getReportRef,
+          onAgentEvent: e.handleAgentEvent,
+          onAgentConnected: e.handleAgentConnected,
+          onAgentDisconnected: e.handleAgentDisconnected,
+          onAgentError: e.handleAgentError
+        }, null, 8, ["disabled", "auto-connect", "indicator", "indicator-position", "indicator-timeout", "field-name", "report-provider", "onAgentEvent", "onAgentConnected", "onAgentDisconnected", "onAgentError"])),
+        v("div", sr, [
+          h(w, {
+            ref: "reportRef",
+            "report-list": [],
+            params: e.params,
+            "user-state": e.globalUserState
+          }, null, 8, ["params", "user-state"])
+        ])
+      ], 64))
+    ]),
+    _: 1
+  }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
+}
+const dr = /* @__PURE__ */ I(nr, [["render", rr]]), ar = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: dr
+}, Symbol.toStringTag, { value: "Module" })), fr = C({
   name: "masked-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdMaskedInput,
   },
   mixins: [O],
@@ -7716,15 +7849,15 @@ const tr = /* @__PURE__ */ I(er, [["render", ir], ["__scopeId", "data-v-66bf7a89
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), nr = { class: "el-input__wrapper el-input__wrapper" };
-function sr(e, i, t, o, n, m) {
-  const s = Ai, u = M;
+}), ur = { class: "el-input__wrapper el-input__wrapper" };
+function pr(e, i, t, o, n, m) {
+  const s = Ni, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -7741,7 +7874,7 @@ function sr(e, i, t, o, n, m) {
       v("div", {
         class: S(["el-input el-input", { "el-input--small": e.smallSize, "el-input--large": e.largeSize, "is-disabled": e.field.options.disabled }])
       }, [
-        v("div", nr, [
+        v("div", ur, [
           h(s, {
             class: "el-input__inner el-input__inner",
             ref: "fieldEditor",
@@ -7767,14 +7900,14 @@ function sr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const rr = /* @__PURE__ */ I(lr, [["render", sr]]), dr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const mr = /* @__PURE__ */ I(fr, [["render", pr]]), hr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: rr
-}, Symbol.toStringTag, { value: "Module" })), ar = C({
+  default: mr
+}, Symbol.toStringTag, { value: "Module" })), cr = C({
   name: "multiple-date",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M,
+    FormItemWrapper: R,
     SdDatePickerBE: ie
   },
   mixins: [O],
@@ -7803,15 +7936,15 @@ const rr = /* @__PURE__ */ I(lr, [["render", sr]]), dr = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function fr(e, i, t, o, n, m) {
-  const s = ie, u = M;
+function br(e, i, t, o, n, m) {
+  const s = ie, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -7852,14 +7985,14 @@ function fr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ur = /* @__PURE__ */ I(ar, [["render", fr], ["__scopeId", "data-v-315f06a2"]]), pr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const gr = /* @__PURE__ */ I(cr, [["render", br], ["__scopeId", "data-v-315f06a2"]]), Fr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ur
-}, Symbol.toStringTag, { value: "Module" })), mr = C({
+  default: gr
+}, Symbol.toStringTag, { value: "Module" })), yr = C({
   name: "number-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -7891,18 +8024,18 @@ const ur = /* @__PURE__ */ I(ar, [["render", fr], ["__scopeId", "data-v-315f06a2
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), hr = {
+}), vr = {
   key: 1,
   class: "mr-1"
-}, cr = { key: 1 };
-function br(e, i, t, o, n, m) {
-  const s = V, u = Ct, p = M;
+}, wr = { key: 1 };
+function Cr(e, i, t, o, n, m) {
+  const s = U, u = St, p = R;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -7941,7 +8074,7 @@ function br(e, i, t, o, n, m) {
               "icon-name": e.field.options.prefixIcon,
               class: "mr-1"
             }, null, 8, ["icon-name"])) : b("", !0),
-            e.field.options.prefixText ? (l(), c("span", hr, F(e.field.options.prefixText), 1)) : b("", !0)
+            e.field.options.prefixText ? (l(), c("span", vr, F(e.field.options.prefixText), 1)) : b("", !0)
           ]),
           key: "0"
         } : void 0,
@@ -7953,8 +8086,8 @@ function br(e, i, t, o, n, m) {
               "icon-name": e.field.options.suffixIcon,
               class: "mr-1"
             }, null, 8, ["icon-name"])) : b("", !0),
-            i[1] || (i[1] = E()),
-            e.field.options.suffixText ? (l(), c("span", cr, F(e.field.options.suffixText), 1)) : b("", !0)
+            i[1] || (i[1] = $()),
+            e.field.options.suffixText ? (l(), c("span", wr, F(e.field.options.suffixText), 1)) : b("", !0)
           ]),
           key: "1"
         } : void 0
@@ -7963,14 +8096,14 @@ function br(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const gr = /* @__PURE__ */ I(mr, [["render", br], ["__scopeId", "data-v-fb135eaa"]]), Fr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Sr = /* @__PURE__ */ I(yr, [["render", Cr], ["__scopeId", "data-v-fb135eaa"]]), Ir = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: gr
-}, Symbol.toStringTag, { value: "Module" })), yr = C({
+  default: Sr
+}, Symbol.toStringTag, { value: "Module" })), Mr = C({
   name: "objectid-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -7997,15 +8130,15 @@ const gr = /* @__PURE__ */ I(mr, [["render", br], ["__scopeId", "data-v-fb135eaa
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function vr(e, i, t, o, n, m) {
-  const s = V, u = ye, p = M;
+function Rr(e, i, t, o, n, m) {
+  const s = U, u = ye, p = R;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -8048,14 +8181,14 @@ function vr(e, i, t, o, n, m) {
         e.field.options.prefixText ? {
           name: "prepend",
           fn: f(() => [
-            E(F(e.field.options.prefixText), 1)
+            $(F(e.field.options.prefixText), 1)
           ]),
           key: "0"
         } : void 0,
         e.field.options.suffixText ? {
           name: "append",
           fn: f(() => [
-            E(F(e.field.options.suffixText), 1)
+            $(F(e.field.options.suffixText), 1)
           ]),
           key: "1"
         } : void 0,
@@ -8073,14 +8206,14 @@ function vr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const wr = /* @__PURE__ */ I(yr, [["render", vr]]), Cr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const kr = /* @__PURE__ */ I(Mr, [["render", Rr]]), Or = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: wr
-}, Symbol.toStringTag, { value: "Module" })), Sr = C({
+  default: kr
+}, Symbol.toStringTag, { value: "Module" })), Pr = C({
   name: "otp-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -8102,7 +8235,7 @@ const wr = /* @__PURE__ */ I(yr, [["render", vr]]), Cr = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
@@ -8122,8 +8255,8 @@ const wr = /* @__PURE__ */ I(yr, [["render", vr]]), Cr = /* @__PURE__ */ Object.
     }
   }
 });
-function Ir(e, i, t, o, n, m) {
-  const s = St, u = M;
+function Er(e, i, t, o, n, m) {
+  const s = It, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -8157,14 +8290,14 @@ function Ir(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Mr = /* @__PURE__ */ I(Sr, [["render", Ir]]), Rr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const $r = /* @__PURE__ */ I(Pr, [["render", Er]]), Lr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Mr
-}, Symbol.toStringTag, { value: "Module" })), kr = C({
+  default: $r
+}, Symbol.toStringTag, { value: "Module" })), jr = C({
   name: "picture-upload-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   data() {
@@ -8194,7 +8327,7 @@ const Mr = /* @__PURE__ */ I(Sr, [["render", Ir]]), Rr = /* @__PURE__ */ Object.
     this.registerToRefList(), this.initApi(), this.field.options.disabled, this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = R(null);
+    const e = M(null), i = M(null);
     return {
       fieldEditor: e,
       imageRef: i
@@ -8216,7 +8349,7 @@ const Mr = /* @__PURE__ */ I(Sr, [["render", Ir]]), Rr = /* @__PURE__ */ Object.
     },
     beforePictureUpload(e) {
       let i = [];
-      if (this.field.options && this.field.options.fileTypes && (i = this.field.options.fileTypes), i.length === 0 || !Ke(e, i, i.map((n) => "image/" + n)))
+      if (this.field.options && this.field.options.fileTypes && (i = this.field.options.fileTypes), i.length === 0 || !Ze(e, i, i.map((n) => "image/" + n)))
         return this.alert(`Picture must be ${i.join(", ")} format!`, "warning"), !1;
       let t = !1, o = 5;
       return this.field.options && this.field.options.fileMaxSize && (o = this.field.options.fileMaxSize), t = e.size / 1024 / 1024 <= o, t ? (this.uploadData.key = e.name, this.handleOnBeforeUpload(e)) : (this.alert(`Picture size can not exceed ${o}MB`, "warning"), !1);
@@ -8321,12 +8454,12 @@ const Mr = /* @__PURE__ */ I(Sr, [["render", Ir]]), Rr = /* @__PURE__ */ Object.
       e.url && (this.previewIndex = this.previewList.indexOf(e.url), this.imageRef.$el.children[0].click());
     }
   }
-}), Or = { class: "el-upload-list__item-status-label" }, Pr = { class: "el-upload-list__item-actions" }, $r = ["onClick"], Er = ["onClick"], Lr = {
+}), Dr = { class: "el-upload-list__item-status-label" }, Tr = { class: "el-upload-list__item-actions" }, Ur = ["onClick"], Vr = ["onClick"], Br = {
   key: 0,
   class: "el-upload__tip"
 };
-function jr(e, i, t, o, n, m) {
-  const s = oi, u = Z("Check"), p = be, g = Z("ZoomIn"), w = Z("Delete"), L = Z("Plus"), r = Pe, d = M;
+function zr(e, i, t, o, n, m) {
+  const s = li, u = Z("Check"), p = be, g = Z("ZoomIn"), w = Z("Delete"), L = Z("Plus"), r = Pe, d = R;
   return l(), a(d, {
     "build-rules": e.rules,
     field: e.field,
@@ -8370,7 +8503,7 @@ function jr(e, i, t, o, n, m) {
             fit: "cover",
             "preview-teleported": ""
           }, null, 8, ["src", "preview-src-list", "initial-index"]),
-          v("label", Or, [
+          v("label", Dr, [
             h(p, null, {
               default: f(() => [
                 h(u)
@@ -8378,7 +8511,7 @@ function jr(e, i, t, o, n, m) {
               _: 1
             })
           ]),
-          v("span", Pr, [
+          v("span", Tr, [
             v("span", {
               class: "el-upload-list__item-preview",
               onClick: (B) => e.handlePictureCardPreview(k)
@@ -8389,7 +8522,7 @@ function jr(e, i, t, o, n, m) {
                 ]),
                 _: 1
               })
-            ], 8, $r),
+            ], 8, Ur),
             e.field.options.disabled ? b("", !0) : (l(), c("span", {
               key: 0,
               class: "el-upload-list__item-delete",
@@ -8401,11 +8534,11 @@ function jr(e, i, t, o, n, m) {
                 ]),
                 _: 1
               })
-            ], 8, Er))
+            ], 8, Vr))
           ])
         ]),
         tip: f(() => [
-          e.field.options.uploadTip ? (l(), c("div", Lr, F(e.field.options.uploadTip), 1)) : b("", !0)
+          e.field.options.uploadTip ? (l(), c("div", Br, F(e.field.options.uploadTip), 1)) : b("", !0)
         ]),
         default: f(() => [
           h(p, null, {
@@ -8421,14 +8554,14 @@ function jr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Dr = /* @__PURE__ */ I(kr, [["render", jr], ["__scopeId", "data-v-00f00d85"]]), Tr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ar = /* @__PURE__ */ I(jr, [["render", zr], ["__scopeId", "data-v-00f00d85"]]), Nr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Dr
-}, Symbol.toStringTag, { value: "Module" })), Vr = C({
+  default: Ar
+}, Symbol.toStringTag, { value: "Module" })), Wr = C({
   name: "progress-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -8443,7 +8576,7 @@ const Dr = /* @__PURE__ */ I(kr, [["render", jr], ["__scopeId", "data-v-00f00d85
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -8462,8 +8595,8 @@ const Dr = /* @__PURE__ */ I(kr, [["render", jr], ["__scopeId", "data-v-00f00d85
     this.unregisterFromRefList();
   }
 });
-function Ur(e, i, t, o, n, m) {
-  const s = It, u = $;
+function Hr(e, i, t, o, n, m) {
+  const s = Mt, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -8500,15 +8633,15 @@ function Ur(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const Br = /* @__PURE__ */ I(Vr, [["render", Ur], ["__scopeId", "data-v-89a839e4"]]), zr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const qr = /* @__PURE__ */ I(Wr, [["render", Hr], ["__scopeId", "data-v-89a839e4"]]), Gr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Br
-}, Symbol.toStringTag, { value: "Module" })), Ar = C({
+  default: qr
+}, Symbol.toStringTag, { value: "Module" })), Jr = C({
   name: "qrcode-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $,
-    VueQrcode: Jt
+    StaticContentWrapper: E,
+    VueQrcode: Kt
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -8522,15 +8655,15 @@ const Br = /* @__PURE__ */ I(Vr, [["render", Ur], ["__scopeId", "data-v-89a839e4
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Nr(e, i, t, o, n, m) {
-  const s = Z("VueQrcode"), u = $;
+function Kr(e, i, t, o, n, m) {
+  const s = Z("VueQrcode"), u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -8565,14 +8698,14 @@ function Nr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Wr = /* @__PURE__ */ I(Ar, [["render", Nr], ["__scopeId", "data-v-14161622"]]), Hr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Zr = /* @__PURE__ */ I(Jr, [["render", Kr], ["__scopeId", "data-v-14161622"]]), Qr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Wr
-}, Symbol.toStringTag, { value: "Module" })), qr = C({
+  default: Zr
+}, Symbol.toStringTag, { value: "Module" })), Yr = C({
   name: "radio-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -8596,15 +8729,15 @@ const Wr = /* @__PURE__ */ I(Ar, [["render", Nr], ["__scopeId", "data-v-14161622
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Gr(e, i, t, o, n, m) {
-  const s = Mt, u = ni, p = ge, g = Fe, w = li, L = M;
+function Xr(e, i, t, o, n, m) {
+  const s = Rt, u = si, p = ge, g = Fe, w = ni, L = R;
   return l(), a(L, {
     "build-rules": e.rules,
     field: e.field,
@@ -8637,7 +8770,7 @@ function Gr(e, i, t, o, n, m) {
             style: j({ display: e.field.options.displayStyle })
           }, {
             default: f(() => [
-              E(F(r.label), 1)
+              $(F(r.label), 1)
             ]),
             _: 2
           }, 1032, ["value", "disabled", "border", "style"]))), 128)) : (l(), c(y, { key: 1 }, [
@@ -8655,7 +8788,7 @@ function Gr(e, i, t, o, n, m) {
                       style: j({ display: e.field.options.displayStyle })
                     }, {
                       default: f(() => [
-                        E(F(r.label), 1)
+                        $(F(r.label), 1)
                       ]),
                       _: 2
                     }, 1032, ["value", "disabled", "border", "style"]))
@@ -8672,7 +8805,7 @@ function Gr(e, i, t, o, n, m) {
               style: j({ display: e.field.options.displayStyle })
             }, {
               default: f(() => [
-                E(F(r.label), 1)
+                $(F(r.label), 1)
               ]),
               _: 2
             }, 1032, ["value", "disabled", "border", "style"]))), 128))
@@ -8684,14 +8817,14 @@ function Gr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Jr = /* @__PURE__ */ I(qr, [["render", Gr], ["__scopeId", "data-v-9ae0dedd"]]), Kr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const _r = /* @__PURE__ */ I(Yr, [["render", Xr], ["__scopeId", "data-v-9ae0dedd"]]), xr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Jr
-}, Symbol.toStringTag, { value: "Module" })), Zr = C({
+  default: _r
+}, Symbol.toStringTag, { value: "Module" })), ed = C({
   name: "radio-text-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -8740,7 +8873,7 @@ const Jr = /* @__PURE__ */ I(qr, [["render", Gr], ["__scopeId", "data-v-9ae0dedd
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -8752,8 +8885,8 @@ const Jr = /* @__PURE__ */ I(qr, [["render", Gr], ["__scopeId", "data-v-9ae0dedd
     this.unregisterFromRefList();
   }
 });
-function Qr(e, i, t, o, n, m) {
-  const s = ye, u = ni, p = ge, g = Fe, w = li, L = M;
+function id(e, i, t, o, n, m) {
+  const s = ye, u = si, p = ge, g = Fe, w = ni, L = R;
   return l(), a(L, {
     "build-rules": e.rules,
     field: e.field,
@@ -8792,7 +8925,7 @@ function Qr(e, i, t, o, n, m) {
                     style: { display: "flex" }
                   }, {
                     default: f(() => [
-                      E(F(r.label) + " ", 1),
+                      $(F(r.label) + " ", 1),
                       r.text ? (l(), a(s, {
                         key: 0,
                         size: "small",
@@ -8805,7 +8938,7 @@ function Qr(e, i, t, o, n, m) {
                         r.suffix ? {
                           name: "append",
                           fn: f(() => [
-                            E(F(r.suffix), 1)
+                            $(F(r.suffix), 1)
                           ]),
                           key: "0"
                         } : void 0
@@ -8826,7 +8959,7 @@ function Qr(e, i, t, o, n, m) {
             style: { display: "flex" }
           }, {
             default: f(() => [
-              E(F(r.label) + " ", 1),
+              $(F(r.label) + " ", 1),
               r.text ? (l(), a(s, {
                 key: 0,
                 size: "small",
@@ -8839,7 +8972,7 @@ function Qr(e, i, t, o, n, m) {
                 r.suffix ? {
                   name: "append",
                   fn: f(() => [
-                    E(F(r.suffix), 1)
+                    $(F(r.suffix), 1)
                   ]),
                   key: "0"
                 } : void 0
@@ -8854,14 +8987,14 @@ function Qr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Yr = /* @__PURE__ */ I(Zr, [["render", Qr], ["__scopeId", "data-v-10f388a2"]]), Xr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const td = /* @__PURE__ */ I(ed, [["render", id], ["__scopeId", "data-v-10f388a2"]]), od = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Yr
-}, Symbol.toStringTag, { value: "Module" })), _r = C({
+  default: td
+}, Symbol.toStringTag, { value: "Module" })), ld = C({
   name: "rate-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -8893,15 +9026,15 @@ const Yr = /* @__PURE__ */ I(Zr, [["render", Qr], ["__scopeId", "data-v-10f388a2
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function xr(e, i, t, o, n, m) {
-  const s = Rt, u = M;
+function nd(e, i, t, o, n, m) {
+  const s = kt, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -8935,14 +9068,14 @@ function xr(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ed = /* @__PURE__ */ I(_r, [["render", xr], ["__scopeId", "data-v-a4f7a549"]]), id = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const sd = /* @__PURE__ */ I(ld, [["render", nd], ["__scopeId", "data-v-a4f7a549"]]), rd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ed
-}, Symbol.toStringTag, { value: "Module" })), td = C({
+  default: sd
+}, Symbol.toStringTag, { value: "Module" })), dd = C({
   name: "record-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdUiRecordView,
     // SdReport,
   },
@@ -9007,7 +9140,7 @@ const ed = /* @__PURE__ */ I(_r, [["render", xr], ["__scopeId", "data-v-a4f7a549
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -9090,12 +9223,12 @@ const ed = /* @__PURE__ */ I(_r, [["render", xr], ["__scopeId", "data-v-a4f7a549
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), od = {
+}), ad = {
   key: 0,
   class: "record-empty-text"
 };
-function ld(e, i, t, o, n, m) {
-  const s = le, u = V, p = q, g = pe, w = Ni, L = $;
+function fd(e, i, t, o, n, m) {
+  const s = oe, u = U, p = q, g = pe, w = Wi, L = E;
   return e.showWhenParent && (e.recordReady || e.emptyText) ? (l(), a(L, {
     key: 0,
     "build-rules": e.rules,
@@ -9215,7 +9348,7 @@ function ld(e, i, t, o, n, m) {
               size: "small",
               href: d.tag && d.tag == "a" ? d.href : "",
               target: d.blank ? "_blank" : "_self",
-              onClick: U((B) => e.emitButtonRowClick(d, +k, r.row), ["prevent"])
+              onClick: V((B) => e.emitButtonRowClick(d, +k, r.row), ["prevent"])
             }, {
               default: f(() => [
                 d.prefixIcon ? (l(), a(u, {
@@ -9235,19 +9368,19 @@ function ld(e, i, t, o, n, m) {
           ], 64))), 256)) : b("", !0)
         ]),
         _: 1
-      }, 8, ["form-id", "provider-type", "data-provider", "parent-id", "data-id", "params", "block-ui-fields", "init-data", "title-enable", "icon-name", "subform-width", "title-name", "label-width", "column", "action-enable", "add-btn-enable", "block-enable", "border-enable", "vertical-enable", "last-record", "list-view-btn-enable", "list-view-read-only", "update-btn-enable", "del-btn-enable", "reload-btn-enable", "view-btn-enable", "allow-delete-func", "enable-ws", "custom-content-enable", "custom-content", "auto-action-footer", "meta-by-field", "meta-time-field", "parent-path", "insert-before", "update-before", "view-before", "before-save", "after-delete", "user-state", "build-state"])) : (l(), c("div", od, F(e.emptyText), 1))
+      }, 8, ["form-id", "provider-type", "data-provider", "parent-id", "data-id", "params", "block-ui-fields", "init-data", "title-enable", "icon-name", "subform-width", "title-name", "label-width", "column", "action-enable", "add-btn-enable", "block-enable", "border-enable", "vertical-enable", "last-record", "list-view-btn-enable", "list-view-read-only", "update-btn-enable", "del-btn-enable", "reload-btn-enable", "view-btn-enable", "allow-delete-func", "enable-ws", "custom-content-enable", "custom-content", "auto-action-footer", "meta-by-field", "meta-time-field", "parent-path", "insert-before", "update-before", "view-before", "before-save", "after-delete", "user-state", "build-state"])) : (l(), c("div", ad, F(e.emptyText), 1))
     ]),
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"])) : b("", !0);
 }
-const nd = /* @__PURE__ */ I(td, [["render", ld], ["__scopeId", "data-v-e0c8551b"]]), sd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ud = /* @__PURE__ */ I(dd, [["render", fd], ["__scopeId", "data-v-e0c8551b"]]), pd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: nd
-}, Symbol.toStringTag, { value: "Module" })), rd = C({
+  default: ud
+}, Symbol.toStringTag, { value: "Module" })), md = C({
   name: "report-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdReport,
   },
   mixins: [O],
@@ -9271,7 +9404,7 @@ const nd = /* @__PURE__ */ I(td, [["render", ld], ["__scopeId", "data-v-e0c8551b
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -9290,8 +9423,8 @@ const nd = /* @__PURE__ */ I(td, [["render", ld], ["__scopeId", "data-v-e0c8551b
     this.unregisterFromRefList();
   }
 });
-function dd(e, i, t, o, n, m) {
-  const s = le, u = V, p = q, g = $;
+function hd(e, i, t, o, n, m) {
+  const s = oe, u = U, p = q, g = E;
   return l(), a(g, {
     "build-rules": e.rules,
     field: e.field,
@@ -9324,7 +9457,7 @@ function dd(e, i, t, o, n, m) {
       }, {
         default: f(() => [
           h(u, { "icon-name": "report-ui" }),
-          i[0] || (i[0] = E()),
+          i[0] || (i[0] = $()),
           v("span", null, F(e.field.options.providerType || "Report"), 1)
         ]),
         _: 1
@@ -9333,15 +9466,15 @@ function dd(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const ad = /* @__PURE__ */ I(rd, [["render", dd], ["__scopeId", "data-v-7a37e132"]]), fd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const cd = /* @__PURE__ */ I(md, [["render", hd], ["__scopeId", "data-v-7a37e132"]]), bd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ad
-}, Symbol.toStringTag, { value: "Module" })), ud = C({
+  default: cd
+}, Symbol.toStringTag, { value: "Module" })), gd = C({
   name: "scan-code-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $,
-    SdScan: Ze
+    StaticContentWrapper: E,
+    SdScan: Qe
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -9355,7 +9488,7 @@ const ad = /* @__PURE__ */ I(rd, [["render", dd], ["__scopeId", "data-v-7a37e132
     this.unregisterFromRefList();
   },
   setup() {
-    return { fieldEditor: R(null) };
+    return { fieldEditor: M(null) };
   },
   methods: {
     // รัน user JS ของ event ผ่าน sandbox (pattern เดียวกับ button-ui)
@@ -9376,8 +9509,8 @@ const ad = /* @__PURE__ */ I(rd, [["render", dd], ["__scopeId", "data-v-7a37e132
     }
   }
 });
-function pd(e, i, t, o, n, m) {
-  const s = V, u = ue, p = Ze, g = $;
+function Fd(e, i, t, o, n, m) {
+  const s = U, u = ne, p = Qe, g = E;
   return l(), a(g, {
     "build-rules": e.rules,
     field: e.field,
@@ -9406,7 +9539,7 @@ function pd(e, i, t, o, n, m) {
               "icon-name": "scan-ui",
               class: "mr-1"
             }),
-            E(" Scan listener" + F(e.field.options.name ? ": " + e.field.options.name : ""), 1)
+            $(" Scan listener" + F(e.field.options.name ? ": " + e.field.options.name : ""), 1)
           ]),
           _: 1
         })) : b("", !0),
@@ -9431,14 +9564,14 @@ function pd(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const md = /* @__PURE__ */ I(ud, [["render", pd]]), hd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const yd = /* @__PURE__ */ I(gd, [["render", Fd]]), vd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: md
-}, Symbol.toStringTag, { value: "Module" })), cd = C({
+  default: yd
+}, Symbol.toStringTag, { value: "Module" })), wd = C({
   name: "segmented-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -9474,7 +9607,7 @@ const md = /* @__PURE__ */ I(ud, [["render", pd]]), hd = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -9497,8 +9630,8 @@ const md = /* @__PURE__ */ I(ud, [["render", pd]]), hd = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   }
 });
-function bd(e, i, t, o, n, m) {
-  const s = V, u = kt, p = $;
+function Cd(e, i, t, o, n, m) {
+  const s = U, u = Ot, p = E;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -9546,14 +9679,14 @@ function bd(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const gd = /* @__PURE__ */ I(cd, [["render", bd], ["__scopeId", "data-v-df2d6bff"]]), Fd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Sd = /* @__PURE__ */ I(wd, [["render", Cd], ["__scopeId", "data-v-df2d6bff"]]), Id = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: gd
-}, Symbol.toStringTag, { value: "Module" })), yd = C({
+  default: Sd
+}, Symbol.toStringTag, { value: "Module" })), Md = C({
   name: "select-data-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdCrudSelectSubForm,
   },
   mixins: [O],
@@ -9647,7 +9780,7 @@ const gd = /* @__PURE__ */ I(cd, [["render", bd], ["__scopeId", "data-v-df2d6bff
     return {};
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -9657,8 +9790,8 @@ const gd = /* @__PURE__ */ I(cd, [["render", bd], ["__scopeId", "data-v-df2d6bff
     this.unregisterFromRefList();
   }
 });
-function vd(e, i, t, o, n, m) {
-  const s = Oe, u = M;
+function Rd(e, i, t, o, n, m) {
+  const s = Oe, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -9706,14 +9839,14 @@ function vd(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const wd = /* @__PURE__ */ I(yd, [["render", vd]]), Cd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const kd = /* @__PURE__ */ I(Md, [["render", Rd]]), Od = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: wd
-}, Symbol.toStringTag, { value: "Module" })), Sd = C({
+  default: kd
+}, Symbol.toStringTag, { value: "Module" })), Pd = C({
   name: "select-form-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdCrudSelectSubForm,
   },
   mixins: [O],
@@ -9774,7 +9907,7 @@ const wd = /* @__PURE__ */ I(yd, [["render", vd]]), Cd = /* @__PURE__ */ Object.
     return {};
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -9797,8 +9930,8 @@ const wd = /* @__PURE__ */ I(yd, [["render", vd]]), Cd = /* @__PURE__ */ Object.
     }
   }
 });
-function Id(e, i, t, o, n, m) {
-  const s = Oe, u = M;
+function Ed(e, i, t, o, n, m) {
+  const s = Oe, u = R;
   return e.showWhenParent ? (l(), a(u, {
     key: 0,
     "build-rules": e.rules,
@@ -9857,14 +9990,14 @@ function Id(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"])) : b("", !0);
 }
-const Md = /* @__PURE__ */ I(Sd, [["render", Id]]), Rd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const $d = /* @__PURE__ */ I(Pd, [["render", Ed]]), Ld = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Md
-}, Symbol.toStringTag, { value: "Module" })), kd = C({
+  default: $d
+}, Symbol.toStringTag, { value: "Module" })), jd = C({
   name: "select-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -9891,15 +10024,15 @@ const Md = /* @__PURE__ */ I(Sd, [["render", Id]]), Rd = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Od(e, i, t, o, n, m) {
-  const s = Pt, u = Ot, p = M;
+function Dd(e, i, t, o, n, m) {
+  const s = Et, u = Pt, p = R;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -9949,14 +10082,14 @@ function Od(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Pd = /* @__PURE__ */ I(kd, [["render", Od], ["__scopeId", "data-v-fc573572"]]), $d = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Td = /* @__PURE__ */ I(jd, [["render", Dd], ["__scopeId", "data-v-fc573572"]]), Ud = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Pd
-}, Symbol.toStringTag, { value: "Module" })), Ed = C({
+  default: Td
+}, Symbol.toStringTag, { value: "Module" })), Vd = C({
   name: "select-path-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdSelectPathData,
   },
   mixins: [O],
@@ -9992,7 +10125,7 @@ const Pd = /* @__PURE__ */ I(kd, [["render", Od], ["__scopeId", "data-v-fc573572
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   watch: {
@@ -10002,11 +10135,11 @@ const Pd = /* @__PURE__ */ I(kd, [["render", Od], ["__scopeId", "data-v-fc573572
         let i = [];
         if (this.field.options.sourcePath)
           for (const t in e) {
-            const o = e[t], n = oe(o, this.field.options.sourcePath);
+            const o = e[t], n = le(o, this.field.options.sourcePath);
             if (n && typeof n == "object")
               for (const m in n) {
                 let s = n[m];
-                this.field.options.prefixProp && (s.prefixProp = oe(o, this.field.options.prefixProp)), this.field.options.groupProp && (s.groupProp = oe(o, this.field.options.groupProp)), i.push(s);
+                this.field.options.prefixProp && (s.prefixProp = le(o, this.field.options.prefixProp)), this.field.options.groupProp && (s.groupProp = le(o, this.field.options.groupProp)), i.push(s);
               }
           }
         this.onItemListChange(i), e && Object.keys(e).length > 0 || this.onItemListChange([]);
@@ -10061,8 +10194,8 @@ const Pd = /* @__PURE__ */ I(kd, [["render", Od], ["__scopeId", "data-v-fc573572
     this.unregisterFromRefList();
   }
 });
-function Ld(e, i, t, o, n, m) {
-  const s = Wi, u = M;
+function Bd(e, i, t, o, n, m) {
+  const s = Hi, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -10110,14 +10243,14 @@ function Ld(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const jd = /* @__PURE__ */ I(Ed, [["render", Ld], ["__scopeId", "data-v-c4a11139"]]), Dd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const zd = /* @__PURE__ */ I(Vd, [["render", Bd], ["__scopeId", "data-v-c4a11139"]]), Ad = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: jd
-}, Symbol.toStringTag, { value: "Module" })), Td = C({
+  default: zd
+}, Symbol.toStringTag, { value: "Module" })), Nd = C({
   name: "select-sql-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
     // SdCrudSelectSubForm,
   },
   mixins: [O],
@@ -10153,7 +10286,7 @@ const jd = /* @__PURE__ */ I(Ed, [["render", Ld], ["__scopeId", "data-v-c4a11139
     return {};
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -10163,8 +10296,8 @@ const jd = /* @__PURE__ */ I(Ed, [["render", Ld], ["__scopeId", "data-v-c4a11139
     this.unregisterFromRefList();
   }
 });
-function Vd(e, i, t, o, n, m) {
-  const s = Oe, u = M;
+function Wd(e, i, t, o, n, m) {
+  const s = Oe, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -10215,14 +10348,14 @@ function Vd(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Ud = /* @__PURE__ */ I(Td, [["render", Vd]]), Bd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Hd = /* @__PURE__ */ I(Nd, [["render", Wd]]), qd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Ud
-}, Symbol.toStringTag, { value: "Module" })), zd = C({
+  default: Hd
+}, Symbol.toStringTag, { value: "Module" })), Gd = C({
   name: "side-menu-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdUiMenu,
   },
   mixins: [O],
@@ -10261,7 +10394,7 @@ const Ud = /* @__PURE__ */ I(Td, [["render", Vd]]), Bd = /* @__PURE__ */ Object.
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -10280,8 +10413,8 @@ const Ud = /* @__PURE__ */ I(Td, [["render", Vd]]), Bd = /* @__PURE__ */ Object.
     this.unregisterFromRefList();
   }
 });
-function Ad(e, i, t, o, n, m) {
-  const s = Hi, u = $;
+function Jd(e, i, t, o, n, m) {
+  const s = qi, u = E;
   return e.showWhenParent ? (l(), a(u, {
     key: 0,
     "build-rules": e.rules,
@@ -10339,14 +10472,14 @@ function Ad(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"])) : b("", !0);
 }
-const Nd = /* @__PURE__ */ I(zd, [["render", Ad], ["__scopeId", "data-v-375e200e"]]), Wd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Kd = /* @__PURE__ */ I(Gd, [["render", Jd], ["__scopeId", "data-v-375e200e"]]), Zd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Nd
-}, Symbol.toStringTag, { value: "Module" })), Hd = C({
+  default: Kd
+}, Symbol.toStringTag, { value: "Module" })), Qd = C({
   name: "slider-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -10378,15 +10511,15 @@ const Nd = /* @__PURE__ */ I(zd, [["render", Ad], ["__scopeId", "data-v-375e200e
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function qd(e, i, t, o, n, m) {
-  const s = $t, u = M;
+function Yd(e, i, t, o, n, m) {
+  const s = $t, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -10417,15 +10550,15 @@ function qd(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Gd = /* @__PURE__ */ I(Hd, [["render", qd], ["__scopeId", "data-v-01943245"]]), Jd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Xd = /* @__PURE__ */ I(Qd, [["render", Yd], ["__scopeId", "data-v-01943245"]]), _d = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Gd
-}, Symbol.toStringTag, { value: "Module" })), Kd = C({
+  default: Xd
+}, Symbol.toStringTag, { value: "Module" })), xd = C({
   name: "smart-card-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $,
-    SdSmartCard: Qe
+    StaticContentWrapper: E,
+    SdSmartCard: Ye
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -10439,7 +10572,7 @@ const Gd = /* @__PURE__ */ I(Hd, [["render", qd], ["__scopeId", "data-v-01943245
     this.unregisterFromRefList();
   },
   setup() {
-    return { fieldEditor: R(null) };
+    return { fieldEditor: M(null) };
   },
   methods: {
     // รัน user JS ของ event ผ่าน sandbox (pattern เดียวกับ scan-code-ui / button-ui)
@@ -10472,8 +10605,8 @@ const Gd = /* @__PURE__ */ I(Hd, [["render", qd], ["__scopeId", "data-v-01943245
     }
   }
 });
-function Zd(e, i, t, o, n, m) {
-  const s = V, u = ue, p = Qe, g = $;
+function ea(e, i, t, o, n, m) {
+  const s = U, u = ne, p = Ye, g = E;
   return l(), a(g, {
     "build-rules": e.rules,
     field: e.field,
@@ -10502,7 +10635,7 @@ function Zd(e, i, t, o, n, m) {
               "icon-name": "card-pos",
               class: "mr-1"
             }),
-            E(" Smart card listener" + F(e.field.options.name ? ": " + e.field.options.name : ""), 1)
+            $(" Smart card listener" + F(e.field.options.name ? ": " + e.field.options.name : ""), 1)
           ]),
           _: 1
         })) : b("", !0),
@@ -10528,14 +10661,14 @@ function Zd(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Qd = /* @__PURE__ */ I(Kd, [["render", Zd]]), Yd = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ia = /* @__PURE__ */ I(xd, [["render", ea]]), ta = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Qd
-}, Symbol.toStringTag, { value: "Module" })), Xd = C({
+  default: ia
+}, Symbol.toStringTag, { value: "Module" })), oa = C({
   name: "statistic-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdHtmlEditor,
   },
   mixins: [O],
@@ -10551,19 +10684,19 @@ const Qd = /* @__PURE__ */ I(Kd, [["render", Zd]]), Yd = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {},
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), _d = { style: { display: "inline-flex", "align-items": "center" } }, xd = { key: 1 }, ea = { key: 1 }, ia = {
+}), la = { style: { display: "inline-flex", "align-items": "center" } }, na = { key: 1 }, sa = { key: 1 }, ra = {
   key: 0,
   class: "statistic-footer"
-}, ta = { class: "footer-item" };
-function oa(e, i, t, o, n, m) {
-  const s = V, u = ne, p = Et, g = we, w = $;
+}, da = { class: "footer-item" };
+function aa(e, i, t, o, n, m) {
+  const s = U, u = se, p = Lt, g = we, w = E;
   return l(), a(w, {
     "build-rules": e.rules,
     field: e.field,
@@ -10592,8 +10725,8 @@ function oa(e, i, t, o, n, m) {
           style: j(`width: ${e.field.options.width || 100}px;`)
         }, Y({
           title: f(() => [
-            v("div", _d, [
-              E(F(e.field.options.title) + " ", 1),
+            v("div", la, [
+              $(F(e.field.options.title) + " ", 1),
               e.field.options.labelTooltip ? (l(), a(u, {
                 key: 0,
                 content: e.field.options.labelTooltip
@@ -10623,7 +10756,7 @@ function oa(e, i, t, o, n, m) {
                 "icon-name": e.field.options.prefixIcon,
                 class: "mr-2"
               }, null, 8, ["icon-name"])) : b("", !0),
-              e.field.options.prefixText ? (l(), c("span", xd, F(e.field.options.prefixText), 1)) : b("", !0)
+              e.field.options.prefixText ? (l(), c("span", na, F(e.field.options.prefixText), 1)) : b("", !0)
             ]),
             key: "0"
           } : void 0,
@@ -10635,14 +10768,14 @@ function oa(e, i, t, o, n, m) {
                 "icon-name": e.field.options.suffixIcon,
                 class: "ml-1"
               }, null, 8, ["icon-name"])) : b("", !0),
-              i[1] || (i[1] = E()),
-              e.field.options.suffixText ? (l(), c("span", ea, F(e.field.options.suffixText), 1)) : b("", !0)
+              i[1] || (i[1] = $()),
+              e.field.options.suffixText ? (l(), c("span", sa, F(e.field.options.suffixText), 1)) : b("", !0)
             ]),
             key: "1"
           } : void 0
         ]), 1032, ["value", "formatter", "decimal-separator", "group-separator", "precision", "style"]),
-        e.field.options.footer ? (l(), c("div", ia, [
-          v("div", ta, [
+        e.field.options.footer ? (l(), c("div", ra, [
+          v("div", da, [
             h(g, {
               modelValue: e.field.options.footer,
               "onUpdate:modelValue": i[0] || (i[0] = (L) => e.field.options.footer = L),
@@ -10657,14 +10790,14 @@ function oa(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const la = /* @__PURE__ */ I(Xd, [["render", oa], ["__scopeId", "data-v-a66186a8"]]), na = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const fa = /* @__PURE__ */ I(oa, [["render", aa], ["__scopeId", "data-v-a66186a8"]]), ua = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: la
-}, Symbol.toStringTag, { value: "Module" })), sa = C({
+  default: fa
+}, Symbol.toStringTag, { value: "Module" })), pa = C({
   name: "step-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -10703,7 +10836,7 @@ const la = /* @__PURE__ */ I(Xd, [["render", oa], ["__scopeId", "data-v-a66186a8
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -10718,8 +10851,8 @@ const la = /* @__PURE__ */ I(Xd, [["render", oa], ["__scopeId", "data-v-a66186a8
     this.unregisterFromRefList();
   }
 });
-function ra(e, i, t, o, n, m) {
-  const s = jt, u = Lt, p = $;
+function ma(e, i, t, o, n, m) {
+  const s = Dt, u = jt, p = E;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -10757,14 +10890,14 @@ function ra(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const da = /* @__PURE__ */ I(sa, [["render", ra], ["__scopeId", "data-v-36741146"]]), aa = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ha = /* @__PURE__ */ I(pa, [["render", ma], ["__scopeId", "data-v-36741146"]]), ca = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: da
-}, Symbol.toStringTag, { value: "Module" })), fa = C({
+  default: ha
+}, Symbol.toStringTag, { value: "Module" })), ba = C({
   name: "svg-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -10803,7 +10936,7 @@ const da = /* @__PURE__ */ I(sa, [["render", ra], ["__scopeId", "data-v-36741146
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -10821,7 +10954,7 @@ const da = /* @__PURE__ */ I(sa, [["render", ra], ["__scopeId", "data-v-36741146
         this.fileList = [], this.uploadBtnHidden = !1;
     },
     beforeUpload(e) {
-      return Ke(e, Gi, qi) ? e.size / 1024 / 1024 > 1 ? (x.error("Picture size can not exceed 1MB!"), !1) : !0 : (x.error("Picture must be SVG format!"), !1);
+      return Ze(e, Ji, Gi) ? e.size / 1024 / 1024 > 1 ? (x.error("Picture size can not exceed 1MB!"), !1) : !0 : (x.error("Picture must be SVG format!"), !1);
     },
     async handleCardPreview(e) {
       this.dialogImageUrl = e.url, this.dialogVisible = !0;
@@ -10840,9 +10973,9 @@ const da = /* @__PURE__ */ I(sa, [["render", ra], ["__scopeId", "data-v-36741146
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), ua = ["src"];
-function pa(e, i, t, o, n, m) {
-  const s = Z("Plus"), u = be, p = Pe, g = ii, w = M;
+}), ga = ["src"];
+function Fa(e, i, t, o, n, m) {
+  const s = Z("Plus"), u = be, p = Pe, g = ti, w = R;
   return l(), a(w, {
     "build-rules": e.rules,
     field: e.field,
@@ -10893,7 +11026,7 @@ function pa(e, i, t, o, n, m) {
             "w-full": "",
             src: e.dialogImageUrl,
             alt: "Preview Icon"
-          }, null, 8, ua)
+          }, null, 8, ga)
         ]),
         _: 1
       }, 8, ["modelValue"])
@@ -10901,14 +11034,14 @@ function pa(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ma = /* @__PURE__ */ I(fa, [["render", pa], ["__scopeId", "data-v-077ba947"]]), ha = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ya = /* @__PURE__ */ I(ba, [["render", Fa], ["__scopeId", "data-v-077ba947"]]), va = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ma
-}, Symbol.toStringTag, { value: "Module" })), ca = C({
+  default: ya
+}, Symbol.toStringTag, { value: "Module" })), wa = C({
   name: "svg-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -10922,15 +11055,15 @@ const ma = /* @__PURE__ */ I(fa, [["render", pa], ["__scopeId", "data-v-077ba947
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function ba(e, i, t, o, n, m) {
-  const s = Ji, u = V, p = $;
+function Ca(e, i, t, o, n, m) {
+  const s = Ki, u = U, p = E;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -10970,14 +11103,14 @@ function ba(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ga = /* @__PURE__ */ I(ca, [["render", ba], ["__scopeId", "data-v-f8779646"]]), Fa = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Sa = /* @__PURE__ */ I(wa, [["render", Ca], ["__scopeId", "data-v-f8779646"]]), Ia = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ga
-}, Symbol.toStringTag, { value: "Module" })), ya = C({
+  default: Sa
+}, Symbol.toStringTag, { value: "Module" })), Ma = C({
   name: "switch-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11001,15 +11134,15 @@ const ga = /* @__PURE__ */ I(ca, [["render", ba], ["__scopeId", "data-v-f8779646
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), va = { class: "custom-active-action" }, wa = { class: "custom-active-action" };
-function Ca(e, i, t, o, n, m) {
-  const s = V, u = Dt, p = M;
+}), Ra = { class: "custom-active-action" }, ka = { class: "custom-active-action" };
+function Oa(e, i, t, o, n, m) {
+  const s = U, u = Tt, p = R;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -11038,14 +11171,14 @@ function Ca(e, i, t, o, n, m) {
         onChange: e.handleChangeEvent
       }, {
         "active-action": f(() => [
-          v("span", va, [
+          v("span", Ra, [
             h(s, {
               "icon-name": e.field.options.activeIcon
             }, null, 8, ["icon-name"])
           ])
         ]),
         "inactive-action": f(() => [
-          v("span", wa, [
+          v("span", ka, [
             h(s, {
               "icon-name": e.field.options.inactiveIcon
             }, null, 8, ["icon-name"])
@@ -11057,14 +11190,14 @@ function Ca(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Sa = /* @__PURE__ */ I(ya, [["render", Ca], ["__scopeId", "data-v-60c683b8"]]), Ia = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Pa = /* @__PURE__ */ I(Ma, [["render", Oa], ["__scopeId", "data-v-60c683b8"]]), Ea = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Sa
-}, Symbol.toStringTag, { value: "Module" })), Ma = C({
+  default: Pa
+}, Symbol.toStringTag, { value: "Module" })), $a = C({
   name: "tags-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11094,15 +11227,15 @@ const Sa = /* @__PURE__ */ I(ya, [["render", Ca], ["__scopeId", "data-v-60c683b8
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
-}), Ra = { key: 1 }, ka = { key: 1 };
-function Oa(e, i, t, o, n, m) {
-  const s = V, u = Tt, p = M;
+}), La = { key: 1 }, ja = { key: 1 };
+function Da(e, i, t, o, n, m) {
+  const s = U, u = Ut, p = R;
   return l(), a(p, {
     "build-rules": e.rules,
     field: e.field,
@@ -11146,7 +11279,7 @@ function Oa(e, i, t, o, n, m) {
               "icon-name": e.field.options.prefixIcon,
               class: "mr-1"
             }, null, 8, ["icon-name"])) : b("", !0),
-            e.field.options.prefixText ? (l(), c("span", Ra, F(e.field.options.prefixText), 1)) : b("", !0)
+            e.field.options.prefixText ? (l(), c("span", La, F(e.field.options.prefixText), 1)) : b("", !0)
           ]),
           key: "0"
         } : void 0,
@@ -11157,8 +11290,8 @@ function Oa(e, i, t, o, n, m) {
               key: 0,
               "icon-name": e.field.options.suffixIcon
             }, null, 8, ["icon-name"])) : b("", !0),
-            i[1] || (i[1] = E()),
-            e.field.options.suffixText ? (l(), c("span", ka, F(e.field.options.suffixText), 1)) : b("", !0)
+            i[1] || (i[1] = $()),
+            e.field.options.suffixText ? (l(), c("span", ja, F(e.field.options.suffixText), 1)) : b("", !0)
           ]),
           key: "1"
         } : void 0
@@ -11167,14 +11300,14 @@ function Oa(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Pa = /* @__PURE__ */ I(Ma, [["render", Oa]]), $a = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ta = /* @__PURE__ */ I($a, [["render", Da]]), Ua = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Pa
-}, Symbol.toStringTag, { value: "Module" })), Ea = C({
+  default: Ta
+}, Symbol.toStringTag, { value: "Module" })), Va = C({
   name: "text-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11201,15 +11334,15 @@ const Pa = /* @__PURE__ */ I(Ma, [["render", Oa]]), $a = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function La(e, i, t, o, n, m) {
-  const s = V, u = q, p = ye, g = M;
+function Ba(e, i, t, o, n, m) {
+  const s = U, u = q, p = ye, g = R;
   return l(), a(g, {
     "build-rules": e.rules,
     field: e.field,
@@ -11253,7 +11386,7 @@ function La(e, i, t, o, n, m) {
         e.field.options.prefixText ? {
           name: "prepend",
           fn: f(() => [
-            E(F(e.field.options.prefixText), 1)
+            $(F(e.field.options.prefixText), 1)
           ]),
           key: "0"
         } : void 0,
@@ -11261,11 +11394,11 @@ function La(e, i, t, o, n, m) {
           name: "append",
           fn: f(() => [
             !e.field.options.appendButton && e.field.options.suffixText ? (l(), c(y, { key: 0 }, [
-              E(F(e.field.options.suffixText), 1)
+              $(F(e.field.options.suffixText), 1)
             ], 64)) : (l(), a(u, {
               key: 1,
               disabled: e.field.options.disabled || e.field.options.appendButtonDisabled,
-              onClick: U(e.emitAppendButtonClick, ["prevent"])
+              onClick: V(e.emitAppendButtonClick, ["prevent"])
             }, {
               default: f(() => [
                 e.field.options.buttonIcon ? (l(), a(s, {
@@ -11273,7 +11406,7 @@ function La(e, i, t, o, n, m) {
                   "icon-name": e.field.options.buttonIcon,
                   class: "mr-1"
                 }, null, 8, ["icon-name"])) : b("", !0),
-                E(" " + F(e.field.options.suffixText), 1)
+                $(" " + F(e.field.options.suffixText), 1)
               ]),
               _: 1
             }, 8, ["disabled", "onClick"]))
@@ -11294,14 +11427,14 @@ function La(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const ja = /* @__PURE__ */ I(Ea, [["render", La]]), Da = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const za = /* @__PURE__ */ I(Va, [["render", Ba]]), Aa = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: ja
-}, Symbol.toStringTag, { value: "Module" })), Ta = C({
+  default: za
+}, Symbol.toStringTag, { value: "Module" })), Na = C({
   name: "text-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11315,15 +11448,15 @@ const ja = /* @__PURE__ */ I(Ea, [["render", La]]), Da = /* @__PURE__ */ Object.
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Va(e, i, t, o, n, m) {
-  const s = V, u = ne, p = Vt, g = $;
+function Wa(e, i, t, o, n, m) {
+  const s = U, u = se, p = Vt, g = E;
   return l(), a(g, {
     "build-rules": e.rules,
     field: e.field,
@@ -11367,7 +11500,7 @@ function Va(e, i, t, o, n, m) {
           class: S({ underline: !!e.field.options.underline, bold: !!e.field.options.bold, italic: !!e.field.options.italic })
         }, {
           default: f(() => [
-            E(F(e.field.options.content), 1)
+            $(F(e.field.options.content), 1)
           ]),
           _: 1
         }, 8, ["truncated", "line-clamp", "style", "class"]),
@@ -11392,14 +11525,14 @@ function Va(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Ua = /* @__PURE__ */ I(Ta, [["render", Va], ["__scopeId", "data-v-b76cd20b"]]), Ba = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ha = /* @__PURE__ */ I(Na, [["render", Wa], ["__scopeId", "data-v-b76cd20b"]]), qa = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Ua
-}, Symbol.toStringTag, { value: "Module" })), za = C({
+  default: Ha
+}, Symbol.toStringTag, { value: "Module" })), Ga = C({
   name: "textarea-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11423,15 +11556,15 @@ const Ua = /* @__PURE__ */ I(Ta, [["render", Va], ["__scopeId", "data-v-b76cd20b
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Aa(e, i, t, o, n, m) {
-  const s = ye, u = M;
+function Ja(e, i, t, o, n, m) {
+  const s = ye, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -11468,14 +11601,14 @@ function Aa(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Na = /* @__PURE__ */ I(za, [["render", Aa]]), Wa = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ka = /* @__PURE__ */ I(Ga, [["render", Ja]]), Za = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Na
-}, Symbol.toStringTag, { value: "Module" })), Ha = C({
+  default: Ka
+}, Symbol.toStringTag, { value: "Module" })), Qa = C({
   name: "time-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11496,19 +11629,19 @@ const Na = /* @__PURE__ */ I(za, [["render", Aa]]), Wa = /* @__PURE__ */ Object.
     this.initFieldModel(), this.initEventHandler(), this.buildFieldRules(), this.handleOnCreated();
   },
   mounted() {
-    this.registerToRefList(), this.field.options.initCurrent && !this.fieldValue && this.setFieldValue(fe().format("HH:mm:ss")), this.handleOnMounted();
+    this.registerToRefList(), this.field.options.initCurrent && !this.fieldValue && this.setFieldValue(ue().format("HH:mm:ss")), this.handleOnMounted();
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function qa(e, i, t, o, n, m) {
-  const s = si, u = M;
+function Ya(e, i, t, o, n, m) {
+  const s = ri, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -11548,14 +11681,14 @@ function qa(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Ga = /* @__PURE__ */ I(Ha, [["render", qa], ["__scopeId", "data-v-45369194"]]), Ja = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Xa = /* @__PURE__ */ I(Qa, [["render", Ya], ["__scopeId", "data-v-45369194"]]), _a = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Ga
-}, Symbol.toStringTag, { value: "Module" })), Ka = C({
+  default: Xa
+}, Symbol.toStringTag, { value: "Module" })), xa = C({
   name: "time-range-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11579,15 +11712,15 @@ const Ga = /* @__PURE__ */ I(Ha, [["render", qa], ["__scopeId", "data-v-45369194
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function Za(e, i, t, o, n, m) {
-  const s = si, u = M;
+function ef(e, i, t, o, n, m) {
+  const s = ri, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -11625,14 +11758,14 @@ function Za(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const Qa = /* @__PURE__ */ I(Ka, [["render", Za], ["__scopeId", "data-v-b059ddb1"]]), Ya = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const tf = /* @__PURE__ */ I(xa, [["render", ef], ["__scopeId", "data-v-b059ddb1"]]), of = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Qa
-}, Symbol.toStringTag, { value: "Module" })), Xa = C({
+  default: tf
+}, Symbol.toStringTag, { value: "Module" })), lf = C({
   name: "time-select-input",
   typeName: "FormField",
   components: {
-    FormItemWrapper: M
+    FormItemWrapper: R
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel"],
@@ -11693,15 +11826,15 @@ const Qa = /* @__PURE__ */ I(Ka, [["render", Za], ["__scopeId", "data-v-b059ddb1
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   beforeUnmount() {
     this.unregisterFromRefList();
   }
 });
-function _a(e, i, t, o, n, m) {
-  const s = Ut, u = M;
+function nf(e, i, t, o, n, m) {
+  const s = Bt, u = R;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -11746,14 +11879,14 @@ function _a(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const xa = /* @__PURE__ */ I(Xa, [["render", _a], ["__scopeId", "data-v-365dcbe8"]]), ef = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const sf = /* @__PURE__ */ I(lf, [["render", nf], ["__scopeId", "data-v-365dcbe8"]]), rf = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: xa
-}, Symbol.toStringTag, { value: "Module" })), tf = C({
+  default: sf
+}, Symbol.toStringTag, { value: "Module" })), df = C({
   name: "tour-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $
+    StaticContentWrapper: E
     // SdHtmlEditor,
   },
   mixins: [O],
@@ -11774,7 +11907,7 @@ const xa = /* @__PURE__ */ I(Xa, [["render", _a], ["__scopeId", "data-v-365dcbe8
   },
   setup() {
     return {
-      fieldEditor: R(null)
+      fieldEditor: M(null)
     };
   },
   methods: {
@@ -11793,8 +11926,8 @@ const xa = /* @__PURE__ */ I(Xa, [["render", _a], ["__scopeId", "data-v-365dcbe8
     this.unregisterFromRefList();
   }
 });
-function of(e, i, t, o, n, m) {
-  const s = V, u = q, p = we, g = zt, w = Bt, L = $;
+function af(e, i, t, o, n, m) {
+  const s = U, u = q, p = we, g = At, w = zt, L = E;
   return l(), a(L, {
     "build-rules": e.rules,
     field: e.field,
@@ -11820,7 +11953,7 @@ function of(e, i, t, o, n, m) {
           plain: !!e.field.options.plain,
           round: !!e.field.options.round,
           circle: !!e.field.options.circle,
-          onClick: i[0] || (i[0] = U((r) => e.field.options.open = !0, ["prevent"]))
+          onClick: i[0] || (i[0] = V((r) => e.field.options.open = !0, ["prevent"]))
         }, {
           default: f(() => [
             e.field.options.prefixIcon ? (l(), a(s, {
@@ -11876,15 +12009,15 @@ function of(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "style", "sub-form-row-id"]);
 }
-const lf = /* @__PURE__ */ I(tf, [["render", of], ["__scopeId", "data-v-fbe88553"]]), nf = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const ff = /* @__PURE__ */ I(df, [["render", af], ["__scopeId", "data-v-fbe88553"]]), uf = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: lf
-}, Symbol.toStringTag, { value: "Module" })), sf = C({
+  default: ff
+}, Symbol.toStringTag, { value: "Module" })), pf = C({
   name: "tree-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $,
-    SdCrudTree: Ye
+    StaticContentWrapper: E,
+    SdCrudTree: Xe
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel", "globalUserState"],
@@ -11915,7 +12048,7 @@ const lf = /* @__PURE__ */ I(tf, [["render", of], ["__scopeId", "data-v-fbe88553
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = A("formParams", {});
+    const e = M(null), i = A("formParams", {});
     return {
       fieldEditor: e,
       formParams: i
@@ -12020,8 +12153,8 @@ const lf = /* @__PURE__ */ I(tf, [["render", of], ["__scopeId", "data-v-fbe88553
     this.unregisterFromRefList();
   }
 });
-function rf(e, i, t, o, n, m) {
-  const s = le, u = V, p = q, g = pe, w = Ye, L = $;
+function mf(e, i, t, o, n, m) {
+  const s = oe, u = U, p = q, g = pe, w = Xe, L = E;
   return e.showWhenParent ? (l(), a(L, {
     key: 0,
     "build-rules": e.rules,
@@ -12138,7 +12271,7 @@ function rf(e, i, t, o, n, m) {
               tag: d.tag,
               href: d.tag && d.tag == "a" ? d.href : "",
               target: d.blank ? "_blank" : "_self",
-              onClick: U((B) => e.emitButtonRowClick(d, +k, r.row, 0), ["prevent"])
+              onClick: V((B) => e.emitButtonRowClick(d, +k, r.row, 0), ["prevent"])
             }, {
               default: f(() => [
                 d.prefixIcon ? (l(), a(u, {
@@ -12163,15 +12296,15 @@ function rf(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"])) : b("", !0);
 }
-const df = /* @__PURE__ */ I(sf, [["render", rf], ["__scopeId", "data-v-753b3431"]]), af = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const hf = /* @__PURE__ */ I(pf, [["render", mf], ["__scopeId", "data-v-753b3431"]]), cf = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: df
-}, Symbol.toStringTag, { value: "Module" })), ff = C({
+  default: hf
+}, Symbol.toStringTag, { value: "Module" })), bf = C({
   name: "vue-ui",
   typeName: "FormField",
   components: {
-    StaticContentWrapper: $,
-    SDCustomContent: Xe
+    StaticContentWrapper: E,
+    SDCustomContent: _e
   },
   mixins: [O],
   inject: ["refList", "getFormConfig", "globalOptionModel", "globalModel", "getOptionModel", "globalUserState"],
@@ -12195,13 +12328,13 @@ const df = /* @__PURE__ */ I(sf, [["render", rf], ["__scopeId", "data-v-753b3431
     // markRaw กัน component object โดน reactive wrap (Vue warn + เสีย perf)
     vueComponents() {
       return {
-        VueFlow: de(Qt),
-        Handle: de(Zt),
-        Panel: de(Kt),
+        VueFlow: ae(Yt),
+        Handle: ae(Qt),
+        Panel: ae(Zt),
         // 🔴 ต้อง register ชื่อ kebab ตรงๆ ด้วย — Vue แปลง <sd-date-picker-be> เป็น 'SdDatePickerBe'
         //    (e เล็ก) ซึ่งไม่ตรงกับ 'SdDatePickerBE' ⇒ resolve ไม่เจอ tag หายเงียบๆ
-        SdDatePickerBE: de(ie),
-        "sd-date-picker-be": de(ie),
+        SdDatePickerBE: ae(ie),
+        "sd-date-picker-be": ae(ie),
         SdReport: this.sdReportBound,
         "sd-report": this.sdReportBound
       };
@@ -12214,12 +12347,12 @@ const df = /* @__PURE__ */ I(sf, [["render", rf], ["__scopeId", "data-v-753b3431
     this.registerToRefList(), this.handleOnMounted();
   },
   setup() {
-    const e = R(null), i = gi({}), t = A("globalUserState", null), o = de(
+    const e = M(null), i = Fi({}), t = A("globalUserState", null), o = ae(
       C({
         name: "SdReportBound",
         inheritAttrs: !1,
         setup(n, { attrs: m }) {
-          return () => Fi(le, { userState: t, ...m });
+          return () => yi(oe, { userState: t, ...m });
         }
       })
     );
@@ -12235,8 +12368,8 @@ const df = /* @__PURE__ */ I(sf, [["render", rf], ["__scopeId", "data-v-753b3431
     this.unregisterFromRefList();
   }
 });
-function uf(e, i, t, o, n, m) {
-  const s = Xe, u = $;
+function gf(e, i, t, o, n, m) {
+  const s = _e, u = E;
   return l(), a(u, {
     "build-rules": e.rules,
     field: e.field,
@@ -12264,17 +12397,17 @@ function uf(e, i, t, o, n, m) {
     _: 1
   }, 8, ["build-rules", "field", "builder", "builder-status", "parent-field", "parent-list", "index-of-parent-list", "sub-form-row-index", "sub-form-col-index", "sub-form-row-id"]);
 }
-const pf = /* @__PURE__ */ I(ff, [["render", uf]]), mf = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Ff = /* @__PURE__ */ I(bf, [["render", gf]]), yf = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: pf
+  default: Ff
 }, Symbol.toStringTag, { value: "Module" }));
 function Be() {
   return {
     fields: [],
-    formConfig: D(hf())
+    formConfig: D(vf())
   };
 }
-function hf() {
+function vf() {
   return {
     modelName: "formData",
     refName: "sdForm",
@@ -12295,7 +12428,7 @@ function hf() {
     onFormUnmounted: ""
   };
 }
-function cf(e, i) {
+function wf(e, i) {
   if (!e) return "";
   let t = e.replace(/\\n/g, "").replace(/[\s\r\n'"]/g, "").replace(/-----BEGIN.*?-----/g, "").replace(/-----END.*?-----/g, "");
   const o = "-----BEGIN PUBLIC KEY-----", n = "-----END PUBLIC KEY-----", m = t.match(/.{1,64}/g)?.join(`
@@ -12304,20 +12437,20 @@ function cf(e, i) {
 ${m}
 ${n}`;
 }
-const bf = (e, i) => {
+const Cf = (e, i) => {
   try {
-    return new xt(i).decryptPublic(e, "utf8");
+    return new eo(i).decryptPublic(e, "utf8");
   } catch {
     return "";
   }
-}, gf = async function(e, i) {
+}, Sf = async function(e, i) {
   if (!e) return {};
   const { key: t, iv: o, data: n } = e, m = (u) => {
     try {
       if (!u) return null;
-      const p = bf(t, cf(u, "public"));
+      const p = Cf(t, wf(u, "public"));
       if (!p) return null;
-      const w = Yt.decrypt(n, ze(p), { iv: ze(o), mode: _t.CBC, padding: Xt.PKCS7 }).toString(fi.Utf8);
+      const w = Xt.decrypt(n, ze(p), { iv: ze(o), mode: xt.CBC, padding: _t.PKCS7 }).toString(ui.Utf8);
       return w ? JSON.parse(w) : null;
     } catch {
       return null;
@@ -12332,9 +12465,9 @@ tjverk8X5A9+IBcvMQIDAQAB
 -----END PUBLIC KEY-----`)), s !== null ? s : {};
 };
 function ze(e) {
-  return fi.Hex.parse(e);
+  return ui.Hex.parse(e);
 }
-const Ff = C({
+const If = C({
   name: "SdFormRender",
   emits: ["formChange"],
   components: {
@@ -12425,10 +12558,10 @@ const Ff = C({
       backdropParent: !1,
       formIdParent: this.sdform.joiner_field.joiner_enable && this.sdform.joiner_field.form_id !== "" ? D(this.sdform.joiner_field.form_id.value) : "",
       dataIdParent: "",
-      router: ai(),
-      route: di(),
+      router: fi(),
+      route: ai(),
       isDark: H(),
-      copyClipboard: xi,
+      copyClipboard: et,
       loadedForm: !1,
       // joiner ยัง resolve label ของ parent ไม่เสร็จ → overlay กันกดมั่ว. ไม่มี joiner = พร้อมทันที
       joinerReady: !this.sdform.joiner_field.joiner_enable,
@@ -12508,13 +12641,13 @@ const Ff = C({
     }
   },
   setup() {
-    const e = R(), i = R();
+    const e = M(), i = M();
     let t;
     return {
       renderFormRef: e,
       parentInput: i,
       loadingStart: () => {
-        t = Wt.service({
+        t = Ht.service({
           lock: !0,
           text: "Loading",
           background: "rgba(0, 0, 0, 0.7)",
@@ -12577,7 +12710,7 @@ const Ff = C({
       if (this.loadedForm = !1, this.formRender)
         this.formRenderModel = this.formRender;
       else {
-        const e = await gf(this.sdform.form_model, this.userState);
+        const e = await Sf(this.sdform.form_model, this.userState);
         e ? e.model ? this.formRenderModel = e.model : this.formRenderModel = Be() : this.formRenderModel = Be();
       }
       this.buildFormModel(this.formRenderModel ? this.formRenderModel.fields : null), this.initFormRender();
@@ -12613,7 +12746,7 @@ const Ff = C({
       if (this.sdform.joiner_field.joiner_enable && this.formData[this.sdform.joiner_field.field_name] && (i = this.formData[this.sdform.joiner_field.field_name]), this.formDataModel[this.sdform.joiner_field.field_name]) {
         let t = this.formData._id ? this.formData._id : "";
         this.formDataModel.xparentx = this.formDataModel[this.sdform.joiner_field.field_name].value || null, e = this.formDataModel[this.sdform.joiner_field.field_name];
-        const o = await _i(this.sdform.dataid, t, this.formDataModel, this.$data.useUserState);
+        const o = await xi(this.sdform.dataid, t, this.formDataModel, this.$data.useUserState);
         o.data ? (this.showInput = !1, x.warning(o.message)) : this.showInput = !0;
       } else
         this.formDataModel.xparentx = null, this.showInput = !1;
@@ -12626,7 +12759,7 @@ const Ff = C({
     },
     notify(e, i = "info", t = "Notification", o = 5e3) {
       try {
-        ri({
+        di({
           title: t,
           type: i,
           message: e,
@@ -12802,10 +12935,10 @@ const Ff = C({
       }
     },
     initFormRender(e = !0) {
-      this.formId = "sdRender" + ae(), e && this.insertCustomStyleAndScriptNode(), this.handleOnCreated(), this.addFieldValidateEventHandler(), this.registerFormToRefList();
+      this.formId = "sdRender" + fe(), e && this.insertCustomStyleAndScriptNode(), this.handleOnCreated(), this.addFieldValidateEventHandler(), this.registerFormToRefList();
     },
     insertCustomStyleAndScriptNode() {
-      this.formConfig && this.formConfig.cssCode && Yi(this.formConfig.cssCode, this.previewState ? "" : this.formId), this.formConfig && this.formConfig.functions && Xi(this.formConfig.functions, this.previewState ? "" : this.formId);
+      this.formConfig && this.formConfig.cssCode && Xi(this.formConfig.cssCode, this.previewState ? "" : this.formId), this.formConfig && this.formConfig.functions && _i(this.formConfig.functions, this.previewState ? "" : this.formId);
     },
     addFieldChangeEventHandler() {
       try {
@@ -12878,7 +13011,7 @@ const Ff = C({
       let i = [], t = null, o = (n, m) => {
         n.options && n.options.name === e && (t = m.options.name);
       };
-      if (Qi(this.fields, o), t) {
+      if (Yi(this.fields, o), t) {
         let n = this.getFieldRef(t);
         if (n) {
           let m = n.getRowIdData();
@@ -13067,10 +13200,10 @@ const Ff = C({
       }));
     },
     getFieldInput() {
-      return Zi(this.formRenderModel.fields);
+      return Qi(this.formRenderModel.fields);
     },
     getContainerFields() {
-      return Ki(this.formRenderModel.fields);
+      return Zi(this.formRenderModel.fields);
     },
     addEC(e, i) {
       this.externalComponents[e] = i;
@@ -13085,12 +13218,12 @@ const Ff = C({
   beforeUnmount() {
     this.handleOnUnmounted();
   }
-}), yf = ["data-id"], vf = { style: { margin: "0px" } }, wf = {
+}), Mf = ["data-id"], Rf = { style: { margin: "0px" } }, kf = {
   key: 2,
   class: "widget-wrapper"
-}, Cf = { key: 0 }, Sf = { key: 1 };
-function If(e, i, t, o, n, m) {
-  const s = V, u = ne, p = q, g = et, w = ue, L = ei, r = xe, d = At, k = it, B = tt, se = Nt;
+}, Of = { key: 0 }, Pf = { key: 1 };
+function Ef(e, i, t, o, n, m) {
+  const s = U, u = se, p = q, g = it, w = ne, L = ii, r = ei, d = Nt, k = tt, B = ot, re = Wt;
   return l(), c(y, null, [
     Q((l(), a(d, {
       "label-position": e.labelPosition,
@@ -13100,7 +13233,7 @@ function If(e, i, t, o, n, m) {
       "validate-on-rule-change": !1,
       model: e.formDataModel,
       ref: "renderFormRef",
-      onSubmit: i[1] || (i[1] = U(() => {
+      onSubmit: i[1] || (i[1] = V(() => {
       }, ["prevent"]))
     }, {
       default: f(() => [
@@ -13121,7 +13254,7 @@ function If(e, i, t, o, n, m) {
           }, {
             label: f(() => [
               v("span", null, [
-                E(F(e.sdform.joiner_field.joiner_label) + " ", 1),
+                $(F(e.sdform.joiner_field.joiner_label) + " ", 1),
                 e.sdform.joiner_field.joiner_hint ? (l(), a(u, {
                   key: 0,
                   content: e.sdform.joiner_field.joiner_hint,
@@ -13177,7 +13310,7 @@ function If(e, i, t, o, n, m) {
                         icon: "Plus",
                         plain: "",
                         circle: "",
-                        onClick: U(e.handleOpenParentFormAdd, ["prevent"]),
+                        onClick: V(e.handleOpenParentFormAdd, ["prevent"]),
                         style: { margin: "0px" }
                       }, null, 8, ["onClick"])) : b("", !0)
                     ], 64)),
@@ -13188,7 +13321,7 @@ function If(e, i, t, o, n, m) {
                       icon: "Edit",
                       plain: "",
                       circle: "",
-                      onClick: U(e.handleOpenParentFormEdit, ["prevent"]),
+                      onClick: V(e.handleOpenParentFormEdit, ["prevent"]),
                       style: { margin: "0px" }
                     }, null, 8, ["onClick"])) : b("", !0),
                     e.showInput && !e.sdform.joiner_field.edit_enable && e.sdform.joiner_field.view_enable ? (l(), a(p, {
@@ -13198,7 +13331,7 @@ function If(e, i, t, o, n, m) {
                       icon: "View",
                       plain: "",
                       circle: "",
-                      onClick: U(e.handleOpenParentFormView, ["prevent"]),
+                      onClick: V(e.handleOpenParentFormView, ["prevent"]),
                       style: { margin: "0px" }
                     }, null, 8, ["onClick"])) : b("", !0)
                   ]),
@@ -13213,14 +13346,14 @@ function If(e, i, t, o, n, m) {
                 style: { position: "absolute", top: "0", right: "0", "z-index": "999" }
               }, {
                 default: f(() => [
-                  E(F(e.sdform.joiner_field.field_name), 1)
+                  $(F(e.sdform.joiner_field.field_name), 1)
                 ]),
                 _: 1
               })) : b("", !0)
             ]),
             _: 1
           }, 8, ["label", "label-width", "size", "label-position", "class", "prop"])) : b("", !0)
-        ], 8, yf)) : b("", !0),
+        ], 8, Mf)) : b("", !0),
         e.dataError ? (l(), a(r, {
           key: 1,
           title: "Data Validation Error",
@@ -13228,33 +13361,33 @@ function If(e, i, t, o, n, m) {
           style: { "margin-bottom": "15px" }
         }, {
           default: f(() => [
-            v("ul", vf, [
-              (l(!0), c(y, null, T(e.formData.xerrorx, (K, re) => (l(), c("li", null, [
+            v("ul", Rf, [
+              (l(!0), c(y, null, T(e.formData.xerrorx, (K, de) => (l(), c("li", null, [
                 v("b", null, [
-                  v("u", null, F(re), 1)
+                  v("u", null, F(de), 1)
                 ]),
-                E(" " + F(K), 1)
+                $(" " + F(K), 1)
               ]))), 256))
             ])
           ]),
           _: 1
         })) : b("", !0),
-        e.showInput ? (l(), c("div", wf, [
-          (l(!0), c(y, null, T(e.fields, (K, re) => (l(), c(y, null, [
+        e.showInput ? (l(), c("div", kf, [
+          (l(!0), c(y, null, T(e.fields, (K, de) => (l(), c(y, null, [
             K.category === "container" ? (l(), a(N(K.component + "-render"), {
               field: K,
-              key: K.id ? K.id : re,
+              key: K.id ? K.id : de,
               "parent-list": e.fields,
-              "index-of-parent-list": re,
+              "index-of-parent-list": de,
               "parent-field": null
             }, null, 8, ["field", "parent-list", "index-of-parent-list"])) : (l(), a(N(K.component), {
               field: K,
               "form-model": e.formDataModel,
               builder: null,
               "builder-status": !1,
-              key: K.id ? K.id : re,
+              key: K.id ? K.id : de,
               "parent-list": e.fields,
-              "index-of-parent-list": re,
+              "index-of-parent-list": de,
               "parent-field": null
             }, null, 8, ["field", "form-model", "parent-list", "index-of-parent-list"]))
           ], 64))), 256))
@@ -13262,9 +13395,9 @@ function If(e, i, t, o, n, m) {
       ]),
       _: 1
     }, 8, ["label-position", "size", "class", "label-width", "model"])), [
-      [se, !e.joinerReady]
+      [re, !e.joinerReady]
     ]),
-    e.showPopupFlag ? (l(), c("div", Cf, [
+    e.showPopupFlag ? (l(), c("div", Of, [
       (l(), a(k, he({
         key: e.subFormBindProps.formId,
         ref: "refSubForm"
@@ -13273,16 +13406,16 @@ function If(e, i, t, o, n, m) {
         "user-state": e.userState
       }), null, 16, ["user-state"]))
     ])) : b("", !0),
-    e.showPopupGridFlag ? (l(), c("div", Sf, [
+    e.showPopupGridFlag ? (l(), c("div", Pf, [
       h(B, he({ ref: "refGrid" }, e.gridBindProps, { "user-state": e.userState }), null, 16, ["user-state"])
     ])) : b("", !0)
   ], 64);
 }
-const Mf = /* @__PURE__ */ I(Ff, [["render", If], ["__scopeId", "data-v-6ce45eb2"]]), bp = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const $f = /* @__PURE__ */ I(If, [["render", Ef], ["__scopeId", "data-v-6ce45eb2"]]), Cp = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Mf
+  default: $f
 }, Symbol.toStringTag, { value: "Module" }));
 export {
-  bp as S,
-  cp as i
+  Cp as S,
+  wp as i
 };
